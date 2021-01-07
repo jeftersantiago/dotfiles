@@ -1,0 +1,8 @@
+#!/bin/sh
+[ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
+[ -f "$PV/scripts/cmds" ] && source "$PV/scripts/cmds"
+setxkbmap br
+xrdb ~/.Xresources
+shopt -s autocd
+PS1="\[\e]0;\u@\h\$ : \w\a\]\u@\h\$ "
+
