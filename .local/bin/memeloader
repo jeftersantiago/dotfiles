@@ -1,0 +1,12 @@
+#!/bin/sh
+
+promp="$(echo -e "1\n2\n3\n4\n" | fzf-tmux --height 5% --prompt "choose the sub:  1 - memepiece, 2 - physicsmemes, 3 - dankmemes , 4 - mathmemes ")"
+case "$promp" in
+        1) sub=memepiece;;
+        2) sub=physicsmemes;;
+        3) sub=dankmemes;;
+        4) sub=mathmemes;;
+esac;
+
+wget -O - -q reddit.com/r/$sub.json | jq '.data.children[] |.data.url' | xargs feh
+

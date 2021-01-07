@@ -1,0 +1,5 @@
+#!/bin/sh
+case $BLOCK_BUTTON in
+        1) killall i3 && killall mpd;;
+esac
+echo "🚪"

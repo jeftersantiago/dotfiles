@@ -1,0 +1,3 @@
+#!/bin/sh
+printf "🖴 %s%s\n" "$(df -h "/dev/sda4" | awk '/[0-9]/ {print $3 "/" $2}')"
+

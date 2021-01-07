@@ -1,0 +1,8 @@
+!/bin/sh
+pidof dunst && killall dunst
+dunst &
+
+notify-send "MESSAGE 1 TITLE" "MESSAGE MESSAGE MESSAGE >>>>>>" --icon=dialog-information
+notify-send "MESSAGE 2 TITLE" "MESSAGE MESSAGE MESSAGE >>>>>>" --icon=dialog-information
+notify-send "MalsjalfjslfjaslkfjsalfkjsaflkajsflksajESSAGE 3 TITLE" "MESSAGE MESSAGE MESSAGE >>>>>>
+alskfjalkj " --icon=dialog-information
