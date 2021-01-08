@@ -1,6 +1,6 @@
 #!/bin/sh
-[ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
-[ -f "$PV/scripts/cmds" ] && source "$PV/scripts/cmds"
+[ -f $SC"aliases" ] && source $SC"aliases"
+[ -f $SC"cmds" ] && source $SC"cmds"
 setxkbmap br
 xrdb ~/.Xresources
 shopt -s autocd
