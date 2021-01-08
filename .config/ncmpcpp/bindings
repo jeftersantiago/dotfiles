@@ -198,9 +198,6 @@
 #def_key "y"
 #  toggle_single
 #
-#def_key "R"
-#  toggle_consume
-#
 #def_key "Y"
 #  toggle_replay_gain_mode
 #
@@ -432,10 +429,6 @@ def_key "l"
 def_key "."
     show_lyrics
 
-def_key "n"
-    next_found_item
-def_key "N"
-    previous_found_item
 
 # not used but bound
 def_key "J"

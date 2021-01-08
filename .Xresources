@@ -3,7 +3,7 @@
 *scrollBar:false
 *geometry: 80x32
 *alpha:0.9
-*faceName:liberation mono:size=10
+*faceName:liberation mono:size=09
 
 !*translations: #override \n\
 ! Ctrl <Key> minus: smaller-vt-font() \n\
