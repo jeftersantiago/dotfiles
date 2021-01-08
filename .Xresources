@@ -31,11 +31,11 @@ Alt <Key>V: insert-selection(CLIPBOARD)
 *color3:            #cc7833
 *color11:           #bc9458
 !blue
-*color4:            #6d9cbe
-*color12:           #d0d0ff
+*color4:            #3288C6
+*color12:           #3288C6
 !magenta
-*color5:            #9f5079
-*color13:           #a761c2
+*color5:            #E10778
+*color13:           #A617DE
 !cyan
 *color6:            #435d75
 *color14:           #6e98a4

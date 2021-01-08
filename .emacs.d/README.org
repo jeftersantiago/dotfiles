@@ -3,7 +3,7 @@
 (setq-default user-full-name "Jefter Santiago Mares")
 (setq-default user-mail-address "jefter.santiago66@gmail.com")
 
-(load "~/.shortcuts/emacs.el")
+(load "~/.local/bin/emacs.el")
 
 ;; 'y' is two characters less than 'yes'.
 ;; 'defalias' or 'fset'?

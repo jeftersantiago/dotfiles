@@ -137,22 +137,22 @@
         <command>xterm</command>
       </action>
     </keybind>
-    <keybind key="A-3">
+    <keybind key="A-F10">
       <action name="Execute">
         <command>pulsemixer --change-volume +5</command>
       </action>
     </keybind>
-    <keybind key="A-S-3">
+    <keybind key="A-F10">
       <action name="Execute">
         <command>pulsemixer --change-volume +10</command>
       </action>
     </keybind>
-    <keybind key="A-2">
+    <keybind key="A-F9">
       <action name="Execute">
         <command>pulsemixer --change-volume -5</command>
       </action>
     </keybind>
-    <keybind key="A-S-2">
+    <keybind key="A-S-F9">
       <action name="Execute">
         <command>pulsemixer --change-volume -10</command>
       </action>
