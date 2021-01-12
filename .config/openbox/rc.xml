@@ -172,9 +172,19 @@
         <command>thunar</command>
       </action>
     </keybind>
+   <keybind key="W-S-D">
+        <action name="Execute">
+        <command>discord</command>
+        </action>
+   </keybind>
    <keybind key="W-S-B">
         <action name="Execute">
         <command>firefox</command>
+        </action>
+   </keybind>
+   <keybind key="W-S-X">
+        <action name="Execute">
+        <command>xournalpp</command>
         </action>
    </keybind>
     <keybind key="W-p">
@@ -705,6 +715,19 @@
         <y>center</y>
       </position>
     </application>
+    <application class="discord">
+      <decor>yes</decor>
+      <size>
+        <width>50%</width>
+        <height>80%</height>
+      </size>
+      <position force="yes">
+        <x>-35%</x>
+        <y>center</y>
+      </position>
+    </application>
+
+
 
 
     <!--
