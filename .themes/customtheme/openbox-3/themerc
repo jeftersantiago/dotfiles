@@ -5,7 +5,7 @@
 window.*.button.*.bg: parentrelative
 
 window.active.title.bg.color:                   #000000
-window.active.label.text.color:                 #ffffff
+window.active.label.text.color:                 #2A85C5
 window.active.button.pressed.image.color:       #000000
 window.active.button.unpressed.image.color:     #ffffff
 window.active.button.*.image.color:             #ffffff
@@ -13,7 +13,7 @@ window.active.button.*.pressed.image.color:     #ffffff
 window.active.button.disabled.image.color:      #ffffff
 
 window.inactive.button*.image.color:            #ffffff
-window.inactive.label.text.color:               #585758
+window.inactive.label.text.color:               #948F57
 window.inactive.title.bg.color:                 #000000
 
 
@@ -25,8 +25,8 @@ window.inactive.title.bg.color:                 #000000
 window.client.padding.width: 0
 window.handle.width: 0
 osd.hilight.bg: flat border
-osd.hilight.bg.color: #ffffff
-osd.hilight.bg.border.color: #ffffff
+osd.hilight.bg.color: #2A85C5
+osd.hilight.bg.border.color: #2A85C5
 
 menu.items.active.bg: Flat Solid
 menu.items.active.bg.color:  #ffffff

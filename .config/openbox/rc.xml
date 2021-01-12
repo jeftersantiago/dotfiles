@@ -169,9 +169,14 @@
     </keybind>
     <keybind key="W-S-f">
       <action name="Execute">
-        <command>nautilus</command>
+        <command>thunar</command>
       </action>
     </keybind>
+   <keybind key="W-S-B">
+        <action name="Execute">
+        <command>firefox</command>
+        </action>
+   </keybind>
     <keybind key="W-p">
       <action name="Execute">
         <command>dmenu_run -fn "Source Code Pro:size=15"</command>
@@ -656,7 +661,7 @@
     <manageDesktops>yes</manageDesktops>
   </menu>
   <applications>
-    <application class="xterm">
+    <application class="XTerm">
       <decor>yes</decor>
       <size>
         <width>55%</width>
@@ -689,6 +694,19 @@
         <y>center</y>
       </position>
     </application>
+    <application class="Emacs">
+      <decor>no</decor>
+      <size>
+        <width>60%</width>
+        <height>80%</height>
+      </size>
+      <position force="yes">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+
+
     <!--
     <decor>yes</decor>
     <shade>no</shade>

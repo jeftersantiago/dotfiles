@@ -13,8 +13,8 @@
     padding = 5
     horizontal_padding = 8
     frame_width = 3
-    frame_color = "#585758"
-    separator_color = "585758"
+    frame_color = "#ffffff"
+    separator_color = "ffffff"
     sort = yes
     idle_threshold = 120
     font = Source Code Pro 10
@@ -44,7 +44,7 @@
     class = Dunst
     startup_notification = false
     verbosity = mesg
-    corner_radius = 35
+    corner_radius = 0
     ignore_dbusclose = false
     force_xinerama = false
     mouse_left_click = close_current
