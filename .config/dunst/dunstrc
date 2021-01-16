@@ -3,6 +3,7 @@
     monitor = 0
     follow = mouse
     geometry = "0x0-0+0"
+    geometry = "330x50-10+44"
     #       [{width}]x{height}[+/-{x}+/-{y}]
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = yes
@@ -13,8 +14,8 @@
     padding = 5
     horizontal_padding = 8
     frame_width = 3
-    frame_color = "#ffffff"
-    separator_color = "ffffff"
+    frame_color = "#060E10"
+    separator_color = "#060E10"
     sort = yes
     idle_threshold = 120
     font = Source Code Pro 10
@@ -71,15 +72,15 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#222222"
+    background = "##444444"
     foreground = "#888888"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "1d202b"
-    foreground = "#ffffff"
+    background = "#000000"
+    foreground = "#585758"
     timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
     icon = /usr/share/icons/Adwaita/24x24/apps/preferences-system-notifications-symbolic.symbolic.png

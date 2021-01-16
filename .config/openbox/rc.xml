@@ -212,12 +212,18 @@
         <command>dmenu_run -fn "Source Code Pro:size=15"</command>
       </action>
     </keybind>
-    <keybind key="W-S-N">
+    <keybind key="M-S-N">
+      <action name="Execute">
+        <command>nitrogen</command>
+        </action>
+        </keybind>
+        <keybind key="W-S-N">
       <action name="Execute">
         <command>xterm  -e newsboat</command>
       </action>
     </keybind>
-    <keybind key="M-S-P">
+
+        <keybind key="M-S-P">
       <action name="Execute">
         <command>pavucontrol</command>
       </action>
