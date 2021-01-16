@@ -199,7 +199,7 @@
     </keybind>
     <keybind key="W-S-s">
       <action name="Execute">
-        <command>spotify</command>
+        <command>spotify-tray</command>
       </action>
     </keybind>
     <keybind key="W-S-X">
@@ -219,10 +219,15 @@
     </keybind>
     <keybind key="M-S-P">
       <action name="Execute">
-        <command>xterm  -e pulsemixer</command>
+        <command>pavucontrol</command>
       </action>
     </keybind>
-    <keybind key="W-S-m">
+    <keybind key="M-S-B">
+      <action name="Execute">
+        <command>mate-power-preferences</command>
+      </action>
+    </keybind>
+        <keybind key="W-S-m">
       <action name="Execute">
         <command>xterm -e ncmpcpp</command>
       </action>
@@ -692,7 +697,7 @@
   </menu>
   <applications>
     <application class="discord">
-      <decor>yes</decor>
+      <decor>no</decor>
       <size>
         <width>50%</width>
         <height>80%</height>
@@ -768,7 +773,19 @@
         <y>center</y>
       </position>
     </application>
-    <application class="MuPDF">
+     <application class="Pavucontrol">
+      <decor>yes</decor>
+      <size>
+        <width>30%</width>
+        <height>60%</height>
+      </size>
+      <position force="yes">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+
+   <application class="MuPDF">
       <decor>yes</decor>
       <position force="yes">
         <x>center</x>

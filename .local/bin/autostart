@@ -4,9 +4,13 @@ xrdb ~/.Xresources &
 xset b off &
 
 dunst &
+
 nm-applet &
 
+blueman-applet &
 
-xfce4-panel &
+mate-power-manager &
+
 tint2 &
+
 nitrogen --restore &
