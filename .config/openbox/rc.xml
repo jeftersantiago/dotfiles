@@ -75,7 +75,7 @@
     </font>
   </theme>
   <desktops>
-    <number>4</number>
+    <number>5</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
@@ -164,7 +164,7 @@
     </keybind>
     <keybind key="W-S-R">
       <action name="Execute">
-        <command>xterm  -e ranger</command>
+        <command>st  -e ranger</command>
       </action>
     </keybind>
     <keybind key="W-S-f">
@@ -185,6 +185,11 @@
     <keybind key="W-S-B">
       <action name="Execute">
         <command>firefox</command>
+      </action>
+    </keybind>
+    <keybind key="W-q">
+      <action name="Execute">
+        <command>qutebrowser</command>
       </action>
     </keybind>
     <keybind key="W-S-K">
@@ -708,7 +713,7 @@
         <y>center</y>
       </position>
     </application>
-    <application class="mpv">
+    <application class="qutebrowser">
       <decor>yes</decor>
       <size>
         <width>60%</width>
@@ -719,7 +724,28 @@
         <y>center</y>
       </position>
     </application>
-
+    <application class="mpv">
+      <decor>no</decor>
+      <size>
+        <width>60%</width>
+        <height>80%</height>
+      </size>
+      <position force="yes">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+    <application class="okular">
+      <decor>no</decor>
+      <size>
+        <width>60%</width>
+        <height>80%</height>
+      </size>
+      <position force="yes">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
     <application class="XTerm">
       <decor>yes</decor>
       <size>

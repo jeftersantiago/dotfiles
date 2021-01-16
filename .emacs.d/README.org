@@ -99,7 +99,6 @@
 
 
 (load-theme  'dracula t)
-(load-theme  'almost-mono-black t)
 ;(set-frame-parameter (selected-frame) 'alpha '(95 . 50))
 ;(add-to-list 'default-frame-alist '(alpha . (95 . 50)))
 
@@ -379,3 +378,13 @@ sudo pacman -S checkbashisms # Arch Linux, from AUR
   (setq flycheck-checkbashisms-newline t)
   (setq flycheck-checkbashisms-posix t))
 #+end_src
+* discord
+#+BEGIN_SRC emacs-lisp
+(use-package elcord
+  :config
+  (setq elcord-client-id '"714056771391717468")
+  (setq elcord-refresh-rate 5)
+  (setq elcord-use-major-mode-as-main-icon t)
+  :init
+  (elcord-mode))
+#+END_SRC

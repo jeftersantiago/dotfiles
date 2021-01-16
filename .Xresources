@@ -3,7 +3,7 @@ ktermName: xterm-256color
 *scrollBar:false
 *geometry: 80x32
 *alpha:0.9
-*faceName:source code pro:size=13
+*faceName:source code pro:size=11
 
 
 Alt <Key>C: copy-selection(CLIPBOARD) \n\
@@ -25,12 +25,12 @@ Alt <Key>V: insert-selection(CLIPBOARD)
 !blue
 *color4:            #3288C6
 *color12:           #3288C6
-!magenta
+!*magenta
 *color5:            #E10778
 *color13:           #A617DE
-!cyan
+!*cyan
 *color6:            #435d75
 *color14:           #6e98a4
-!white
+!*white
 *color7:            #dddddd
 *color15:           #dddddd
