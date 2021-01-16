@@ -172,6 +172,11 @@
         <command>thunar</command>
       </action>
     </keybind>
+    <keybind key="W-R">
+      <action name="Execute">
+        <command>redshift-gtk</command>
+      </action>
+    </keybind>
    <keybind key="W-S-D">
         <action name="Execute">
         <command>discord</command>
@@ -180,6 +185,16 @@
    <keybind key="W-S-B">
         <action name="Execute">
         <command>firefox</command>
+        </action>
+   </keybind>
+   <keybind key="W-S-K">
+        <action name="Execute">
+        <command>keepassxc</command>
+        </action>
+   </keybind>
+   <keybind key="W-S-s">
+        <action name="Execute">
+        <command>spotify</command>
         </action>
    </keybind>
    <keybind key="W-S-X">
@@ -671,7 +686,32 @@
     <manageDesktops>yes</manageDesktops>
   </menu>
   <applications>
-    <application class="XTerm">
+
+   <application class="discord">
+      <decor>yes</decor>
+      <size>
+        <width>50%</width>
+        <height>80%</height>
+      </size>
+      <position force="yes">
+        <x>-35%</x>
+        <y>center</y>
+      </position>
+    </application>
+
+	<application class="Emacs">
+      <decor>yes</decor>
+      <size>
+        <width>60%</width>
+        <height>80%</height>
+      </size>
+      <position force="yes">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+
+	<application class="XTerm">
       <decor>yes</decor>
       <size>
         <width>55%</width>
@@ -682,6 +722,23 @@
         <y>center</y>
       </position>
     </application>
+
+
+
+      <application class="Thunar">
+      <decor>yes</decor>
+      <size>
+        <width>55%</width>
+        <height>70%</height>
+      </size>
+      <position force="yes">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+
+
+
     <application class="MuPDF">
       <decor>yes</decor>
       <position force="yes">
@@ -704,31 +761,6 @@
         <y>center</y>
       </position>
     </application>
-    <application class="Emacs">
-      <decor>no</decor>
-      <size>
-        <width>60%</width>
-        <height>80%</height>
-      </size>
-      <position force="yes">
-        <x>center</x>
-        <y>center</y>
-      </position>
-    </application>
-    <application class="discord">
-      <decor>yes</decor>
-      <size>
-        <width>50%</width>
-        <height>80%</height>
-      </size>
-      <position force="yes">
-        <x>-35%</x>
-        <y>center</y>
-      </position>
-    </application>
-
-
-
 
     <!--
     <decor>yes</decor>
