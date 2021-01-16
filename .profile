@@ -10,4 +10,7 @@ export PATH=$PATH:/usr/bin/pdflatex
 export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | paste -sd ':')"
 
 test -f "$HOME"/.shrc && export ENV="$HOME"/.shrc
+<<<<<<< HEAD
 
+=======
+>>>>>>> e8b8628d7e0f0563bdfcbc45ddf1a9a4b20cbcab
