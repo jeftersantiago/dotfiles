@@ -1,0 +1,12 @@
+#!/bin/sh
+#xsetwacom set 9 MapToOutput LVDS-1
+xrdb ~/.Xresources &
+xset b off &
+
+dunst &
+nm-applet &
+
+
+xfce4-panel &
+tint2 &
+nitrogen --restore &
