@@ -39,13 +39,13 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Source Code Pro</name>
-      <size>10</size>
+      <size>7</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
       <name>Source Code Pro</name>
-      <size>10</size>
+      <size>8</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
@@ -215,15 +215,14 @@
     <keybind key="M-S-N">
       <action name="Execute">
         <command>nitrogen</command>
-        </action>
-        </keybind>
-        <keybind key="W-S-N">
+      </action>
+    </keybind>
+    <keybind key="W-S-N">
       <action name="Execute">
         <command>xterm  -e newsboat</command>
       </action>
     </keybind>
-
-        <keybind key="M-S-P">
+    <keybind key="M-S-P">
       <action name="Execute">
         <command>pavucontrol</command>
       </action>
@@ -233,7 +232,7 @@
         <command>mate-power-preferences</command>
       </action>
     </keybind>
-        <keybind key="W-S-m">
+    <keybind key="W-S-m">
       <action name="Execute">
         <command>xterm -e ncmpcpp</command>
       </action>
@@ -736,7 +735,7 @@
       </position>
     </application>
     <application class="mpv">
-      <decor>no</decor>
+      <decor>yes</decor>
       <size>
         <width>60%</width>
         <height>80%</height>
@@ -779,7 +778,7 @@
         <y>center</y>
       </position>
     </application>
-     <application class="Pavucontrol">
+    <application class="Pavucontrol">
       <decor>yes</decor>
       <size>
         <width>30%</width>
@@ -790,8 +789,7 @@
         <y>center</y>
       </position>
     </application>
-
-   <application class="MuPDF">
+    <application class="MuPDF">
       <decor>yes</decor>
       <position force="yes">
         <x>center</x>
