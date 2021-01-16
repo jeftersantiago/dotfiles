@@ -177,35 +177,14 @@
         <command>redshift-gtk</command>
       </action>
     </keybind>
-<<<<<<< HEAD
-   <keybind key="W-S-D">
-        <action name="Execute">
-=======
     <keybind key="W-S-D">
       <action name="Execute">
->>>>>>> e8b8628d7e0f0563bdfcbc45ddf1a9a4b20cbcab
         <command>discord</command>
       </action>
     </keybind>
     <keybind key="W-S-B">
       <action name="Execute">
         <command>firefox</command>
-<<<<<<< HEAD
-        </action>
-   </keybind>
-   <keybind key="W-S-K">
-        <action name="Execute">
-        <command>keepassxc</command>
-        </action>
-   </keybind>
-   <keybind key="W-S-s">
-        <action name="Execute">
-        <command>spotify</command>
-        </action>
-   </keybind>
-   <keybind key="W-S-X">
-        <action name="Execute">
-=======
       </action>
     </keybind>
     <keybind key="W-q">
@@ -225,7 +204,6 @@
     </keybind>
     <keybind key="W-S-X">
       <action name="Execute">
->>>>>>> e8b8628d7e0f0563bdfcbc45ddf1a9a4b20cbcab
         <command>xournalpp</command>
       </action>
     </keybind>
@@ -713,12 +691,7 @@
     <manageDesktops>yes</manageDesktops>
   </menu>
   <applications>
-<<<<<<< HEAD
-
-   <application class="discord">
-=======
     <application class="discord">
->>>>>>> e8b8628d7e0f0563bdfcbc45ddf1a9a4b20cbcab
       <decor>yes</decor>
       <size>
         <width>50%</width>
@@ -729,12 +702,7 @@
         <y>center</y>
       </position>
     </application>
-<<<<<<< HEAD
-
-	<application class="Emacs">
-=======
     <application class="Emacs">
->>>>>>> e8b8628d7e0f0563bdfcbc45ddf1a9a4b20cbcab
       <decor>yes</decor>
       <size>
         <width>60%</width>
@@ -744,15 +712,6 @@
         <x>center</x>
         <y>center</y>
       </position>
-<<<<<<< HEAD
-    </application>
-
-	<application class="XTerm">
-      <decor>yes</decor>
-      <size>
-        <width>55%</width>
-        <height>70%</height>
-=======
     </application>
     <application class="qutebrowser">
       <decor>yes</decor>
@@ -770,64 +729,26 @@
       <size>
         <width>60%</width>
         <height>80%</height>
->>>>>>> e8b8628d7e0f0563bdfcbc45ddf1a9a4b20cbcab
       </size>
       <position force="yes">
         <x>center</x>
         <y>center</y>
       </position>
     </application>
-<<<<<<< HEAD
-
-
-
-      <application class="Thunar">
-      <decor>yes</decor>
-=======
     <application class="okular">
       <decor>no</decor>
->>>>>>> e8b8628d7e0f0563bdfcbc45ddf1a9a4b20cbcab
       <size>
-        <width>55%</width>
-        <height>70%</height>
+        <width>60%</width>
+        <height>80%</height>
       </size>
       <position force="yes">
         <x>center</x>
         <y>center</y>
       </position>
     </application>
-<<<<<<< HEAD
-
-
-
-    <application class="MuPDF">
-=======
     <application class="XTerm">
->>>>>>> e8b8628d7e0f0563bdfcbc45ddf1a9a4b20cbcab
       <decor>yes</decor>
-      <position force="yes">
-        <x>center</x>
-        <y>center</y>
-      </position>
       <size>
-<<<<<<< HEAD
-        <width>%20</width>
-        <height>90%</height>
-      </size>
-    </application>
-    <application class="firefox">
-      <decor>no</decor>
-      <size>
-        <width>%100</width>
-        <height>100%</height>
-      </size>
-      <position force="yes">
-        <x>center</x>
-        <y>center</y>
-      </position>
-    </application>
-
-=======
         <width>55%</width>
         <height>70%</height>
       </size>
@@ -869,7 +790,6 @@
         <y>center</y>
       </position>
     </application>
->>>>>>> e8b8628d7e0f0563bdfcbc45ddf1a9a4b20cbcab
     <!--
     <decor>yes</decor>
     <shade>no</shade>
