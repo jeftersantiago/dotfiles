@@ -11,6 +11,7 @@ blueman-applet &
 
 mate-power-manager &
 
-tint2 &
+#tint2 &
+xfce4-panel &
 
 nitrogen --restore &

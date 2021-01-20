@@ -75,7 +75,7 @@
     </font>
   </theme>
   <desktops>
-    <number>5</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
@@ -708,7 +708,7 @@
         <height>80%</height>
       </size>
       <position force="yes">
-        <x>-35%</x>
+        <x>center</x>
         <y>center</y>
       </position>
     </application>
@@ -759,8 +759,8 @@
     <application class="XTerm">
       <decor>yes</decor>
       <size>
-        <width>55%</width>
-        <height>70%</height>
+        <width>80%</width>
+        <height>80%</height>
       </size>
       <position force="yes">
         <x>center</x>
