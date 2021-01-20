@@ -26,7 +26,7 @@
     <!-- <cornerRadius>8</cornerRadius> -->
     <titleLayout>NLDIMC</titleLayout>
     <!--
-      available characters are NDSLIMC, each can occur at moxterm "once.
+      available characters are NDSLIMC, each can occur at most "once.
       N: window icon
       L: window label (AKA title).
       I: iconify
@@ -129,12 +129,12 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>xterm</command>
+        <command>st</command>
       </action>
     </keybind>
     <keybind key="W-S-Return">
       <action name="Execute">
-        <command>xterm</command>
+        <command>st</command>
       </action>
     </keybind>
     <keybind key="A-F10">
@@ -219,12 +219,12 @@
     </keybind>
     <keybind key="W-S-N">
       <action name="Execute">
-        <command>xterm  -e newsboat</command>
+        <command>st  -e newsboat</command>
       </action>
     </keybind>
     <keybind key="M-S-P">
       <action name="Execute">
-        <command>xterm -e pulsemixer</command>
+        <command>st -e pulsemixer</command>
       </action>
     </keybind>
      <keybind key="M-S-V">
@@ -239,7 +239,7 @@
     </keybind>
     <keybind key="W-S-m">
       <action name="Execute">
-        <command>xterm -e ncmpcpp</command>
+        <command>st -e ncmpcpp</command>
       </action>
     </keybind>
     <keybind key="W-S-E">
@@ -415,7 +415,7 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>32%</width>
+        <width>30%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -424,16 +424,16 @@
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
-        <width>32%</width>
+        <width>30%</width>
         <height>100%</height>
       </action>
     </keybind>
     <keybind key="W-space">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <x>32%</x>
+        <x>30%</x>
         <y>0</y>
-        <width>37%</width>
+        <width>40%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -761,11 +761,11 @@
         <y>center</y>
       </position>
     </application>
-    <application class="XTerm">
+    <application class="St">
       <decor>yes</decor>
       <size>
-        <width>80%</width>
-        <height>80%</height>
+        <width>50%</width>
+        <height>70%</height>
       </size>
       <position force="yes">
         <x>center</x>

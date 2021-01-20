@@ -3,7 +3,7 @@ ktermName: xterm-256color
 *scrollBar:false
 *geometry: 80x32
 *alpha:0.9
-*faceName:source code pro:size=12
+*faceName:source code pro:size=08
 
 
 Alt <Key>C: copy-selection(CLIPBOARD) \n\
