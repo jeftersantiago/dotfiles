@@ -224,10 +224,15 @@
     </keybind>
     <keybind key="M-S-P">
       <action name="Execute">
+        <command>xterm -e pulsemixer</command>
+      </action>
+    </keybind>
+     <keybind key="M-S-V">
+      <action name="Execute">
         <command>pavucontrol</command>
       </action>
     </keybind>
-    <keybind key="M-S-B">
+   <keybind key="M-S-B">
       <action name="Execute">
         <command>mate-power-preferences</command>
       </action>
@@ -702,7 +707,7 @@
   </menu>
   <applications>
     <application class="discord">
-      <decor>no</decor>
+      <decor>yes</decor>
       <size>
         <width>50%</width>
         <height>80%</height>

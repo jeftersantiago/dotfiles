@@ -381,10 +381,10 @@ sudo pacman -S checkbashisms # Arch Linux, from AUR
 * discord
 #+BEGIN_SRC emacs-lisp
 ;;(use-package elcord
-;;  :config
+;; :config
 ;; (setq elcord-client-id '"714056771391717468")
 ;;  (setq elcord-refresh-rate 5)
-;; (setq elcord-use-major-mode-as-main-icon t)
-;;  :init
+;;  (setq elcord-use-major-mode-as-main-icon t)
+;; :init
 ;;  (elcord-mode))
 #+END_SRC
