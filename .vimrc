@@ -6,7 +6,7 @@ set expandtab
 syntax on
 filetype on
 set number     relativenumber
-colorscheme    elflord
+colorscheme   elflord
 nmap<C-l> :colorscheme elflord <CR>
 nmap<C-d> :colorscheme darkness<CR>
 let mapleader=" "

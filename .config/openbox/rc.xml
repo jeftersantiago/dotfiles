@@ -227,12 +227,12 @@
         <command>st -e pulsemixer</command>
       </action>
     </keybind>
-     <keybind key="M-S-V">
+    <keybind key="M-S-V">
       <action name="Execute">
         <command>pavucontrol</command>
       </action>
     </keybind>
-   <keybind key="M-S-B">
+    <keybind key="M-S-B">
       <action name="Execute">
         <command>mate-power-preferences</command>
       </action>
