@@ -718,6 +718,17 @@
         <y>center</y>
       </position>
     </application>
+    <application class="TelegramDesktop">
+      <decor>no</decor>
+      <size>
+        <width>40%</width>
+        <height>70%</height>
+      </size>
+      <position force="yes">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
     <application class="Emacs">
       <decor>yes</decor>
       <size>
