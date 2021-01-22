@@ -3,7 +3,7 @@
 (setq-default user-full-name "Jefter Santiago Mares")
 (setq-default user-mail-address "jefter.santiago66@gmail.com")
 
-(load "~/.local/bin/emacs.el")
+(load "~/.local/bin/emacs_shortcuts.el")
 
 ;; 'y' is two characters less than 'yes'.
 ;; 'defalias' or 'fset'?
@@ -37,9 +37,9 @@
 (setq make-backup-files nil)
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(setq inhibit-splash-screen t
-	  initial-scratch-message nil
-	  initial-major-mode 'org-mode)
+;;(setq inhibit-splash-screen t
+;;	  initial-scratch-message nil
+;;	  initial-major-mode 'org-mode)
 
 (setq kill-buffer-query-functions
 	  (remq 'process-kill-buffer-query-function
@@ -79,51 +79,52 @@
 * appearence
 ** theme and envoirment
 #+BEGIN_SRC emacs-lisp
-(set-face-attribute 'default nil :height 80)
-(setq inhibit-startup-message t)
-(scroll-bar-mode -1)
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(global-set-key (kbd "<f5>") 'revert-buffer)
-(set-language-environment "UTF-8")
-(global-prettify-symbols-mode t)
-(setq ring-bell-function 'ignore)
+  (set-face-attribute 'default nil :height 80)
+;;  (setq inhibit-startup-message t)
+  (scroll-bar-mode -1)
+  (tool-bar-mode -1)
+  (menu-bar-mode -1)
+  (global-set-key (kbd "<f5>") 'revert-buffer)
+  (set-language-environment "UTF-8")
+  (global-prettify-symbols-mode t)
+  (setq ring-bell-function 'ignore)
 
-;;(use-package delight)
-;;(delight 'emacs-lisp-mode "Elisp" :major)
-
-
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-
-(use-package dracula-theme)
+  ;;(use-package delight)
+  ;;(delight 'emacs-lisp-mode "Elisp" :major)
 
 
-(load-theme  'dracula t)
-;(set-frame-parameter (selected-frame) 'alpha '(95 . 50))
-;(add-to-list 'default-frame-alist '(alpha . (95 . 50)))
+  (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
-(use-package rainbow-delimiters)
-(global-set-key (kbd "C-x C-j") 'font-lock-mode)
+  (use-package dracula-theme)
 
-;; simple mode line
-(use-package mood-line)
-(mood-line-mode)
 
-;; displaying number lines
+  (load-theme  'dracula t)
+  (load-theme  'almost-mono-black t)
+  ;(set-frame-parameter (selected-frame) 'alpha '(95 . 50))
+  ;(add-to-list 'default-frame-alist '(alpha . (95 . 50)))
 
-(require 'display-line-numbers)
-(defcustom display-line-numbers-exempt-modes '(vterm-mode eshell-mode shell-mode term-mode ansi-term-mode)
-  "Major modes on which to disable the linum mode, exempts them from global requirement"
-  :group 'display-line-numbers
-  :type 'list
-  :version "green")
-(defun display-lines-numbers--turn-on ()
-  "turn on line numbers but excempting certain majore modes defined in `display-line-numbers-exempt-modes'"
-  (if (and
-       (not (member major-mode display-line-numbers-exempt-modes))
-       (not (minibufferp)))
-      (display-line-numbers-mode)))
-;;(global-display-line-numbers-mode)
+  (use-package rainbow-delimiters)
+  (global-set-key (kbd "C-x C-j") 'font-lock-mode)
+
+  ;; simple mode line
+  (use-package mood-line)
+  (mood-line-mode)
+
+  ;; displaying number lines
+
+  (require 'display-line-numbers)
+  (defcustom display-line-numbers-exempt-modes '(vterm-mode eshell-mode shell-mode term-mode ansi-term-mode)
+	"Major modes on which to disable the linum mode, exempts them from global requirement"
+	:group 'display-line-numbers
+	:type 'list
+	:version "green")
+  (defun display-lines-numbers--turn-on ()
+	"turn on line numbers but excempting certain majore modes defined in `display-line-numbers-exempt-modes'"
+	(if (and
+		 (not (member major-mode display-line-numbers-exempt-modes))
+		 (not (minibufferp)))
+		(display-line-numbers-mode)))
+  ;;(global-display-line-numbers-mode)
 
 #+END_SRC
 ** fonts
@@ -380,11 +381,11 @@ sudo pacman -S checkbashisms # Arch Linux, from AUR
 #+end_src
 * discord
 #+BEGIN_SRC emacs-lisp
-;;(use-package elcord
-;; :config
+(use-package elcord
+ :config
 ;; (setq elcord-client-id '"714056771391717468")
 ;;  (setq elcord-refresh-rate 5)
 ;;  (setq elcord-use-major-mode-as-main-icon t)
-;; :init
-;;  (elcord-mode))
+ :init
+  (elcord-mode))
 #+END_SRC
