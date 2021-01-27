@@ -220,7 +220,7 @@
     <keybind key="W-S-N">
       <action name="Execute">
         <!-- <command>st  -e newsboat</command> -->
-        <command> firefox moz-extension://f2ae2861-edc6-499f-9950-43dd0037fb6e/reader.html</command>
+        <command> firefox moz-extension://5bd9773c-fd9f-481a-9508-482dc9c8155f/reader.html</command>
       </action>
     </keybind>
     <keybind key="M-S-P">
@@ -776,7 +776,7 @@
     <application class="St">
       <decor>yes</decor>
       <size>
-        <width>50%</width>
+        <width>70%</width>
         <height>70%</height>
       </size>
       <position force="yes">
