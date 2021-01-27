@@ -219,7 +219,8 @@
     </keybind>
     <keybind key="W-S-N">
       <action name="Execute">
-        <command>st  -e newsboat</command>
+        <!-- <command>st  -e newsboat</command> -->
+        <command> firefox moz-extension://f2ae2861-edc6-499f-9950-43dd0037fb6e/reader.html</command>
       </action>
     </keybind>
     <keybind key="M-S-P">
@@ -709,7 +710,7 @@
     <application class="discord">
       <decor>yes</decor>
       <size>
-        <width>50%</width>
+        <width>70%</width>
         <height>80%</height>
       </size>
       <position force="yes">

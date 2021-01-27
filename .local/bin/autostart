@@ -1,19 +1,11 @@
 #!/bin/sh
-xsetwacom set 9 MapToOutput eDP-1
+#xsetwacom set 9 MapToOutput eDP-1
 
 xrdb ~/.Xresources &
-
 xset b off &
-
-dunst &
-
-nm-applet &
-
-blueman-applet &
-
-mate-power-manager &
-
 tint2 &
-
+dunst &
+nm-applet &
+mate-power-manager &
 
 nitrogen --restore &
