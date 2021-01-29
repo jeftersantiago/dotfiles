@@ -1,6 +1,6 @@
 #!/bin/sh
 export READER="evince"
-export LANG="en_US.UTF-8"
+export LANG="fr_FR.UTF-8"
 export SCRIPTS=$HOME/".local/bin/"
 export SC=$HOME"/.local/bin/"
 export CONFIGS=$HOME"/.config/"

@@ -80,7 +80,7 @@
 
 [urgency_normal]
     background = "#000000"
-    foreground = "#585758"
+    foreground = "#AEA9A9"
     timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
     icon = /usr/share/icons/Adwaita/24x24/apps/preferences-system-notifications-symbolic.symbolic.png
