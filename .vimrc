@@ -1,16 +1,22 @@
+
 set encoding=utf-8
 set expandtab
 set ignorecase
 set smartcase
 set expandtab
+
 syntax on
 filetype on
-set number     relativenumber
-colorscheme   elflord
-nmap<C-l> :colorscheme elflord <CR>
-nmap<C-d> :colorscheme darkness<CR>
+
+set number relativenumber
+
 let mapleader=" "
 
+colorscheme elflord
+
+" changing themes
+nmap<C-l> :colorscheme elflord <CR>
+nmap<C-d> :colorscheme darkness<CR>
 
 " save/leave file
 map<leader>w :w<CR>

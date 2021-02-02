@@ -1,7 +1,11 @@
 #!/bin/sh
 [ -f $SC"aliases" ] && source $SC"aliases"
 [ -f $SC"cmds" ] && source $SC"cmds"
+
 setxkbmap br
+
 xrdb ~/.Xresources
+# i don't need cd
 shopt -s autocd
+
 PS1="\[\e]0;\u@\h\$ : \w\a\]\u@\h\w\$ "

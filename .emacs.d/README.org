@@ -146,8 +146,8 @@
   #+end_src
 * evil mode 
   #+begin_src emacs-lisp
-;;	(require 'evil)
-;;	(evil-mode 1)
+  (require 'evil)
+  (evil-mode 1)
   #+end_src
 * dir-locals
   Taken from https://emacs.stackexchange.com/a/13096/10950
@@ -167,7 +167,7 @@
 		  (with-current-buffer buffer
 			(when (equal default-directory dir))
 			(my-reload-dir-locals-for-current-buffer)))))
-  #+END_SRC
+			#+END_SRC
 * multi-term
   #+BEGIN_SRC emacs-lisp
 	(use-package multi-term)

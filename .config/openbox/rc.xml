@@ -817,17 +817,6 @@
         <y>center</y>
       </position>
     </application>
-    <application class="MuPDF">
-      <decor>yes</decor>
-      <position force="yes">
-        <x>center</x>
-        <y>center</y>
-      </position>
-      <size>
-        <width>20%</width>
-        <height>90%</height>
-      </size>
-    </application>
     <application class="firefox">
       <decor>no</decor>
       <size>
