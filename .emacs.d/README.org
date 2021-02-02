@@ -146,8 +146,8 @@
   #+end_src
 * evil mode 
   #+begin_src emacs-lisp
-	(require 'evil)
-	(evil-mode 1)
+;;	(require 'evil)
+;;	(evil-mode 1)
   #+end_src
 * dir-locals
   Taken from https://emacs.stackexchange.com/a/13096/10950
