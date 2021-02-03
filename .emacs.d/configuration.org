@@ -215,8 +215,8 @@
   (use-package dired-open
 	:config
 	(setq dired-open-extensions
-		  '(("doc" . "openoffice")
-			("docx" . "openoffice")
+		  '(("doc" . "openoffice4")
+			("docx" . "openoffice4")
 			("xopp" . "xournalpp")
 			("gif" . "mirage")
 			("jpeg" ."mirage")
