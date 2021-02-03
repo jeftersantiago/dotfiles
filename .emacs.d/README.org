@@ -1,10 +1,20 @@
+#+TITLE: EMACS CONFIGURATIONS
+#+AUTHOR: Jefter Santiago 
+#+EMAIL: jefterrsantiago@gmail.com
+#+OPTIONS: toc:nil num:nil
+
+* about me
+#+begin_src emacs-lisp
+  (setq-default user-full-name "Jefter Santiago Mares")
+  (setq-default user-mail-address "jefterrsantiago@gmail.com")
+#+end_src
+
+* private configs
+#+begin_src emacs-lisp
+(load "~/.local/bin/private.el")
+#+end_src
 * general configuration
   #+begin_src emacs-lisp
-	(setq-default user-full-name "Jefter Santiago Mares")
-	(setq-default user-mail-address "jefter.santiago66@gmail.com")
-
-	(load "~/.local/bin/emacs_shortcuts.el")
-
 	;; 'y' is two characters less than 'yes'.
 	;; 'defalias' or 'fset'?
 	(defalias 'yes-or-no-p 'y-or-n-p)
@@ -19,7 +29,7 @@
 	;;(setq-default column-number-mode t)
 	(setq-default cursor-type 'box)
 
-	;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Fill-Commands.html.
+
 	(setq-default fill-column 78)
 	;; (setq-default sentence-end-double-space nil)
 
@@ -77,44 +87,74 @@
 	  :hook (prog-mode . real-auto-save-mode))
   #+end_src
 * appearence
-** theme and envoirment
+** window tweaks 
+  #+begin_src emacs-lisp
+	(scroll-bar-mode -1)
+	(tool-bar-mode -1)
+	(menu-bar-mode -1)
+	(set-window-scroll-bars (minibuffer-window) nil nil)
+  #+end_src
+** lambdas
+  #+begin_src emacs-lisp 
+	(global-prettify-symbols-mode t)
+  #+end_src
+** theme  
+#+begin_src emacs-lisp
+  (use-package modus-operandi-theme)
+
+  (defun transparency (value)
+	"Sets the transparency of the frame window. 0=transparent/100=opaque."
+	(interactive "nTransparency Value 0 - 100 opaque:")
+	(set-frame-parameter (selected-frame) 'alpha value))
+
+  (defun hrs/apply-theme ()
+	"Apply my chosen theme and make frames just slightly transparent."
+	(interactive)
+	(load-theme 'modus-operandi t)
+	(transparency 90))
+
+  (if (daemonp)
+	  (add-hook 'after-make-frame-functions
+				(lambda (frame)
+				  (with-selected-frame frame (hrs/apply-theme))))
+	(hrs/apply-theme))
+#+end_src
+** highlight current line
+#+begin_src emacs-lisp
+  (use-package diff-hl
+	:config
+	(add-hook 'prog-mode-hook 'turn-on-diff-hl-mode)
+	(add-hook 'vc-dir-mode-hook 'turn-on-diff-hl-mode))
+#+end_src
+** envoirment
    #+BEGIN_SRC emacs-lisp
-	 (set-face-attribute 'default nil :height 80)
-	 ;;  (setq inhibit-startup-message t)
-	 (scroll-bar-mode -1)
-	 (tool-bar-mode -1)
-	 (menu-bar-mode -1)
-	 (global-set-key (kbd "<f5>") 'revert-buffer)
-	 (set-language-environment "UTF-8")
-	 (global-prettify-symbols-mode t)
-	 (setq ring-bell-function 'ignore)
+		(set-face-attribute 'default nil :height 80)
+		(setq inhibit-startup-message t)
+		(global-set-key (kbd "<f5>") 'revert-buffer)
+		(set-language-environment "UTF-8")
+		(global-prettify-symbols-mode t)
+		(setq ring-bell-function 'ignore)
 
-	 ;;(use-package delight)
-	 ;;(delight 'emacs-lisp-mode "Elisp" :major)
+		(use-package delight)
+		(delight 'emacs-lisp-mode "Elisp" :major)
 
 
-	 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+		(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
-	 (use-package dracula-theme)
+		(use-package dracula-theme)
 
+		(use-package rainbow-delimiters)
+		(global-set-key (kbd "C-x C-j") 'font-lock-mode)
 
-	 (load-theme  'dracula t)
-;;	 (load-theme  'almost-mono-black t)
-											 ;(set-frame-parameter (selected-frame) 'alpha '(95 . 50))
-											 ;(add-to-list 'default-frame-alist '(alpha . (95 . 50)))
+		;; simple mode line
+		(use-package mood-line)
+		(mood-line-mode)
 
-	 (use-package rainbow-delimiters)
-	 (global-set-key (kbd "C-x C-j") 'font-lock-mode)
+		;; displaying number lines
 
-	 ;; simple mode line
-	 (use-package mood-line)
-	 (mood-line-mode)
-
-	 ;; displaying number lines
-
-	 (require 'display-line-numbers)
-	 (defcustom display-line-numbers-exempt-modes '(vterm-mode eshell-mode shell-mode term-mode ansi-term-mode)
-	   "Major modes on which to disable the linum mode, exempts them from global requirement"
+		(require 'display-line-numbers)
+		(defcustom display-line-numbers-exempt-modes '(vterm-mode eshell-mode shell-mode term-mode ansi-term-mode)
+		  "Major modes on which to disable the linum mode, exempts them from global requirement"
 	   :group 'display-line-numbers
 	   :type 'list
 	   :version "green")
@@ -123,15 +163,15 @@
 	   (if (and
 			(not (member major-mode display-line-numbers-exempt-modes))
 			(not (minibufferp)))
-		   (display-line-numbers-mode)))
-	 ;;(global-display-line-numbers-mode)
+								   (display-line-numbers-mode)))
+							 ;;(global-display-line-numbers-mode)
 
    #+END_SRC
 ** fonts
    #+begin_src emacs-lisp
-	 (add-to-list 'default-frame-alist '(font . "Source Code Pro 10"))
+	 (add-to-list 'default-frame-alist '(font . "Inconsolata 10"))
 	 ;; https://emacs.stackexchange.com/q/45895
-	 (set-face-attribute 'fixed-pitch nil :family "Source Code Pro 10")
+	 (set-face-attribute 'fixed-pitch nil :family "Inconsolata 10")
 	 (use-package default-text-scale
 	   :demand t
 	   :hook (after-init . default-text-scale-mode))
@@ -146,8 +186,8 @@
   #+end_src
 * evil mode 
   #+begin_src emacs-lisp
-  (require 'evil)
-  (evil-mode 1)
+	(require 'evil)
+	(evil-mode 1)
   #+end_src
 * dir-locals
   Taken from https://emacs.stackexchange.com/a/13096/10950
@@ -168,12 +208,6 @@
 			(when (equal default-directory dir))
 			(my-reload-dir-locals-for-current-buffer)))))
 			#+END_SRC
-* multi-term
-  #+BEGIN_SRC emacs-lisp
-	(use-package multi-term)
-	(setq multi-term "/bin/sh")
-	(global-set-key (kbd "C-x t") 'multi-term)
-  #+END_SRC
 * search and buffers behavior
 ** swiper
    #+BEGIN_SRC  emacs-lisp
@@ -224,7 +258,7 @@
 	(add-hook 'LateX-mode-hook (lambda () (latex-preview-pane-mode)))
 	(global-set-key (kbd "C-x l ") 'latex-preview-pane-mode)
   #+END_SRC
-
+  
   #+begin_src emacs-lisp
 	(use-package auctex
 	  :hook ((latex-mode LaTeX-mode) . lsp)
@@ -248,6 +282,7 @@
 	(setq org-src-window-setup 'current-window)
 	(add-to-list 'org-structure-template-alist
 				 '("el" . "src emacs-lisp"))
+
 
 	(add-hook 'org-mode-hook 'auto-fill-mode)
 	(setq-default fill-column 79)
