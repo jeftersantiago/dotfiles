@@ -22,7 +22,7 @@
     <primaryMonitor>Active</primaryMonitor>
   </placement>
   <theme>
-    <name>customtheme</name>
+    <name>custom-minstral-theme</name>
     <!-- <cornerRadius>8</cornerRadius> -->
     <titleLayout>NLDIMC</titleLayout>
     <!--
@@ -142,12 +142,12 @@
         <command>pulsemixer --change-volume +5</command>
       </action>
     </keybind>
-     <keybind key="W-S-P">
+    <keybind key="W-S-P">
       <action name="Execute">
         <command>gnome-pomodoro</command>
       </action>
     </keybind>
-   <keybind key="A-F10">
+    <keybind key="A-F10">
       <action name="Execute">
         <command>pulsemixer --change-volume +10</command>
       </action>
@@ -733,7 +733,7 @@
       <decor>yes</decor>
       <size>
         <width>60%</width>
-        <height>80%</height>
+        <height>70%</height>
       </size>
       <position force="yes">
         <x>center</x>
@@ -776,7 +776,7 @@
     <application class="St">
       <decor>yes</decor>
       <size>
-        <width>50%</width>
+        <width>60%</width>
         <height>70%</height>
       </size>
       <position force="yes">
