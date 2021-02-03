@@ -2,7 +2,7 @@
 
 # default applications
 export READER="okular"
-export BROWSER="firefox"
+export BROWSER="tor-browser"
 export VIEWER="mirage"
 
 # language

@@ -38,37 +38,37 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Source Code Pro</name>
+      <name>Inconsolata</name>
       <size>7</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Source Code Pro</name>
+      <name>Inconsolata</name>
       <size>8</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>Source Code Pro</name>
+      <name>Inconsolata Ultra-Bold Condensed</name>
       <size>14</size>
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>Source Code Pro</name>
+      <name>Inconsolata</name>
       <size>15</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Source Code Pro</name>
+      <name>Inconsolata</name>
       <size>16</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Source Code Pro</name>
+      <name>Inconsolata</name>
       <size>16</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
@@ -162,11 +162,6 @@
         <command>pulsemixer --change-volume -10</command>
       </action>
     </keybind>
-    <keybind key="W-S-t">
-      <action name="Execute">
-        <command>telegram-desktop</command>
-      </action>
-    </keybind>
     <keybind key="W-S-R">
       <action name="Execute">
         <command>st -e ranger</command>
@@ -179,22 +174,17 @@
     </keybind>
     <keybind key="W-R">
       <action name="Execute">
-        <command>redshift-gtk</command>
-      </action>
-    </keybind>
-    <keybind key="W-S-D">
-      <action name="Execute">
-        <command>discord</command>
+        <command>redshift</command>
       </action>
     </keybind>
     <keybind key="W-S-B">
       <action name="Execute">
-        <command>firefox</command>
+        <command>tor-browser</command>
       </action>
     </keybind>
-    <keybind key="W-q">
+    <keybind key="A-S-F">
       <action name="Execute">
-        <command>qutebrowser</command>
+        <command>firefox</command>
       </action>
     </keybind>
     <keybind key="W-S-K">

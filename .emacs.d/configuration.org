@@ -209,6 +209,39 @@
 			(when (equal default-directory dir))
 			(my-reload-dir-locals-for-current-buffer)))))
 #+end_src
+* dired
+** opening media in respective applications
+#+begin_src emacs-lisp
+  (use-package dired-open
+	:config
+	(setq dired-open-extensions
+		  '(("doc" . "openoffice")
+			("docx" . "openoffice")
+			("xopp" . "xournalpp")
+			("gif" . "mirage")
+			("jpeg" ."mirage")
+			("jpg" . "mirage")
+			("png" . "mirage")
+			("mkv" . "mpv")
+			("avi" . "mpv")
+			("mov" . "mpv")
+			("mp3" . "mpv")
+			("mp4" . "mpv")
+			("pdf" . "okular")
+			("webm" . "mpv")
+			)))
+#+end_src
+** hide dotfiles and extra information (aka ownership and such)
+#+begin_src emacs-lisp
+	(use-package dired-hide-dotfiles
+	  :config
+	  (dired-hide-dotfiles-mode)
+	  (define-key dired-mode-map "." 'dired-hide-dotfiles-mode))
+
+  (setq-default dired-listing-switches "-lhvA")
+  (add-hook 'dired-mode-hook (lambda () (dired-hide-details-mode 1)))
+#+end_src
+
 * search and buffers behavior
 ** swiper
 #+begin_src  emacs-lisp
