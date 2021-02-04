@@ -1,4 +1,4 @@
-#define max_width 6
-#define max_height 6
-static unsigned char max_bits[] = {
-   0x00, 0x1e, 0x12, 0x12, 0x1e, 0x00};
+#define close_width 9
+#define close_height 9
+static unsigned char close_bits[] = {
+  0x33, 0x33, 0x00, 0x00, 0x30, 0x30 };

@@ -38,37 +38,37 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Inconsolata</name>
+      <name>Liberation Mono</name>
       <size>7</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Inconsolata</name>
+      <name>Liberation Mono</name>
       <size>8</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>Inconsolata Ultra-Bold Condensed</name>
+      <name>Liberation Mono</name>
       <size>14</size>
-      <weight>Normal</weight>
+      <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>Inconsolata</name>
+      <name>Liberation Mono</name>
       <size>15</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Inconsolata</name>
+      <name>Liberation Mono</name>
       <size>16</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Inconsolata</name>
+      <name>Liberation Mono</name>
       <size>16</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
@@ -187,12 +187,12 @@
         <command>qutebrowser</command>
       </action>
     </keybind>
-   <keybind key="W-S-t">
+    <keybind key="W-S-t">
       <action name="Execute">
         <command>telegram-desktop</command>
       </action>
-    </keybind>	
-	    <keybind key="W-S-D">
+    </keybind>
+    <keybind key="W-S-D">
       <action name="Execute">
         <command>discord</command>
       </action>
@@ -219,7 +219,7 @@
     </keybind>
     <keybind key="W-S-N">
       <action name="Execute">
-      <command>st -e newsboat</command>
+        <command>st -e newsboat</command>
       </action>
     </keybind>
     <keybind key="M-S-P">
