@@ -25,19 +25,19 @@
   (sp-pair "{" nil :post-handlers '(("||\n[i]" "RET"))))
 
 (setq inhibit-splash-screen t
-	       initial-scratch-message nil
-	       initial-major-mode 'org-mode)
+		initial-scratch-message nil
+		initial-major-mode 'org-mode)
 (setq inhibit-startup-message t)
 
 (setq kill-buffer-query-functions
-	  (remq 'process-kill-buffer-query-function
+	      (remq 'process-kill-buffer-query-function
 			kill-buffer-query-functions))
 ;; smother scroll
 (setq scroll-step            1
-	  scroll-conservatively  10000
-	  mouse-wheel-scroll-amount '(1 ((shift) . 1))
-	  mouse-wheel-progressive-speed nil
-	  mouse-wheel-follow-mouse 't)
+	      scroll-conservatively  10000
+	      mouse-wheel-scroll-amount '(1 ((shift) . 1))
+	      mouse-wheel-progressive-speed nil
+	      mouse-wheel-follow-mouse 't)
 
 ;; insert new line whithout breaking
 (defun insert-new-line-below ()
@@ -50,16 +50,6 @@
 
 ;; trash "custom-variables" goes to a file that is ignored
 (setq custom-file "~/.emacs.d/custom.el")
-
-;; backup disabled
-(setq-default backup-inhibited t)
-(setq-default create-lockfiles nil)
-(setq-default make-backup-files nil)
-(use-package real-auto-save
-  :ensure t
-  :demand t
-  :config (setq real-auto-save-interval 10)
-  :hook (prog-mode . real-auto-save-mode))
 
 (use-package modus-operandi-theme)
 
@@ -130,6 +120,16 @@
 (mood-line-mode)
 
 (global-prettify-symbols-mode t)
+
+;; backup disabled
+(setq-default backup-inhibited t)
+(setq-default create-lockfiles nil)
+(setq-default make-backup-files nil)
+(use-package real-auto-save
+  :ensure t
+  :demand t
+  :config (setq real-auto-save-interval 10)
+  :hook (prog-mode . real-auto-save-mode))
 
 (setq locale-coding-system 'utf-8)
 (set-terminal-coding-system 'utf-8)

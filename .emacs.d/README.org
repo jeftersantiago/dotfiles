@@ -42,22 +42,22 @@
 #+end_src
 ** disabling splash-screen and startup message
 #+begin_src emacs-lisp
-   (setq inhibit-splash-screen t
+  (setq inhibit-splash-screen t
 		  initial-scratch-message nil
 		  initial-major-mode 'org-mode)
-   (setq inhibit-startup-message t)
+  (setq inhibit-startup-message t)
 #+end_src
 ** mouse scrolling
 #+begin_src emacs-lisp
-	(setq kill-buffer-query-functions
-		  (remq 'process-kill-buffer-query-function
-				kill-buffer-query-functions))
-	;; smother scroll
-	(setq scroll-step            1
-		  scroll-conservatively  10000
-		  mouse-wheel-scroll-amount '(1 ((shift) . 1))
-		  mouse-wheel-progressive-speed nil
-		  mouse-wheel-follow-mouse 't)
+  (setq kill-buffer-query-functions
+		(remq 'process-kill-buffer-query-function
+			  kill-buffer-query-functions))
+  ;; smother scroll
+  (setq scroll-step            1
+		scroll-conservatively  10000
+		mouse-wheel-scroll-amount '(1 ((shift) . 1))
+		mouse-wheel-progressive-speed nil
+		mouse-wheel-follow-mouse 't)
 #+end_src
 ** inserting new lines below
 #+begin_src emacs-lisp
@@ -76,18 +76,6 @@
 	(setq custom-file "~/.emacs.d/custom.el")
 
 #+end_src
-* backup/autosaving
-  #+begin_src emacs-lisp
-	;; backup disabled
-	(setq-default backup-inhibited t)
-	(setq-default create-lockfiles nil)
-	(setq-default make-backup-files nil)
-	(use-package real-auto-save
-	  :ensure t
-	  :demand t
-	  :config (setq real-auto-save-interval 10)
-	  :hook (prog-mode . real-auto-save-mode))
-  #+end_src
 * appearence
 ** theme  
 #+begin_src emacs-lisp
@@ -176,6 +164,18 @@
 ** lambdas
   #+begin_src emacs-lisp 
 	(global-prettify-symbols-mode t)
+  #+end_src
+* backup/autosaving
+  #+begin_src emacs-lisp
+	;; backup disabled
+	(setq-default backup-inhibited t)
+	(setq-default create-lockfiles nil)
+	(setq-default make-backup-files nil)
+	(use-package real-auto-save
+	  :ensure t
+	  :demand t
+	  :config (setq real-auto-save-interval 10)
+	  :hook (prog-mode . real-auto-save-mode))
   #+end_src
 * utf-8
   #+begin_src emacs-lisp

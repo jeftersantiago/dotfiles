@@ -1,8 +1,8 @@
 ! Dimensions
 border.color:				#575757
-border.width                    	1
+border.width							1
 padding.width:                          1
-window.handle.width:                    1
+window.handle.width:                    0
 window.client.padding.width:            0
 window.client.padding.height:           0
 menu.overlap:                           0
