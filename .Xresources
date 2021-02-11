@@ -1,9 +1,9 @@
-ktermName: xterm-256color
-*locale: true
-*scrollBar:false
-*geometry: 80x32
-*alpha:0.9
-*faceName:liberation mono:pixelsize=10
+st*termName: xterm-256color
+st*locale: true
+st*scrollBar:false
+st*geometry: 80x32
+st*faceName:liberation mono:pixelsize=10
+!*alpha:0.9
 
 
 Alt <Key>C: copy-selection(CLIPBOARD) \n\

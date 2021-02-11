@@ -1,5 +1,5 @@
 ! Dimensions
-border.color:				#575757
+border.color:				#181818
 border.width							1
 padding.width:                          1
 window.handle.width:                    0
@@ -29,17 +29,17 @@ window.active.label.text.color:		#FFFFFF
 
 
 window.active.handle.bg:		flat solid
-window.active.handle.bg.color:		#575757
-window.active.handle.bg.colorTo:	#575757
+window.active.handle.bg.color:		#181818
+window.active.handle.bg.colorTo:	#181818
 
 window.active.grip.bg:			flat solid
-window.active.grip.bg.color:		#575757
+window.active.grip.bg.color:	#181818
 
-window.active.client.color:  		#575757
-window.inactive.client.color: 		#575757
+window.active.client.color:  #181818
+window.inactive.client.color: 	#181818
 
 window.inactive.title.bg:		flat solid
-window.inactive.title.bg.color:		#575757
+window.inactive.title.bg.color:	#181818
 
 window.inactive.label.bg:		parentrelative
 window.inactive.label.text.color:	#FFFFFF
@@ -48,8 +48,7 @@ window.inactive.handle.bg:		flat solid
 window.inactive.handle.bg.color:	#000000
 
 window.inactive.grip.bg:		flat solid
-window.inactive.grip.bg.color:		#575757
-
+window.inactive.grip.bg.color:	        #181818
 ! OSD
 osd.hilight.bg: flat border
 osd.hilight.bg.color: #000000
@@ -63,11 +62,11 @@ window.active.button.unpressed.bg.colorTo:		#000000
 window.active.button.unpressed.image.color:		#FFFFFF
 
 window.active.button.pressed.bg:			flat solid
-window.active.button.pressed.bg.color:			#575757
-window.active.button.pressed.bg.colorTo:		#575757
+window.active.button.pressed.bg.color:
+window.active.button.pressed.bg.colorTo:
 
 window.active.button.hover.bg:			flat solid
-window.active.button.hover.bg.color:			#575757
+window.active.button.hover.bg.color:
 
 window.active.button.disabled.bg:			parentrelative
 window.active.button.disabled.image.color:		#white
@@ -80,10 +79,10 @@ window.inactive.button.unpressed.bg:			parentrelative
 window.inactive.button.unpressed.image.color:		#white
 
 window.inactive.button.hover.bg:			flat solid
-window.inactive.button.hover.bg.color:			#575757
+window.inactive.button.hover.bg.color:
 window.inactive.button.pressed.bg:			flat solid
-window.inactive.button.pressed.bg.color:		#575757
-window.inactive.button.pressed.bg.colorTo:		#575757
+window.inactive.button.pressed.bg.color:
+window.inactive.button.pressed.bg.colorTo:
 
 window.inactive.button.disabled.bg:			parentrelative
 window.inactive.button.disabled.image.color:		#white

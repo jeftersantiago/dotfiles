@@ -51,24 +51,10 @@
 ;; trash "custom-variables" goes to a file that is ignored
 (setq custom-file "~/.emacs.d/custom.el")
 
-(use-package modus-operandi-theme)
-
-(defun transparency (value)
-      "Sets the transparency of the frame window. 0=transparent/100=opaque."
-      (interactive "nTransparency Value 0 - 100 opaque:")
-      (set-frame-parameter (selected-frame) 'alpha value))
-
-(defun hrs/apply-theme ()
-      "Apply my chosen theme and make frames just slightly transparent."
-      (interactive)
-      (load-theme 'modus-operandi t)
-      (transparency 90))
-
-(if (daemonp)
-	(add-hook 'after-make-frame-functions
-			      (lambda (frame)
-				(with-selected-frame frame (hrs/apply-theme))))
-      (hrs/apply-theme))
+(use-package twilight-anti-bright-theme;;dracula-theme
+ :config
+ (load-theme 'twilight-anti-bright t)
+ :ensure t)
 
 (add-to-list 'default-frame-alist '(font . "Inconsolata 12"))
 ;; https://emacs.stackexchange.com/q/45895
@@ -77,27 +63,15 @@
   :demand t
   :hook (after-init . default-text-scale-mode))
 
-(global-set-key (kbd "C-x C-j") 'font-lock-mode)
+(global-set-key (kbd "C-x C-l") 'font-lock-mode)
 
 (use-package diff-hl
       :config
       (add-hook 'prog-mode-hook 'turn-on-diff-hl-mode)
       (add-hook 'vc-dir-mode-hook 'turn-on-diff-hl-mode))
 
-(require 'display-line-numbers)
-       (defcustom display-line-numbers-exempt-modes '(vterm-mode eshell-mode shell-mode term-mode ansi-term-mode)
-	 "Major modes on which to disable the linum mode, exempts them from global requirement"
-      :group 'display-line-numbers
-      :type 'list
-      :version "green")
-(defun display-lines-numbers--turn-on ()
-      "turn on line numbers but excempting certain majore modes defined in `display-line-numbers-exempt-modes'"
-      (if (and
-	       (not (member major-mode display-line-numbers-exempt-modes))
-	       (not (minibufferp)))
-							      (display-line-numbers-mode)))
-
- (global-display-line-numbers-mode)
+(global-display-line-numbers-mode)
+(setq display-line-numbers-type 'relative)
 
 (set-face-attribute 'default nil :height 80)
 (setq ring-bell-function 'ignore)
@@ -317,26 +291,28 @@ current buffer's, reload dir-locals."
   (progn
 	(global-set-key "\M-x" 'counsel-M-x)
 	(global-set-key (kbd "C-x C-f") 'counsel-find-file)))
-;;     (use-package auto-complete
-;;     :ensure t
-;;       :init
-;;	  (progn
-;;		(ac-config-default)
-;;	(global-auto-complete-mode t)))
+   (use-package auto-complete
+     :ensure t
+       :init
+	 (progn
+	       (ac-config-default)
+       (global-auto-complete-mode t)))
 
 (use-package flycheck
-  :ensure t
-  :config
-  (add-hook 'prog-mode-hook #'flycheck-mode)
-  (set-face-underline 'flycheck-error '(:color "#dc322f" :style line))
-  (set-face-underline 'flycheck-warning '(:color "#e5aa00" :style line))
-  (set-face-underline 'flycheck-info '(:color "#268bd2" :style line)))
+	   :ensure t
+	   :config
+    ;; (add-hook 'prog-mode-hook #'flycheck-mode)
+    ;; (set-face-underline 'flycheck-error '(:color "#dc322f" :style line))
+    ;; (set-face-underline 'flycheck-warning '(:color "#e5aa00" :style line))
+    ;;	(set-face-underline 'flycheck-info '(:color "#268bd2" :style line))
+)
 
 (use-package flymake
-  :config
-  (set-face-underline 'flymake-error '(:color "#dc322f" :style line))
-  (set-face-underline 'flymake-warning '(:color "#e5aa00" :style line))
-  (set-face-underline 'flymake-note '(:color "#268bd2" :style line)))
+      :config
+    ; (set-face-underline 'flymake-error '(:color "#dc322f" :style line))
+    ; (set-face-underline 'flymake-warning '(:color "#e5aa00" :style line))
+    ; (set-face-underline 'flymake-note '(:color "#268bd2" :style line))
+)
 
 (use-package company
   :ensure t

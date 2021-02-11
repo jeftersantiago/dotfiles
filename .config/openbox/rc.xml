@@ -147,6 +147,11 @@
         <command>gnome-pomodoro</command>
       </action>
     </keybind>
+    <keybind key="W-S-A">
+      <action name="Execute">
+        <command>alarm-clock-applet</command>
+      </action>
+    </keybind>
     <keybind key="A-F10">
       <action name="Execute">
         <command>pulsemixer --change-volume +10</command>
@@ -169,7 +174,7 @@
     </keybind>
     <keybind key="W-S-f">
       <action name="Execute">
-        <command>thunar</command>
+        <command>nautilus</command>
       </action>
     </keybind>
     <keybind key="W-R">
@@ -731,12 +736,12 @@
     <application class="Emacs">
       <decor>yes</decor>
       <size>
-        <width>60%</width>
+        <width>50%</width>
         <height>70%</height>
       </size>
       <position force="yes">
         <x>center</x>
-        <y>center</y>
+        <y>top</y>
       </position>
     </application>
     <application class="qutebrowser">

@@ -5,9 +5,14 @@ xset b off &
 
 dunst &
 
-tint2 &
+#tint1 &
+xfce4-panel &
+plank &
+
+
+xcompmgr &
 nitrogen --restore
 
 blueman-applet &
 nm-applet &
-mate-power-manager &
+#mate-power-manager &
