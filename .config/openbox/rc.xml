@@ -22,8 +22,8 @@
     <primaryMonitor>Active</primaryMonitor>
   </placement>
   <theme>
-    <name>custom-minstral-theme</name>
-    <!-- <cornerRadius>8</cornerRadius> -->
+    <name>Nightmare</name>
+    <cornerRadius>0</cornerRadius>
     <titleLayout>NLDIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most"once.
@@ -245,6 +245,11 @@
     <keybind key="W-S-m">
       <action name="Execute">
         <command>st -e ncmpcpp</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-S">
+      <action name="Execute">
+        <command>spotify-tray</command>
       </action>
     </keybind>
     <keybind key="W-S-E">
@@ -711,6 +716,12 @@
     <manageDesktops>yes</manageDesktops>
   </menu>
   <applications>
+    <application class="*">
+      <position force="yes">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
     <application class="discord">
       <decor>yes</decor>
       <size>
@@ -736,7 +747,7 @@
     <application class="Emacs">
       <decor>yes</decor>
       <size>
-        <width>50%</width>
+        <width>70%</width>
         <height>70%</height>
       </size>
       <position force="yes">
