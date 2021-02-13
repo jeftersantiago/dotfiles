@@ -23,7 +23,7 @@
   </placement>
   <theme>
     <name>Nightmare</name>
-    <cornerRadius>0</cornerRadius>
+    <cornerRadius>8</cornerRadius>
     <titleLayout>NLDIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most"once.
@@ -209,7 +209,7 @@
     </keybind>
     <keybind key="W-S-X">
       <action name="Execute">
-        <command>xournalpp</command>
+        <command>env GTK_THEME=Raleigh: xournalpp</command>
       </action>
     </keybind>
     <keybind key="W-p">
