@@ -209,7 +209,7 @@
     </keybind>
     <keybind key="W-S-X">
       <action name="Execute">
-        <command>env GTK_THEME=Raleigh: xournalpp</command>
+        <command> env GTK_THEME=Raleigh:xournalpp</command>
       </action>
     </keybind>
     <keybind key="W-p">

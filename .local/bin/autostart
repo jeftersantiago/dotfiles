@@ -2,17 +2,17 @@
 #xsetwacom set 9 MapToOutput eDP-1
 xrdb ~/.Xresources &
 xset b off &
+xcompmgr &
 
-dunst &
+#dunst &
 
 #tint1 &
-xfce4-panel &
-plank &
+#xfce4-panel &
+#plank &
 
 
-xcompmgr &
-nitrogen --restore
+#nitrogen --restore
 
-blueman-applet &
-nm-applet &
+#blueman-applet &
+#nm-applet &
 #mate-power-manager &
