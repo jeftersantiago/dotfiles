@@ -11,8 +11,8 @@ xcompmgr &
 #plank &
 
 
-#nitrogen --restore
+nitrogen --restore
 
-#blueman-applet &
-#nm-applet &
+blueman-applet &
+nm-applet &
 #mate-power-manager &
