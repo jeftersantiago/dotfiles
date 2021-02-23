@@ -6,8 +6,8 @@ export BROWSER="firefox"
 export VIEWER="mirage"
 
 # language
-#export LANG="fr_FR.UTF-8"
-export LANG="en_EN.UTF-8"
+export LANG="fr_FR.UTF-8"
+#export LANG="en_EN.UTF-8"
 
 # important directories
 export SCRIPTS=$HOME/".local/bin/"

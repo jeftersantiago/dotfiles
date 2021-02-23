@@ -4,11 +4,9 @@ xrdb ~/.Xresources &
 xset b off &
 xcompmgr &
 
-#dunst &
+dunst &
 
-#tint1 &
-#xfce4-panel &
-#plank &
+xfce4-panel &
 
 
 nitrogen --restore

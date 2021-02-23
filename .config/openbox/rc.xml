@@ -22,7 +22,7 @@
     <primaryMonitor>Active</primaryMonitor>
   </placement>
   <theme>
-    <name>Nightmare</name>
+    <name>Minstral</name>
     <cornerRadius>8</cornerRadius>
     <titleLayout>NLDIMC</titleLayout>
     <!--
@@ -184,7 +184,7 @@
     </keybind>
     <keybind key="W-S-B">
       <action name="Execute">
-        <command>firefox</command>
+        <command>env GTK_THEME=Raleigh: firefox</command>
       </action>
     </keybind>
     <keybind key="A-S-F">
@@ -209,7 +209,7 @@
     </keybind>
     <keybind key="W-S-X">
       <action name="Execute">
-        <command> env GTK_THEME=Raleigh:xournalpp</command>
+        <command> env GTK_THEME=Raleigh: xournalpp</command>
       </action>
     </keybind>
     <keybind key="W-p">
@@ -249,7 +249,7 @@
     </keybind>
     <keybind key="W-S-S">
       <action name="Execute">
-        <command>spotify-tray</command>
+        <command>spotify</command>
       </action>
     </keybind>
     <keybind key="W-S-E">
