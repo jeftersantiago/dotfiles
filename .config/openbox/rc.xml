@@ -144,12 +144,12 @@
     </keybind>
     <keybind key="W-S-P">
       <action name="Execute">
-        <command>gnome-pomodoro</command>
+        <command>env GTK_THEME=Materia-dark-compact: gnome-pomodoro</command>
       </action>
     </keybind>
     <keybind key="W-S-A">
       <action name="Execute">
-        <command>alarm-clock-applet</command>
+        <command>env GTK_THEME=Materia-dark-compact: alarm-clock-applet</command>
       </action>
     </keybind>
     <keybind key="A-F10">
@@ -174,7 +174,7 @@
     </keybind>
     <keybind key="W-S-f">
       <action name="Execute">
-        <command>nautilus</command>
+        <command>thunar</command>
       </action>
     </keybind>
     <keybind key="W-R">
@@ -184,17 +184,13 @@
     </keybind>
     <keybind key="W-S-B">
       <action name="Execute">
-        <command>env GTK_THEME=Raleigh: firefox</command>
+        <!-- <command>env GTK_THEME=Raleigh: firefox</command> -->
+        <command>firefox</command>
       </action>
     </keybind>
     <keybind key="A-S-F">
       <action name="Execute">
         <command>qutebrowser</command>
-      </action>
-    </keybind>
-    <keybind key="W-S-t">
-      <action name="Execute">
-        <command>telegram-desktop</command>
       </action>
     </keybind>
     <keybind key="W-S-D">
@@ -237,11 +233,6 @@
         <command>pavucontrol</command>
       </action>
     </keybind>
-    <keybind key="M-S-B">
-      <action name="Execute">
-        <command>mate-power-preferences</command>
-      </action>
-    </keybind>
     <keybind key="W-S-m">
       <action name="Execute">
         <command>st -e ncmpcpp</command>
@@ -254,7 +245,7 @@
     </keybind>
     <keybind key="W-S-E">
       <action name="Execute">
-        <command>emacs</command>
+        <command>emacs </command>
       </action>
     </keybind>
     <keybind key="W-S-Q">
@@ -747,12 +738,12 @@
     <application class="Emacs">
       <decor>yes</decor>
       <size>
-        <width>70%</width>
+        <width>60%</width>
         <height>70%</height>
       </size>
       <position force="yes">
-        <x>center</x>
-        <y>top</y>
+        <x>10%</x>
+        <y>10%</y>
       </position>
     </application>
     <application class="qutebrowser">
@@ -810,10 +801,10 @@
         <y>center</y>
       </position>
     </application>
-    <application class="Thunar">
+    <application class="Org.gnome.Nautilus">
       <decor>yes</decor>
       <size>
-        <width>55%</width>
+        <width>70%</width>
         <height>70%</height>
       </size>
       <position force="yes">
@@ -833,9 +824,9 @@
       </position>
     </application>
     <application class="firefox">
-      <decor>no</decor>
+      <decor>yes</decor>
       <size>
-        <width>%100</width>
+        <width>100%</width>
         <height>100%</height>
       </size>
       <position force="yes">
@@ -851,12 +842,12 @@
       <y>200</y>
       <monitor>1</monitor>
     </position>
-<size>
+     <size>
       <width>20</width>
       <height>30%</height>
     </size>
 
-        <focus>yes</focus>
+     <focus>yes</focus>
     <desktop>1</desktop>
     <layer>normal</layer>
     <iconic>no</iconic>

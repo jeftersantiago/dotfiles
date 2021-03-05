@@ -6,13 +6,13 @@ xcompmgr &
 
 dunst &
 
-#xfce4-panel &
+#tint2 &
+xfce4-panel &
 
 
 nitrogen --restore
 
 blueman-applet &
 nm-applet &
-
 
 #mate-power-manager &
