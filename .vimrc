@@ -1,3 +1,6 @@
+call plug#begin('~/.vim/plugged')
+Plug 'hugolgst/vimsence'
+call plug#end()
 set encoding=utf-8
 set expandtab
 set ignorecase

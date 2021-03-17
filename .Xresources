@@ -3,18 +3,20 @@ st*locale: true
 st*scrollBar:false
 st*geometry: 80x32
 st*faceName:liberation mono:pixelsize=10
-st*alpha:0.9
+st*alpha:0.95
 
 
 Alt <Key>C: copy-selection(CLIPBOARD) \n\
 Alt <Key>V: insert-selection(CLIPBOARD)
 
 *reverseVideo: true
+
+*.cursorColor:  #C712F2
 !black
 *color0:            #393939
 *color8:            #474747
 !red
-*color1:            #da4939
+*color1:            #af005f
 *color9:            #ff6c5c
 !green
 *color2:            #519f50
@@ -23,10 +25,10 @@ Alt <Key>V: insert-selection(CLIPBOARD)
 *color3:            #cc7833
 *color11:           #bc9458
 !blue
-*color4:            #3288C6
+*color4:            #1C5F87
 *color12:           #3288C6
 !*magenta
-*color5:            #E10778
+*color5:            #5f1c5f
 *color13:           #A617DE
 !*cyan
 *color6:            #435d75

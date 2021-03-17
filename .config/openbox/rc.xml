@@ -24,7 +24,7 @@
   <theme>
     <name>Minstral</name>
     <cornerRadius>8</cornerRadius>
-    <titleLayout>NLDIMC</titleLayout>
+    <titleLayout>LDIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most"once.
       N: window icon
@@ -174,7 +174,7 @@
     </keybind>
     <keybind key="W-S-f">
       <action name="Execute">
-        <command>thunar</command>
+        <command>nautilus</command>
       </action>
     </keybind>
     <keybind key="W-R">
@@ -184,8 +184,7 @@
     </keybind>
     <keybind key="W-S-B">
       <action name="Execute">
-        <!-- <command>env GTK_THEME=Raleigh: firefox</command> -->
-        <command>firefox</command>
+        <command>env GTK_THEME=Raleigh: firefox</command>
       </action>
     </keybind>
     <keybind key="A-S-F">
@@ -196,6 +195,11 @@
     <keybind key="W-S-D">
       <action name="Execute">
         <command>discord</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-T">
+      <action name="Execute">
+        <command>telegram-desktop</command>
       </action>
     </keybind>
     <keybind key="W-S-K">
@@ -218,9 +222,14 @@
         <command>nitrogen</command>
       </action>
     </keybind>
-    <keybind key="W-S-N">
+    <keybind key="W-A-N">
       <action name="Execute">
         <command>st -e newsboat</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-N">
+      <action name="Execute">
+        <command>joplin-desktop</command>
       </action>
     </keybind>
     <keybind key="M-S-P">
@@ -416,7 +425,7 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>30%</width>
+        <width>50%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -425,7 +434,7 @@
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
-        <width>30%</width>
+        <width>50%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -738,19 +747,19 @@
     <application class="Emacs">
       <decor>yes</decor>
       <size>
-        <width>60%</width>
-        <height>70%</height>
+        <width>50%</width>
+        <height>100%</height>
       </size>
       <position force="yes">
-        <x>10%</x>
-        <y>10%</y>
+        <x>25%</x>
+        <y>0%</y>
       </position>
     </application>
     <application class="qutebrowser">
       <decor>yes</decor>
       <size>
         <width>60%</width>
-        <height>80%</height>
+        <height>10%</height>
       </size>
       <position force="yes">
         <x>center</x>
@@ -824,6 +833,17 @@
       </position>
     </application>
     <application class="firefox">
+      <decor>no</decor>
+      <size>
+        <width>100%</width>
+        <height>100%</height>
+      </size>
+      <position force="yes">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+    <application class="Joplin">
       <decor>yes</decor>
       <size>
         <width>100%</width>
