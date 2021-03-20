@@ -4,13 +4,13 @@
 * System and WM
 *Arch Linux* with the *Openbox WM* 
 * List of Applications
-  - Openbox
-  - suckless terminal (st)
-  - emacs
-  - xfce4-panel
-  - newsboat
-  - ncmpcpp
-  - ranger
+  - [[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]
+  -  [[https://github.com/jefter66/st][st]]  (suckless terminal: [[https://st.suckless.org/][oficial site]])
+  - [[https://github.com/jefter66/.emacs.d][emacs]]
+  - [[https://pkgs.org/download/xfce4-panel][xfce4-panel]]
+  - [[https://newsboat.org/][newsboat]]
+  - [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]
+  - [[https://github.com/ranger/ranger][ranger]]
 ** Openbox - Keyboard shortcuts
 *** Loading applications
      | Command            | Application        |
