@@ -85,5 +85,5 @@ the rest is in the [[https://github.com/jefter66/st][st]] repository.
    - Black when active and gray when it isn't
    - The most thinner possible
    - This is it
-* TODOS
-** TODO Make the icon for st work in openbox (it doesn't appear in the panel)
+* TODO
+ - [  ] TODO Make the icon for st work in openbox (it doesn't appear in the panel)
