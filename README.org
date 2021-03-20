@@ -1,12 +1,11 @@
 #+TITLE: Jefter's Dotfiles
 #+STARTUP: shrink noalign
-
-* System and WM
-*Arch Linux* with the *Openbox WM* 
+* My extremely minimalist system!  
+  *[[https://archlinux.org/download/][Arch Linux]]* with the *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
 * List of Applications
-  - [[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]
   -  [[https://github.com/jefter66/st][st]]  (suckless terminal: [[https://st.suckless.org/][oficial site]])
   - [[https://github.com/jefter66/.emacs.d][emacs]]
+  - vim
   - [[https://pkgs.org/download/xfce4-panel][xfce4-panel]]
   - [[https://newsboat.org/][newsboat]]
   - [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]
@@ -79,3 +78,9 @@ In the file [[.shrc][.shrc]] all aliases are loaded with the line
 ** [[.Xresources][Xresources]]
  The only important configuration in here is the transparency
 the rest is in the [[https://github.com/jefter66/st][st]] repository.
+** [[.themes/Minstral/openbox-3/themerc][themerc]]
+   - Black when active and gray when it isn't
+   - The most thinner possible
+   - This is it
+* TODOS
+** TODO Make the icon for st work in openbox (it doesn't appear in the panel)
