@@ -47,7 +47,7 @@
    | pc      |  pictures |
 * Specifics of each important dotfile
   By specifics i mean "stuff that i will forget"
-** rc.xml
+** [[.config/openbox/rc.xml][  rc.xml]]
     Openbox configuration.
     I don't like dark themes in every application, so, in the 
 shortcuts for some of them i run a GTK command to make it run
@@ -67,3 +67,15 @@ i have to add this line in the ~/.profile
 #+begin_src shell
  test -f "$HOME"/.shrc && export ENV="$HOME"/.shrc
 #+end_src
+** [[.local/bin/aliases][aliases]] and [[.local/bin/cmds][cmds]]
+   This file is full of aliases for specific directories and some commands.
+   In my terminal the option "autocmd" is setted, then i setted alias for the direction i want to
+go cd into.
+In the file [[.shrc][.shrc]] all aliases are loaded with the line
+#+begin_src shell
+[ -f $SC"aliases"] && source $SC"aliases"
+[ -f $SC"cmds"] && source $SC"cmds"
+#+end_src
+** [[.Xresources][Xresources]]
+ The only important configuration in here is the transparency
+the rest is in the [[https://github.com/jefter66/st][st]] repository.
