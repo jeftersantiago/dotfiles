@@ -4,7 +4,7 @@
   *[[https://archlinux.org/download/][Arch Linux]]* with the *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
 #+CAPTION: Screenshot 
 #+NAME:   fig:SED-HR4049
-[[./img/image.png]]
+[[.img/image.png]]
 * List of Applications
   -*[[https://github.com/jefter66/st][st]]* (suckless terminal: [[https://st.suckless.org/][oficial site]])
   - *[[https://github.com/jefter66/.emacs.d][emacs]]*
