@@ -86,4 +86,4 @@ the rest is in the [[https://github.com/jefter66/st][st]] repository.
    - The most thinner possible
    - This is it
 * TODO
- - [  ] TODO Make the icon for st work in openbox (it doesn't appear in the panel)
+ - [ ] TODO Make the icon for st work in openbox (it doesn't appear in the panel)
