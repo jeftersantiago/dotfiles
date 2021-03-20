@@ -61,6 +61,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-items" type="array">
+        <value type="string" value="vlc"/>
         <value type="string" value="TelegramDesktop"/>
         <value type="string" value="alarm-clock"/>
         <value type="string" value="Joplin1"/>
@@ -74,11 +75,6 @@
         <value type="string" value="alarm-clock-applet"/>
       </property>
     </property>
-    <property name="plugin-8" type="string" value="pulseaudio">
-      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chromium.instance12265;firefox.instance1035;firefox.instance5911;firefox.instance693;firefox.instance887;spotify"/>
-    </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-11" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -89,6 +85,10 @@
     </property>
     <property name="plugin-7" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="firefox.instance645;firefox.instance824;qutebrowser.instance7586;spotify"/>
     </property>
   </property>
 </channel>

@@ -179,7 +179,7 @@
     </keybind>
     <keybind key="W-R">
       <action name="Execute">
-        <command>redshift</command>
+        <command>redshift-gtk</command>
       </action>
     </keybind>
     <keybind key="W-S-B">
@@ -195,11 +195,6 @@
     <keybind key="W-S-D">
       <action name="Execute">
         <command>discord</command>
-      </action>
-    </keybind>
-    <keybind key="W-S-T">
-      <action name="Execute">
-        <command>telegram-desktop</command>
       </action>
     </keybind>
     <keybind key="W-S-K">
@@ -222,14 +217,9 @@
         <command>nitrogen</command>
       </action>
     </keybind>
-    <keybind key="W-A-N">
-      <action name="Execute">
-        <command>st -e newsboat</command>
-      </action>
-    </keybind>
     <keybind key="W-S-N">
       <action name="Execute">
-        <command>joplin-desktop</command>
+        <command>st -e newsboat</command>
       </action>
     </keybind>
     <keybind key="M-S-P">
@@ -438,16 +428,7 @@
         <height>100%</height>
       </action>
     </keybind>
-    <keybind key="W-space">
-      <action name="Unmaximize"/>
-      <action name="MoveResizeTo">
-        <x>30%</x>
-        <y>0</y>
-        <width>40%</width>
-        <height>100%</height>
-      </action>
-    </keybind>
-    <keybind key="A-space">
+   <keybind key="A-space">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>center</x>
