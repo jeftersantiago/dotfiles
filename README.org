@@ -44,5 +44,11 @@
    | wk      | workspace    |
    | dr      | drive        |
    | pc      |  pictures |
-* Aliases
-  
+* Specifics of each important dotfile
+By specifics i mean "stuff that i will forget"
+** .profile
+   This line is used to set my personal scripts in the PATH,  this way i can
+   run them without specifying the absolute path
+   #+begin_src shell
+   export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | paste -sd ':')"
+   #+end_src
