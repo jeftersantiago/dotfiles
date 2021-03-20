@@ -56,7 +56,7 @@ The command added to the shortcuts is
 #+begin_src shell
 env GTK_THEME=light-theme: application 
 #+end_src
-** .profile
+**  [[~/.profile][.profile]]
    This line is used to set my personal scripts in the PATH,  this way i can
    run them without specifying the absolute path
    #+begin_src shell
