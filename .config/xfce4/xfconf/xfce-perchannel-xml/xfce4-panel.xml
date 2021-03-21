@@ -71,6 +71,7 @@
       </property>
       <property name="icon-size" type="int" value="0"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="bluetooth enabled"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="alarm-clock-applet"/>
       </property>
@@ -88,7 +89,7 @@
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance645;firefox.instance824;qutebrowser.instance7586;spotify"/>
+      <property name="mpris-players" type="string" value="firefox.instance4729;firefox.instance645;firefox.instance824;firefox.instance954;qutebrowser.instance7586;spotify"/>
     </property>
   </property>
 </channel>
