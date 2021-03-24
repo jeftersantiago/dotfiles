@@ -12,8 +12,8 @@
   - [[.config/tint2/tint2rc][tint2]]
   - [[https://newsboat.org/][newsboat]]
   - [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]
-  -+[[https://pkgs.org/download/xfce4-panel][xfce4-panel]]+
-  -+[[https://github.com/ranger/ranger][ranger]]+
+  -   +[[https://pkgs.org/download/xfce4-panel][xfce4-panel]]+
+  -    +[[https://github.com/ranger/ranger][ranger]]+
 ** Openbox - Keyboard shortcuts
 *** Loading applications
      | Command            | Application        |
