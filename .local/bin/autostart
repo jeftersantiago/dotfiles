@@ -12,3 +12,5 @@ nitrogen --restore
 
 blueman-applet &
 nm-applet &
+
+alarm-clock-applet &
