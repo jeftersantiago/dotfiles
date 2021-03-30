@@ -12,8 +12,6 @@
       <property name="icon-size" type="uint" value="0"/>
       <property name="size" type="uint" value="20"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="1"/>
-        <value type="int" value="7"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
         <value type="int" value="4"/>
@@ -36,10 +34,6 @@
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-1" type="string" value="applicationsmenu">
-      <property name="button-icon" type="string" value="archlinux-logo"/>
-      <property name="show-button-title" type="bool" value="false"/>
-    </property>
     <property name="plugin-2" type="string" value="tasklist">
       <property name="grouping" type="uint" value="0"/>
       <property name="show-handle" type="bool" value="false"/>
@@ -84,12 +78,9 @@
     <property name="plugin-13" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-7" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance4729;firefox.instance645;firefox.instance824;firefox.instance954;qutebrowser.instance7586;spotify"/>
+      <property name="mpris-players" type="string" value="firefox.instance10676;firefox.instance11364;firefox.instance958;qutebrowser.instance1322"/>
     </property>
   </property>
 </channel>
