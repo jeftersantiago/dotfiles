@@ -5,7 +5,6 @@ export READER="xreader"
 export BROWSER="firefox"
 export VIEWER="mirage"
 
-
 # language
 #export LANG="fr_FR.UTF-8"
 export LANG="en_US.UTF-8"
