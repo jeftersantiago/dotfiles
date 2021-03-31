@@ -6,3 +6,6 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 XDG_SESSION_TYPE=x11
 autostart &
 exec openbox-session
+
+
+
