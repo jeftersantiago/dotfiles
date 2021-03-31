@@ -2,12 +2,14 @@ st*termName: xterm-256color
 st*locale: true
 st*scrollBar:false
 st*geometry: 80x32
+<<<<<<< HEAD
 st*faceName:liberation mono:pixelsize=12
+=======
+*faceName:liberation mono:pixelsize=14
+>>>>>>> 966ac7e729d3a303c9560a94b9ca524ecf072b34
 st*alpha:0.98
 
-
 Alt <Key>C: copy-selection(CLIPBOARD) \n\
-Alt <Key>V: insert-selection(CLIPBOARD)
 
 *reverseVideo: true
 

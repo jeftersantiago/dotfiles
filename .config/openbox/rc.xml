@@ -172,12 +172,12 @@
         <command>pulsemixer --change-volume -10</command>
       </action>
     </keybind>
-    <!--     <keybind key="W-S-R">
+   <keybind key="W-S-R">
+    <keybind key="W-S-R">
       <action name="Execute">
         <command>st -e ranger</command>
       </action>
     </keybind>
- -->
     <keybind key="W-R">
       <action name="Execute">
         <command>redshift-gtk</command>

@@ -18,7 +18,7 @@
     separator_color = "#060E10"
     sort = yes
     idle_threshold = 120
-    font = Source Code Pro 10
+    font = Monospace 8, Noto Color Emoji 8
     line_height = 2
     markup = full
     format = "<b>%s</b>\n%b\n\n"
