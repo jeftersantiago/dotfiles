@@ -6,7 +6,9 @@ xcompmgr &
 
 dunst &
 
-xfce4-panel &
+tint2 &
+
+mate-power-manager &
 
 nitrogen --restore
 
