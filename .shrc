@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin
 [ -f $SC"aliases" ] && source $SC"aliases"
 [ -f $SC"cmds" ] && source $SC"cmds"
 

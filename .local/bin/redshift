@@ -1,8 +1,0 @@
-#!/bin/sh
-case $BLOCK_BUTTON in
-        1) for pid in $(ps -ef | awk '/redshift/ {print $2}'); do kill -9 $pid; done
-esac
-val="🚨"
-if [[ $(pidof redshift) ]]; then
-        echo $val
-fi

@@ -80,7 +80,7 @@
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance10676;firefox.instance11364;firefox.instance958;qutebrowser.instance1322"/>
+      <property name="mpris-players" type="string" value="firefox.instance10676;firefox.instance11364;firefox.instance15035;firefox.instance958;qutebrowser.instance1322;spotify"/>
     </property>
   </property>
 </channel>

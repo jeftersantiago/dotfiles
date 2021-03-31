@@ -24,7 +24,7 @@
   <theme>
     <name>Minstral</name>
     <cornerRadius>8</cornerRadius>
-    <titleLayout>LDIMC</titleLayout>
+    <titleLayout>NLDIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most"once.
       N: window icon
@@ -38,13 +38,7 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Inconsolata</name>
-      <size>12</size>
-      <weight>Normal</weight>
-      <slant>Normal</slant>
-    </font>
-    <font place="InactiveWindow">
-      <name>Inconsolata</name>
+      <name>Liberation Mono</name>
       <size>12</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
@@ -70,6 +64,12 @@
     <font place="InactiveOnScreenDisplay">
       <name>Liberation Mono</name>
       <size>16</size>
+      <weight>Normal</weight>
+      <slant>Normal</slant>
+    </font>
+    <font place="InactiveWindow">
+      <name>Liberation Mono</name>
+      <size>12</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
@@ -127,6 +127,11 @@
         <command>mate-screenshot -a </command>
       </action>
     </keybind>
+    <keybind key="A-S-B">
+      <action name="Execute">
+        <command>mate-power-preferences</command>
+      </action>
+    </keybind>
     <keybind key="W-Return">
       <action name="Execute">
         <command>st</command>
@@ -167,27 +172,23 @@
         <command>pulsemixer --change-volume -10</command>
       </action>
     </keybind>
-    <keybind key="W-S-R">
+    <!--     <keybind key="W-S-R">
       <action name="Execute">
         <command>st -e ranger</command>
       </action>
     </keybind>
-    <keybind key="W-S-f">
-      <action name="Execute">
-        <command>nautilus</command>
-      </action>
-    </keybind>
+ -->
     <keybind key="W-R">
       <action name="Execute">
         <command>redshift-gtk</command>
       </action>
     </keybind>
-    <keybind key="W-S-B">
+    <keybind key="W-S-f">
       <action name="Execute">
         <command>env GTK_THEME=Raleigh: firefox</command>
       </action>
     </keybind>
-    <keybind key="A-S-F">
+    <keybind key="A-S-q">
       <action name="Execute">
         <command>qutebrowser</command>
       </action>
@@ -195,6 +196,21 @@
     <keybind key="W-S-D">
       <action name="Execute">
         <command>discord</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-T">
+      <action name="Execute">
+        <command>telegram-desktop</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-b">
+      <action name="Execute">
+        <command>thunar</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-f">
+      <action name="Execute">
+        <command>xreader</command>
       </action>
     </keybind>
     <keybind key="W-S-K">
@@ -698,7 +714,7 @@
   </menu>
   <applications>
     <application class="*">
-      <position force="yes">
+      <position force="no">
         <x>center</x>
         <y>center</y>
       </position>
@@ -815,17 +831,6 @@
     </application>
     <application class="firefox">
       <decor>no</decor>
-      <size>
-        <width>100%</width>
-        <height>100%</height>
-      </size>
-      <position force="yes">
-        <x>center</x>
-        <y>center</y>
-      </position>
-    </application>
-    <application class="Joplin">
-      <decor>yes</decor>
       <size>
         <width>100%</width>
         <height>100%</height>

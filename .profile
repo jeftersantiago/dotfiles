@@ -1,13 +1,14 @@
 #!/bin/sh
 
 # default applications
-export READER="okular"
+export READER="xreader"
 export BROWSER="firefox"
 export VIEWER="mirage"
 
 # language
 #export LANG="fr_FR.UTF-8"
-export LANG="en_EN.UTF-8"
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 
 # important directories
 export SCRIPTS=$HOME/".local/bin/"
