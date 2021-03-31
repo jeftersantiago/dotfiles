@@ -1,10 +1,7 @@
 #+TITLE: Jefter's Dotfiles
 #+STARTUP: shrink noalign
-* My extremely minimalist system!  
+* My extremely minimalist system!
   *[[https://archlinux.org/download/][Arch Linux]]* with the *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
-#+CAPTION: Screenshot 
-#+NAME:   fig:SED-HR4049
-[[.img/images.png]]
 * List of Applications
   - *[[https://github.com/jefter66/st][st]]* (suckless terminal: [[https://st.suckless.org/][oficial site]])
   - *[[https://github.com/jefter66/.emacs.d][emacs]]*
@@ -52,12 +49,12 @@
   By specifics i mean "stuff that i will forget"
 ** [[.config/openbox/rc.xml][  rc.xml]]
     Openbox configuration.
-    I don't like dark themes in every application, so, in the 
+    I don't like dark themes in every application, so, in the
 shortcuts for some of them i run a GTK command to make it run
 in a light theme, even tho my system has others in dark themes.
 The command added to the shortcuts is
 #+begin_src shell
-env GTK_THEME=light-theme: application 
+env GTK_THEME=light-theme: application
 #+end_src
 **  [[.profile][.profile]]
    This line is used to set my personal scripts in the PATH,  this way i can
@@ -65,7 +62,7 @@ env GTK_THEME=light-theme: application
    #+begin_src shell
    export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | paste -sd ':')"
    #+end_src
-   I use the sh shell, so, to run it from the login (i don't have a display manager) 
+   I use the sh shell, so, to run it from the login (i don't have a display manager)
 i have to add this line in the ~/.profile
 #+begin_src shell
  test -f "$HOME"/.shrc && export ENV="$HOME"/.shrc
@@ -87,4 +84,4 @@ the rest is in the [[https://github.com/jefter66/st][st]] repository.
    - The most thinner possible
    - This is it
 * TODO Make the icon for st work in openbox (it doesn't appear in the panel)
-   
+
