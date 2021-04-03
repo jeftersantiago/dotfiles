@@ -15,6 +15,10 @@ export SCRIPTS=$HOME/".local/bin/"
 export SC=$HOME"/.local/bin/"
 export CONFIGS=$HOME"/.config/"
 
+
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
+
 # idk why this
 export PATH=$PATH:/usr/bin/pdflatex
 # makes my own scripts load as commands
