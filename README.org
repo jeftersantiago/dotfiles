@@ -4,7 +4,7 @@
   *[[https://archlinux.org/download/][Arch Linux]]* with the *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
 * List of Applications
 ** Required
-  - [[.config/openbox/][openbox]]
+  - [[.config/openbox/rc.xml][openbox]]
   - obconf
   - nitrogen
   - [[.config/tint2/tint2rc][tint2]]
