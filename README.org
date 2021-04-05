@@ -13,7 +13,6 @@
   | lxappearance-obconf | +[[https://pkgs.org/download/xfce4-panel][xfce4-panel]]+                          | thunar                    | mpc                     |
   | dmenu               |                                        |                           | [[https://aur.archlinux.org/packages/mirage/][mirage]]                  |
   |                     |                                        |                           | [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]                 |
-  |                     |                                        |                           | mpv                     |
   |---------------------+----------------------------------------+---------------------------+-------------------------|
 
 * List of Applications
