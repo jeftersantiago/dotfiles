@@ -15,7 +15,7 @@
   |                     | gnome-clocks                           |                           | [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]                 |
   |---------------------+----------------------------------------+---------------------------+-------------------------|
 * Openbox - Keyboard shortcuts
-*** Loading applications
+*** Starting applications
      | Command            | Application        |
      | Super+Return       | st                 |
      | Super+Shift+Return | st                 |
