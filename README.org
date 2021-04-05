@@ -15,7 +15,6 @@
   - *[[https://github.com/jefter66/.emacs.d][emacs]]*
   - [[https://www.vim.org/download.php][vim]]
   - [[https://newsboat.org/][newsboat]]
-  - [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]
   - [[https://github.com/ranger/ranger][ranger]]
   - +[[https://pkgs.org/download/xfce4-panel][xfce4-panel]]+
 ** System status and tools
@@ -33,10 +32,10 @@
   - xreader
   - [[https://aur.archlinux.org/packages/mirage/][mirage]]
   - mupdf
-  - mpd
   - mpc
+  - [[.config/mpd/mpd.conf][mpd]]
   - mpv
-  - ncmpcpp
+  - [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]
 * Openbox - Keyboard shortcuts
 *** Loading applications
      | Command            | Application        |
