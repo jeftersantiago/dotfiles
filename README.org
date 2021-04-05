@@ -12,7 +12,7 @@
   | picom               | [[https://github.com/ranger/ranger][ranger]]                                 | pavucontrol               | xreader                 |
   | lxappearance-obconf | +[[https://pkgs.org/download/xfce4-panel][xfce4-panel]]+                          | thunar                    | mpc                     |
   | dmenu               |                                        |                           | [[https://aur.archlinux.org/packages/mirage/][mirage]]                  |
-  |                     |                                        |                           | [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]                 |
+  |                     | gnome-clocks                           |                           | [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]                 |
   |---------------------+----------------------------------------+---------------------------+-------------------------|
 
 * List of Applications
