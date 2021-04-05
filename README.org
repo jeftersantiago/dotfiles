@@ -2,40 +2,29 @@
 #+STARTUP: shrink noalign
 * My extremely minimalist system!
   *[[https://archlinux.org/download/][Arch Linux]]* with the *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
-* List of Applications
-** Required
-  - [[.config/openbox/rc.xml][openbox]]
-  - obconf
-  - nitrogen
-  - [[.config/tint2/tint2rc][tint2]]
-  - picom
-  - lxappearance-obconf
-** Mostly used     
-  - *[[https://github.com/jefter66/st][st]]* (suckless terminal: [[https://st.suckless.org/][oficial site]])
-  - *[[https://github.com/jefter66/.emacs.d][emacs]]*
-  - [[https://www.vim.org/download.php][vim]]
-  - [[https://newsboat.org/][newsboat]]
-  - [[https://github.com/ranger/ranger][ranger]]
-  - +[[https://pkgs.org/download/xfce4-panel][xfce4-panel]]+
-** System status and tools
-  - mate-utils
-  - network-manager-applet
-  - nitrogen
-  - pavucontrol
-  - [[https://aur.archlinux.org/packages/gnome-shell-pomodoro/][gnome-shell-pomodoro]]
-  - thunar
-** Themes
-  - materia-gtk-theme
-  - adwaita-icon-theme
-  - [[https://aur.archlinux.org/packages/arc-icon-theme-full-git/][arc-icon-theme-full-git]]
-** Multimedia
-  - xreader
-  - [[https://aur.archlinux.org/packages/mirage/][mirage]]
-  - mupdf
-  - mpc
-  - [[.config/mpd/mpd.conf][mpd]]
-  - mpv
-  - [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]
+* Applications
+  |---------------------------+----------------------------------------|
+  | Required                  | Mostly used                            |
+  | [[.config/openbox/rc.xml][openbox]]                   | *[[https://github.com/jefter66/st][st]]* (suckless terminal: [[https://st.suckless.org/][oficial site]]) |
+  | [[.config/tint2/tint2rc][tint2]]                     | *[[https://github.com/jefter66/.emacs.d][emacs]]*                                |
+  | obconf                    | [[https://www.vim.org/download.php][vim]]                                    |
+  | nitrogen                  | [[https://newsboat.org/][newsboat]]                               |
+  | picom                     | [[https://github.com/ranger/ranger][ranger]]                                 |
+  | lxappearance-obconf       | +[[https://pkgs.org/download/xfce4-panel][xfce4-panel]]+                          |
+  | dmenu                     |                                        |
+  |---------------------------+----------------------------------------|
+  | *System status and tools* | * Themes and multimedia*               |
+  | mate-utils                | adwaita-icon-theme                     |
+  | network-manager-applet    | [[https://aur.archlinux.org/packages/arc-icon-theme-full-git/][arc-icon-theme-full-git]]                |
+  | nitrogen                  | materia-gtk-theme                      |
+  | [[https://aur.archlinux.org/packages/gnome-shell-pomodoro/][gnome-shell-pomodoro]]      | mupdf                                  |
+  | pavucontrol               | xreader                                |
+  | thunar                    | mpc                                    |
+  |                           | [[https://aur.archlinux.org/packages/mirage/][mirage]]                                 |
+  |                           | [[.config/mpd/mpd.conf][mpd]]                                    |
+  |                           | mpv                                    |
+  |                           | [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]                                |
+  |---------------------------+----------------------------------------|
 * Openbox - Keyboard shortcuts
 *** Loading applications
      | Command            | Application        |
