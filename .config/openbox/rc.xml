@@ -38,13 +38,13 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Noto Sans</name>
+      <name>Liberation Mono</name>
       <size>8</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Noto Sans</name>
+      <name>Liberation Mono</name>
       <size>8</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
