@@ -38,9 +38,15 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Liberation Mono</name>
-      <size>12</size>
-      <weight>Normal</weight>
+      <name>Noto Sans</name>
+      <size>8</size>
+      <weight>Bold</weight>
+      <slant>Normal</slant>
+    </font>
+    <font place="InactiveWindow">
+      <name>Noto Sans</name>
+      <size>8</size>
+      <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
@@ -64,12 +70,6 @@
     <font place="InactiveOnScreenDisplay">
       <name>Liberation Mono</name>
       <size>16</size>
-      <weight>Normal</weight>
-      <slant>Normal</slant>
-    </font>
-    <font place="InactiveWindow">
-      <name>Liberation Mono</name>
-      <size>12</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
@@ -172,7 +172,6 @@
         <command>pulsemixer --change-volume -10</command>
       </action>
     </keybind>
-   <keybind key="W-S-R">
     <keybind key="W-S-R">
       <action name="Execute">
         <command>st -e ranger</command>
