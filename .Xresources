@@ -1,7 +1,7 @@
 st*termName: xterm-256color
 st*locale: true
 st*scrollBar:false
-st*geometry: 80x32
+emacs*geometry: 80x32
 *faceName:liberation mono:pixelsize=14
 st*alpha:0.98
 
