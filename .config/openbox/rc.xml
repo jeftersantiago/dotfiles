@@ -38,13 +38,13 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Noto Sans</name>
+      <name>Liberation Mono</name>
       <size>8</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Noto Sans</name>
+      <name>Liberation Mono</name>
       <size>8</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
@@ -745,7 +745,7 @@
       <decor>yes</decor>
       <size>
         <width>50%</width>
-        <height>100%</height>
+        <height>70%</height>
       </size>
       <position force="yes">
         <x>25%</x>
@@ -753,7 +753,7 @@
       </position>
     </application>
     <application class="qutebrowser">
-      <decor>yes</decor>
+      <decor>no</decor>
       <size>
         <width>60%</width>
         <height>10%</height>
