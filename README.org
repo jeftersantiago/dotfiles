@@ -1,18 +1,22 @@
 #+TITLE: Jefter's Dotfiles
 #+STARTUP: shrink noalign
 * My extremely minimalist system!
-  *[[https://archlinux.org/download/][Arch Linux]]* with the *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
-* List of Applications
-  - *[[https://github.com/jefter66/st][st]]* (suckless terminal: [[https://st.suckless.org/][oficial site]])
-  - *[[https://github.com/jefter66/.emacs.d][emacs]]*
-  - [[https://www.vim.org/download.php][vim]]
-  - [[.config/tint2/tint2rc][tint2]]
-  - [[https://newsboat.org/][newsboat]]
-  - [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]
-  -   +[[https://pkgs.org/download/xfce4-panel][xfce4-panel]]+
-  -    +[[https://github.com/ranger/ranger][ranger]]+
-** Openbox - Keyboard shortcuts
-*** Loading applications
+  *[[https://archlinux.org/download/][Arch Linux]]* 🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
+* Applications
+  |---------------------+----------------------------------------+---------------------------+-------------------------|
+  | *Required*          | *Customized*                           | *System status and tools* | *Themes and multimedia* |
+  | [[.config/openbox/rc.xml][openbox]]             | *[[https://github.com/jefter66/st][st]]* (suckless terminal: [[https://st.suckless.org/][oficial site]]) | mate-utils                | adwaita-icon-theme      |
+  | [[.config/tint2/tint2rc][tint2]]               | *[[https://github.com/jefter66/.emacs.d][emacs]]*                                | network-manager-applet    | [[https://aur.archlinux.org/packages/arc-icon-theme-full-git/][arc-icon-theme-full-git]] |
+  | obconf              | [[https://www.vim.org/download.php][vim]]                                    | [[https://aur.archlinux.org/packages/gnome-shell-pomodoro/][gnome-shell-pomodoro]]      | materia-gtk-theme       |
+  | nitrogen            | [[https://newsboat.org/][newsboat]]                               | pavucontrol               | mupdf                   |
+  | picom               | [[https://github.com/ranger/ranger][ranger]]                                 | thunar                    | xreader                 |
+  | lxappearance-obconf | [[.config/openbox/rc.xml][openbox]]                                | gnome-clocks              | mpc                     |
+  | dmenu               | [[.config/tint2/tint2rc][tint2]]                                  | pulsemixer                | [[https://aur.archlinux.org/packages/mirage/][mirage]]                  |
+  | xcompmgr            | [[.config/dunst/dunstrc][dunst]]                                  | redshift                  | [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]                 |
+  |---------------------+----------------------------------------+---------------------------+-------------------------|
+
+* Openbox - Keyboard shortcuts
+*** Starting applications
      | Command            | Application        |
      | Super+Return       | st                 |
      | Super+Shift+Return | st                 |
@@ -35,7 +39,7 @@
     | Super+Shift+q     | Close Window                                      |
     | Super+Shift+Space | Fullscreen                                        |
 
-** Ranger shortcuts
+* Ranger shortcuts
    | Command | Go to folder |
    | ch      | home         |
    | rl      | library      |
@@ -83,6 +87,3 @@ the rest is in the [[https://github.com/jefter66/st][st]] repository.
    - Black when active and gray when it isn't
    - The most thinner possible
    - This is it
-- TODO
- - [ ] Make the icon for st work in openbox (it doesn't appear in the panel)
-

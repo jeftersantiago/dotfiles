@@ -154,7 +154,7 @@
     </keybind>
     <keybind key="W-S-A">
       <action name="Execute">
-        <command>env GTK_THEME=Materia-dark-compact: alarm-clock-applet</command>
+        <command>env GTK_THEME=Materia-dark-compact: gnome-clocks</command>
       </action>
     </keybind>
     <keybind key="A-F10">
@@ -254,7 +254,7 @@
     </keybind>
     <keybind key="W-S-S">
       <action name="Execute">
-        <command>spotify</command>
+        <command>spotify-tray</command>
       </action>
     </keybind>
     <keybind key="W-S-E">
@@ -430,7 +430,7 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>50%</width>
+        <width>65%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -439,7 +439,7 @@
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
-        <width>50%</width>
+        <width>35%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -720,10 +720,11 @@
     </application>
     <application class="discord">
       <decor>yes</decor>
-      <size>
+      <!--      <size>
         <width>50%</width>
         <height>80%</height>
       </size>
+ -->
       <position force="yes">
         <x>center</x>
         <y>center</y>
@@ -830,10 +831,11 @@
     </application>
     <application class="firefox">
       <decor>no</decor>
-      <size>
+      <!--      <size>
         <width>100%</width>
         <height>100%</height>
       </size>
+-->
       <position force="yes">
         <x>center</x>
         <y>center</y>

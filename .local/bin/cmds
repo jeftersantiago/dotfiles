@@ -2,12 +2,12 @@
 
 # Directories
 alias \
-    pv="~/documents/.private/"                          \
-    sp=$HOME"/documents/.private/scripts"               \
-    dw=$HOME"/downloads"                                \
-    torr=$HOME"/downloads/_torrent/"                    \
-    ag=$HOME"/documents/agenda/"                        \
-    w="~/workspace"                                     \
+    pv="~/Documents/.private/"                          \
+    sp=$HOME"/Documents/.private/scripts"               \
+    dw=$HOME"/Downloads"                                \
+    torr=$HOME"/Downloads/_torrent/"                    \
+    ag=$HOME"/Documents/agenda/"                        \
+    w="~/Workspace"                                     \
 
 # Some commands
 alias \
