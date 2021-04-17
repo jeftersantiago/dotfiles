@@ -39,19 +39,19 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Liberation Mono</name>
-      <size>8</size>
+      <size>9</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
       <name>Liberation Mono</name>
-      <size>8</size>
+      <size>9</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
       <name>Liberation Mono</name>
-      <size>14</size>
+      <size>15</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
@@ -187,6 +187,16 @@
         <command>env GTK_THEME=Raleigh: firefox</command>
       </action>
     </keybind>
+    <keybind key="W-S-c">
+      <action name="Execute">
+        <command>env GTK_THEME=Raleigh: chromium</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-z">
+      <action name="Execute">
+        <command>env GTK_THEME=Raleigh: zoom</command>
+      </action>
+    </keybind>
     <keybind key="A-S-q">
       <action name="Execute">
         <command>qutebrowser</command>
@@ -235,6 +245,11 @@
     <keybind key="W-S-N">
       <action name="Execute">
         <command>st -e newsboat</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-R">
+      <action name="Execute">
+        <command>st -e R</command>
       </action>
     </keybind>
     <keybind key="M-S-P">
