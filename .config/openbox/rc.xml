@@ -189,7 +189,7 @@
     </keybind>
     <keybind key="W-S-c">
       <action name="Execute">
-        <command>env GTK_THEME=Raleigh: chromium</command>
+        <command>env GTK_THEME=Raleigh: google-chrome-stable</command>
       </action>
     </keybind>
     <keybind key="W-S-z">
@@ -759,12 +759,12 @@
     <application class="Emacs">
       <decor>yes</decor>
       <size>
-        <width>50%</width>
+        <width>40%</width>
         <height>70%</height>
       </size>
       <position force="yes">
-        <x>25%</x>
-        <y>0%</y>
+        <x>20%</x>
+        <y>10%</y>
       </position>
     </application>
     <application class="qutebrowser">
