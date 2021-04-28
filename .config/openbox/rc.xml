@@ -39,19 +39,19 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Liberation Mono</name>
-      <size>10</size>
+      <size>14</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
       <name>Liberation Mono</name>
-      <size>10</size>
+      <size>9</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
       <name>Liberation Mono</name>
-      <size>14</size>
+      <size>15</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
@@ -154,7 +154,7 @@
     </keybind>
     <keybind key="W-S-A">
       <action name="Execute">
-        <command>env GTK_THEME=Materia-dark-compact: gnome-clocks</command>
+        <command>env GTK_THEME=Materia-dark-compact: alarm-clock-applet</command>
       </action>
     </keybind>
     <keybind key="A-F10">
@@ -209,7 +209,7 @@
     </keybind>
     <keybind key="A-S-f">
       <action name="Execute">
-        <command>xreader</command>
+        <command>env GTK_THEME=Raleigh: xreader</command>
       </action>
     </keybind>
     <keybind key="W-S-K">
@@ -235,6 +235,11 @@
     <keybind key="W-S-N">
       <action name="Execute">
         <command>st -e newsboat</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-R">
+      <action name="Execute">
+        <command>st -e R</command>
       </action>
     </keybind>
     <keybind key="M-S-P">
@@ -744,12 +749,12 @@
     <application class="Emacs">
       <decor>yes</decor>
       <size>
-        <width>50%</width>
+        <width>40%</width>
         <height>70%</height>
       </size>
       <position force="yes">
-        <x>25%</x>
-        <y>0%</y>
+        <x>20%</x>
+        <y>10%</y>
       </position>
     </application>
     <application class="qutebrowser">

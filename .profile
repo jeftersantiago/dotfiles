@@ -27,6 +27,8 @@ export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | paste -sd ':')"
 # somehow makes the sh shell works on login
 test -f "$HOME"/.shrc && export ENV="$HOME"/.shrc
 
+xmodmap ~/.Xmodmap
+
 #if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 #  exec startx
 #fi

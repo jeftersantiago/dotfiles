@@ -1,12 +1,13 @@
 #!/bin/sh
 #xsetwacom set 9 MapToOutput eDP-1
+xmodmap ~/.Xmodmap
 xrdb ~/.Xresources &
 xset b off &
 xcompmgr &
 dunst &
 tint2 &
-mate-power-manager &
 nitrogen --restore
 blueman-applet &
 nm-applet &
-alarm-clock-applet &
+mate-power-manager &
+startup_applications &
