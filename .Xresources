@@ -1,13 +1,8 @@
 st*termName: xterm-256color
 st*locale: true
 st*scrollBar:false
-<<<<<<< HEAD
 st*geometry: 80x32
 st*faceName:liberation mono:pixelsize=12
-=======
-emacs*geometry: 80x32
-*faceName:liberation mono:pixelsize=14
->>>>>>> 86a857244861bc2600b805f0c5ddfec74cd2dced
 st*alpha:0.98
 
 Alt <Key>C: copy-selection(CLIPBOARD) \n\

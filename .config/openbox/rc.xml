@@ -39,13 +39,13 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Liberation Mono</name>
-      <size>8</size>
+      <size>10</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
       <name>Liberation Mono</name>
-      <size>8</size>
+      <size>10</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
