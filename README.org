@@ -17,29 +17,34 @@
 
 * Openbox - Keyboard shortcuts
 *** Starting applications
-     | Command            | Application        |
-     | Super+Return       | st                 |
-     | Super+Shift+Return | st                 |
-     | Super+Shift+r      | ranger             |
-     | Super+Shift+n      | newsboat           |
-     | Super+Shift+m      | ncmpcpp            |
-     | Super+p            | dmenu              |
-     | Super+Shift+e      | emacs              |
-     | Super+Shift+b      | firefox            |
-     | Super+Shift+d      | discord            |
-     | Super+Shift+       | pulsemixer         |
-     | Alt+Shift+q        | qutebrowser        |
-     | Super+Shift+x      | xournalpp          |
-     | Super+Shift+a      | alarm-clock-applet |
-     | Alt+Shift+r        | redshift           |
+    |--------------------+--------------------|
+    | Command            | Application        |
+    | Super+Return       | st                 |
+    | Super+Shift+Return | st                 |
+    | Super+Shift+r      | ranger             |
+    | Super+Shift+n      | newsboat           |
+    | Super+Shift+m      | ncmpcpp            |
+    | Super+p            | dmenu              |
+    | Super+Shift+e      | emacs              |
+    | Super+Shift+b      | firefox            |
+    | Super+Shift+d      | discord            |
+    | Super+Shift+       | pulsemixer         |
+    | Alt+Shift+q        | qutebrowser        |
+    | Super+Shift+x      | xournalpp          |
+    | Super+Shift+a      | alarm-clock-applet |
+    | Alt+Shift+r        | redshift           |
+    |--------------------+--------------------|
 *** Windows behavior
+    |-------------------+---------------------------------------------------|
     | Command           | Behavior                                          |
     | Super+Shift+h     | Move to left and resize to half of original size  |
     | Super+Shift+l     | Move to right and resize to half of original size |
     | Super+Shift+q     | Close Window                                      |
     | Super+Shift+Space | Fullscreen                                        |
+    |-------------------+---------------------------------------------------|
 
 * Ranger shortcuts
+   |---------+--------------|
    | Command | Go to folder |
    | ch      | home         |
    | rl      | library      |
@@ -48,7 +53,8 @@
    | dv      | videos       |
    | wk      | workspace    |
    | dr      | drive        |
-   | pc      |  pictures |
+   | pc      | pictures     |
+   |---------+--------------|
 * Specifics of each important dotfile
   By specifics i mean "stuff that i will forget"
 ** [[.config/openbox/rc.xml][  rc.xml]]

@@ -6,16 +6,8 @@ xset b off &
 xcompmgr &
 dunst &
 tint2 &
-<<<<<<< HEAD
-mate-power-manager &
-nitrogen --restore
-blueman-applet &
-nm-applet &
-alarm-clock-applet &
-=======
 nitrogen --restore
 blueman-applet &
 nm-applet &
 mate-power-manager &
 startup_applications &
->>>>>>> d92bcf422d61a45bf0a85f08fc24f00a90ce89ed

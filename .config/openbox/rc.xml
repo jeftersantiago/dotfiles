@@ -154,7 +154,7 @@
     </keybind>
     <keybind key="W-S-A">
       <action name="Execute">
-        <command>env GTK_THEME=Materia-dark-compact: gnome-clocks</command>
+        <command>env GTK_THEME=Materia-dark-compact: alarm-clock-applet</command>
       </action>
     </keybind>
     <keybind key="A-F10">
@@ -187,16 +187,6 @@
         <command>env GTK_THEME=Raleigh: firefox</command>
       </action>
     </keybind>
-    <keybind key="W-S-c">
-      <action name="Execute">
-        <command>env GTK_THEME=Raleigh: google-chrome-stable</command>
-      </action>
-    </keybind>
-    <keybind key="W-S-z">
-      <action name="Execute">
-        <command>env GTK_THEME=Raleigh: zoom</command>
-      </action>
-    </keybind>
     <keybind key="A-S-q">
       <action name="Execute">
         <command>qutebrowser</command>
@@ -219,7 +209,7 @@
     </keybind>
     <keybind key="A-S-f">
       <action name="Execute">
-        <command>xreader</command>
+        <command>env GTK_THEME=Raleigh: xreader</command>
       </action>
     </keybind>
     <keybind key="W-S-K">
