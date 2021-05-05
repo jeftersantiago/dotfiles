@@ -2,7 +2,7 @@ st*termName: xterm-256color
 st*locale: true
 st*scrollBar:false
 st*geometry: 80x32
-st*faceName:liberation mono:pixelsize=29
+st*faceName:liberation mono:pixelsize=25
 st*alpha:0.9
 
 Alt <Key>C: copy-selection(CLIPBOARD) \n\
