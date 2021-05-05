@@ -1,15 +1,14 @@
 #!/bin/sh
-#xsetwacom set 9 MapToOutput eDP-1
+xsetwacom set 20 MapToOutput eDP-1
 xmodmap ~/.Xmodmap
 xrdb ~/.Xresources &
 xset b off &
 xcompmgr &
 dunst &
 tint2 &
-nitrogen --restore
 blueman-applet &
 nm-applet &
 mate-power-manager &
-xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1280x0 --rotate normal --output HDMI-1 --mode 1280x1024 --pos 0x56 --rotate normal
-
+#xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1280x0 --rotate normal --output HDMI-1 --mode 1280x1024 --pos 0x56 --rotate normal
+nitrogen --restore
 

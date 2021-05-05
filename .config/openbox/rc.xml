@@ -39,13 +39,13 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Liberation Mono</name>
-      <size>14</size>
+      <size>15</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
       <name>Liberation Mono</name>
-      <size>9</size>
+      <size>13</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
@@ -114,9 +114,10 @@
     <moveButton>Middle</moveButton>
   </dock>
   <keyboard>
+    <!-- sticking my table to just one screen -->
     <keybind key="W-t">
       <action name="Execute">
-        <command>dtest</command>
+        <command>xsetwacom set 20 MapToOutput eDP-1</command>
       </action>
     </keybind>
     <keybind key="W-F11">
@@ -257,7 +258,7 @@
         <command>st -e ncmpcpp</command>
       </action>
     </keybind>
-    <keybind key="W-S-S">
+    <keybind key="W-S-s">
       <action name="Execute">
         <command>spotify-tray</command>
       </action>
