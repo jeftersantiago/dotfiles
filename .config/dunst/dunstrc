@@ -18,7 +18,7 @@
     separator_color = "#060E10"
     sort = yes
     idle_threshold = 120
-    font = Monospace 8, Liberation Mono  10
+    font = Monospace 28, Monospace  25
     line_height = 2
     markup = full
     format = "<b>%s</b>\n%b\n\n"

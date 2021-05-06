@@ -225,7 +225,7 @@
     </keybind>
     <keybind key="W-p">
       <action name="Execute">
-        <command>dmenu_run -fn "Source Code Pro:size=15"</command>
+        <command>dmenu_run -fn "monospaced:size=25"</command>
       </action>
     </keybind>
     <keybind key="M-S-N">
