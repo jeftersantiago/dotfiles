@@ -9,6 +9,8 @@ tint2 &
 blueman-applet &
 nm-applet &
 mate-power-manager &
-xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1280x0 --rotate normal --output HDMI-1 --mode 1280x1024 --pos 0x56 --rotate normal
+#xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1280x0 --rotate normal --output HDMI-1 --mode 1280x1024 --pos 0x56 --rotate normal
 nitrogen --restore
 
+
+startup_apps &
