@@ -1,0 +1,15 @@
+#+LATEX_HEADER:\input{/home/jefter66/Documents/TeX/header.tex}
+#+OPTIONS: toc:nil num:nil
+\ntitle{Exemplo}{Jefter Santiago}{}{}{07/05/2021 \\ São Paulo}
+* Header 1
+  \blindtext \blindtext \blindtext
+  \blindtext \blindtext \blindtext
+**  Header 2
+   \blindtext \blindtext \blindtext
+   \blindtext \blindtext \blindtext
+   \blindtext \blindtext \blindtext
+*** Header 3
+    \blindtext \blindtext \blindtext
+    \blindtext \blindtext \blindtext
+
+
