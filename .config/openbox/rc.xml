@@ -751,11 +751,11 @@
       <decor>yes</decor>
       <size>
         <width>40%</width>
-        <height>70%</height>
+        <height>50%</height>
       </size>
       <position force="yes">
-        <x>20%</x>
-        <y>10%</y>
+        <x>10%</x>
+        <y>5%</y>
       </position>
     </application>
     <application class="qutebrowser">
