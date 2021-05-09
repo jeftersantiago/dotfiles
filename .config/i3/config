@@ -115,8 +115,8 @@ bindsym  $alt+$left     resize grow width 10 px or 10 ppt
 # this is an substitution for tilda or guake
 
 for_window  [class="^.*"]  floating enable
-#for_window [class="^.*"]  resize set 1000 800
 for_window  [class="^.*"]  move position center
+for_window  [class="^.*"]  border pixel 1
 
 for_window [class="Emacs"] floating disable
 for_window [class="St"]    floating disable
@@ -130,11 +130,11 @@ bindsym $alt+minus   scratchpad show;
 
 
 set $indicator-color		#000000
-set $bg-color		 	    #000000
+set $bg-color		        #000000
 set $active-bg-color		#000000
 set $active-text-color		#ffffff
 set $inactive-bg-color	 	#181818
-set $text-color			    #ffffff
+set $text-color		        #ffffff
 set $inactive-text-color	#ffffff
 set $urgent-bg-color		#ef2929
 
@@ -170,6 +170,6 @@ bindsym $mod+Shift+x    exec    env GTK_THEME=Raleigh: xournalpp
 bindsym $mod+Shift+i    exec    keepassxc
 bindsym $alt+Shift+n    exec    nitrogen
 bindsym $mod+Shift+s    exec    spotify-tray
-bindsym $mod+Shift+v      exec    pavucontrol
+bindsym $mod+Shift+v    exec    pavucontrol
 
 

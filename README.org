@@ -1,7 +1,7 @@
 #+TITLE: Jefter's Dotfiles
 #+STARTUP: shrink noalign
 * My extremely minimalist system!
-  *[[https://archlinux.org/download/][Arch Linux]]* 🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
+  *[[https://archlinux.org/download/][Arch Linux]]* 🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]* , *[[https://i3wm.org/][i3wm]]*
 * Applications
   |---------------------+----------------------------------------+---------------------------+-------------------------|
   | *Required*          | *Customized*                           | *System status and tools* | *Themes and multimedia* |
@@ -15,7 +15,7 @@
   | xcompmgr            | [[.config/dunst/dunstrc][dunst]]                                  | redshift                  | [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]                 |
   |---------------------+----------------------------------------+---------------------------+-------------------------|
 
-* Openbox - Keyboard shortcuts
+* Keyboard shortcuts
 *** Starting applications
     |--------------------+--------------------|
     | Command            | Application        |

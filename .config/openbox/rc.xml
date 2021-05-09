@@ -23,7 +23,7 @@
   </placement>
   <theme>
     <name>Minstral</name>
-    <cornerRadius>8</cornerRadius>
+    <cornerRadius>15</cornerRadius>
     <titleLayout>NLDIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most"once.
@@ -186,6 +186,11 @@
     <keybind key="W-S-f">
       <action name="Execute">
         <command>env GTK_THEME=Raleigh: firefox</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-c">
+      <action name="Execute">
+        <command>brave</command>
       </action>
     </keybind>
     <keybind key="A-S-q">
