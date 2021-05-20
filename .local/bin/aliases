@@ -8,9 +8,9 @@ alias \
     em=$HOME"/.emacs.d/"				\
 
 alias \
-         v="vim "                                       \
-         vmi="vim "                                     \
-         vim="vim "                                     \
+         v="vi "                                       \
+         vmi="vi "                                     \
+#         vim="vi "                                     \
 
 alias\
      	mkdir="mkdir -vp"		              	\

@@ -36,4 +36,3 @@ autocmd FileType tex nnoremap <leader>c :! pdflatex %<CR><CR>
 
 " open current tex file in mupdf
  autocmd FileType tex nnoremap <leader>o :! mupdf $(echo % \| sed 's/tex$/pdf/') & disown <CR><CR>
-

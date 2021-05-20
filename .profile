@@ -2,8 +2,9 @@
 
 # default applications
 export READER="xreader"
-export BROWSER="firefox"
+export BROWSER="brave"
 export VIEWER="mirage"
+export TERMINAL="st"
 
 # language
 #export LANG="fr_FR.UTF-8"

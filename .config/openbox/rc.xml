@@ -23,7 +23,6 @@
   </placement>
   <theme>
     <name>Minstral</name>
-    <cornerRadius>15</cornerRadius>
     <titleLayout>NLDIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most"once.
@@ -84,7 +83,7 @@
       <name>4</name>
       <name>5</name>
     </names>
-    <popupTime>875</popupTime>
+    <popupTime>0</popupTime>
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
@@ -106,7 +105,7 @@
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
-    <stacking>Above</stacking>
+    <stacking>Below</stacking>
     <direction>Horizontal</direction>
     <autoHide>no</autoHide>
     <hideDelay>300</hideDelay>
@@ -175,7 +174,7 @@
     </keybind>
     <keybind key="W-S-R">
       <action name="Execute">
-        <command>st -e ranger</command>
+        <command>st ranger</command>
       </action>
     </keybind>
     <keybind key="W-R">
@@ -190,7 +189,7 @@
     </keybind>
     <keybind key="W-S-c">
       <action name="Execute">
-        <command>brave</command>
+        <command>thunar</command>
       </action>
     </keybind>
     <keybind key="A-S-q">
@@ -210,7 +209,7 @@
     </keybind>
     <keybind key="W-S-b">
       <action name="Execute">
-        <command>thunar</command>
+        <command>brave</command>
       </action>
     </keybind>
     <keybind key="A-S-f">
@@ -240,17 +239,17 @@
     </keybind>
     <keybind key="W-S-N">
       <action name="Execute">
-        <command>st -e newsboat</command>
+        <command>st newsboat</command>
       </action>
     </keybind>
     <keybind key="A-S-R">
       <action name="Execute">
-        <command>st -e R</command>
+        <command>st R</command>
       </action>
     </keybind>
     <keybind key="M-S-P">
       <action name="Execute">
-        <command>st -e pulsemixer</command>
+        <command>st pulsemixer</command>
       </action>
     </keybind>
     <keybind key="M-S-V">
@@ -260,12 +259,7 @@
     </keybind>
     <keybind key="W-S-m">
       <action name="Execute">
-        <command>st -e ncmpcpp</command>
-      </action>
-    </keybind>
-    <keybind key="W-S-s">
-      <action name="Execute">
-        <command>spotify-tray</command>
+        <command>st ncmpcpp</command>
       </action>
     </keybind>
     <keybind key="W-S-E">
@@ -742,7 +736,7 @@
       </position>
     </application>
     <application class="TelegramDesktop">
-      <decor>yes</decor>
+      <decor>no</decor>
       <size>
         <width>40%</width>
         <height>70%</height>
