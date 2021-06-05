@@ -430,22 +430,40 @@
       <action name="Iconify"/>
     </keybind>
     <!-- move to the left side-->
-    <keybind key="W-S-h">
+    <keybind key="W-h">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>65%</width>
+        <width>60%</width>
         <height>100%</height>
       </action>
     </keybind>
-    <keybind key="W-S-l">
+    <keybind key="W-l">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
-        <width>35%</width>
+        <width>40%</width>
         <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="W-k">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>0</y>
+        <width>40%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-j">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>-0</y>
+        <width>40%</width>
+        <height>50%</height>
       </action>
     </keybind>
     <keybind key="A-space">
@@ -718,18 +736,16 @@
   </menu>
   <applications>
     <application class="*">
+      <decor>no</decor>
       <position force="no">
         <x>center</x>
         <y>center</y>
       </position>
     </application>
-    <application class="discord">
-      <decor>yes</decor>
-      <!--      <size>
-        <width>50%</width>
-        <height>80%</height>
-      </size>
- -->
+
+<!--      
+-->
+      <!--
       <position force="yes">
         <x>center</x>
         <y>center</y>
@@ -746,18 +762,7 @@
         <y>center</y>
       </position>
     </application>
-    <application class="Emacs">
-      <decor>yes</decor>
-      <size>
-        <width>40%</width>
-        <height>50%</height>
-      </size>
-      <position force="yes">
-        <x>10%</x>
-        <y>5%</y>
-      </position>
-    </application>
-    <application class="qutebrowser">
+   <application class="qutebrowser">
       <decor>no</decor>
       <size>
         <width>60%</width>
@@ -834,18 +839,21 @@
         <y>center</y>
       </position>
     </application>
+    -->
+<!-- 
     <application class="firefox">
       <decor>no</decor>
-      <!--      <size>
+     <size>
         <width>100%</width>
         <height>100%</height>
       </size>
--->
       <position force="yes">
         <x>center</x>
         <y>center</y>
       </position>
     </application>
+
+-->
     <!--
     <decor>yes</decor>
     <shade>no</shade>
@@ -869,6 +877,34 @@
     <maximized>true</maximized>
   </application>
 -->
+    <application class="Emacs">
+      <decor>yes</decor>
+      <size>
+        <width>40%</width>
+        <height>50%</height>
+      </size>
+      <position force="yes">
+        <x>10%</x>
+        <y>5%</y>
+      </position>
+    </application>
+     <application class="discord">
+      <decor>yes</decor>
+      <size>
+        <width>50%</width>
+        <height>80%</height>
+      </size>
+      </application>
+      <application class="Xreader">
+      <decor>yes</decor>
+      <size>
+        <width>50%</width>
+        <height>80%</height>
+      </size>
+      </application>
+ 
+
+
   </applications>
   <resistance>
     <strength>10</strength>

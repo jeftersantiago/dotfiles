@@ -35,4 +35,4 @@ autocmd BufRead,BufNewFile *.tex set filetype=tex
 autocmd FileType tex nnoremap <leader>c :! pdflatex %<CR><CR>
 
 " open current tex file in mupdf
- autocmd FileType tex nnoremap <leader>o :! mupdf $(echo % \| sed 's/tex$/pdf/') & disown <CR><CR>
+ autocmd FileType tex nnoremap <leader>o :! xreader $(echo % \| sed 's/tex$/pdf/') & disown <CR><CR>

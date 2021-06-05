@@ -5,8 +5,8 @@ xrdb ~/.Xresources &
 xset b off &
 xcompmgr &
 dunst &
-tint2 &
 blueman-applet &
+tint2 &
 nm-applet &
 mate-power-manager &
 nitrogen --restore
