@@ -2,7 +2,7 @@ st*locale: true
 st*scrollBar:false
 st*geometry: 80x32
 *faceName:Source Code Pro:pixelsize=23
-st*alpha:0.98
+st*alpha:0.9
 
 Alt <Key>C: copy-selection(CLIPBOARD) \n\
 

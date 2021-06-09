@@ -1,7 +1,7 @@
 #+TITLE: Jefter's Dotfiles
 #+STARTUP: shrink noalign
 * My extremely minimalist system!
-  *[[https://archlinux.org/download/][Arch Linux]]* 🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]* , *[[https://i3wm.org/][i3wm]]*
+  *[[https://archlinux.org/download/][Arch Linux]]* 🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
 * Applications
   |---------------------+----------------------------------------+---------------------------+-------------------------|
   | *Required*          | *Customized*                           | *System status and tools* | *Themes and multimedia* |
