@@ -1,17 +1,28 @@
 #!/bin/sh
+
+# starting applications 
+
+xcompmgr &
+dunst &
+tint2 &
+mate-power-manager &
+pulseaudio &
+nitrogen --restore
+
+# commands 
 xsetwacom set 20 MapToOutput eDP-1
 xmodmap ~/.Xmodmap
 xrdb ~/.Xresources &
 xset b off &
-xcompmgr &
-dunst &
-blueman-applet &
-tint2 &
+
+# applets 
+
 nm-applet &
-mate-power-manager &
-nitrogen --restore
-touchpad &
-#alsamixer &
+pa-applet & 
+blueman-applet &
+
+
+# scripts
 startup_apps &
-pulseaudio &
+touchpad &
 
