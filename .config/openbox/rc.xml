@@ -37,14 +37,14 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Inconsolata</name>
-      <size>10</size>
+      <name>Source Code Pro</name>
+      <size>9</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Inconsolata</name>
-      <size>11</size>
+      <name>Source Code Pro</name>
+      <size>9</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
