@@ -5,11 +5,13 @@ xrdb ~/.Xresources &
 xset b off &
 xcompmgr &
 dunst &
-pulseaudio & 
 blueman-applet &
 tint2 &
 nm-applet &
 mate-power-manager &
 nitrogen --restore
-xinput set-prop 10 331 1 & 
+touchpad &
+#alsamixer &
 startup_apps &
+pulseaudio &
+

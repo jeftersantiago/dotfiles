@@ -1,16 +1,16 @@
 st*locale: true
 st*scrollBar:false
 st*geometry: 80x32
-*faceName:Source Code Pro:pixelsize=23
-st*alpha:0.9
+*faceName:Source Code Pro:pixelsize=13
+st*alpha:0.99
 
 Alt <Key>C: copy-selection(CLIPBOARD) \n\
 
 *reverseVideo: true
 
 *.cursorColor:  #C712F2
-!black
-*color0:            #393939
+!!black
+!*color0:            #393939
 *color8:            #474747
 !red
 *color1:            #af005f
@@ -33,3 +33,20 @@ Alt <Key>C: copy-selection(CLIPBOARD) \n\
 !*white
 *color7:            #dddddd
 *color15:           #dddddd
+
+
+XTerm.vt100.locale: true
+XTerm.vt100.utf8: true
+
+! Making tab works
+XTerm.vt100.metaSendsEscape: true
+
+
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+
+
+XTerm.vt100.translations: #override \n\
+    Ctrl <Key>M: maximize() \n\
+    Ctrl <Key>R: restore()
+
