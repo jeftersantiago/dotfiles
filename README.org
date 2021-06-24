@@ -1,4 +1,4 @@
-#+TITLE: Jefter's Dotfiles
+#+TITLE: Dotfiles
 #+STARTUP: shrink noalign
 * My extremely minimalist system!
   *[[https://archlinux.org/download/][Arch Linux]]* 🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
