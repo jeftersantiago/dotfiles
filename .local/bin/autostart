@@ -1,7 +1,12 @@
 #!/bin/sh
+monitors &
 
-# starting applications 
+#xsetwacom set 21 MapToOutput eDP-1
 
+# status bar
+dwm-bar &
+
+# starting applications
 xcompmgr &
 dunst &
 tint2 &
@@ -9,20 +14,20 @@ mate-power-manager &
 pulseaudio &
 nitrogen --restore
 
-# commands 
+# commands
 xsetwacom set 20 MapToOutput eDP-1
 xmodmap ~/.Xmodmap
 xrdb ~/.Xresources &
 xset b off &
 
-# applets 
+# applets
 
 nm-applet &
-pa-applet & 
+pa-applet &
 blueman-applet &
 
 
 # scripts
-startup_apps &
+#startup_apps &
 touchpad &
 

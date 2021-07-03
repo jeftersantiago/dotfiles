@@ -19,7 +19,7 @@
     <policy>UnderMouse</policy>
     <center>yes</center>
     <monitor>Mouse</monitor>
-    <primaryMonitor>Active</primaryMonitor>
+    <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
     <name>Minstral</name>
@@ -37,37 +37,37 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Source Code Pro</name>
+      <name>Noto Sans</name>
       <size>9</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Source Code Pro</name>
+      <name>Noto Sans</name>
       <size>9</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>Inconsolata</name>
+      <name>Noto Sans</name>
       <size>11</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>Inconsolata</name>
+      <name>Noto Sans</name>
       <size>11</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Inconsolata</name>
+      <name>Noto Sans</name>
       <size>11</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Inconsolata</name>
+      <name>Noto Sans</name>
       <size>11</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
@@ -194,7 +194,7 @@
     </keybind>
     <keybind key="W-S-c">
       <action name="Execute">
-        <command>env thunar</command>
+        <command>nautilus</command>
       </action>
     </keybind>
     <keybind key="A-S-q">
@@ -207,9 +207,19 @@
         <command>discord</command>
       </action>
     </keybind>
+    <keybind key="W-S-S">
+      <action name="Execute">
+        <command>spotify-tray</command>
+      </action>
+    </keybind>
     <keybind key="W-S-T">
       <action name="Execute">
         <command>telegram-desktop</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-W">
+      <action name="Execute">
+        <command>whatsapp-nativefier-dark</command>
       </action>
     </keybind>
     <keybind key="W-S-b">
@@ -219,7 +229,7 @@
     </keybind>
     <keybind key="A-S-f">
       <action name="Execute">
-        <command>env GTK_THEME=Raleigh: xreader</command>
+        <command>env GTK_THEME=Materia-dark-compact: evince</command>
       </action>
     </keybind>
     <keybind key="W-S-K">
@@ -244,7 +254,7 @@
     </keybind>
     <keybind key="W-S-N">
       <action name="Execute">
-        <command>xterm -e newsboat</command>
+        <command>st -e newsboat</command>
       </action>
     </keybind>
     <keybind key="A-S-R">
