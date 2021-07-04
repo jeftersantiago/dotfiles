@@ -15,7 +15,7 @@ colorscheme elflord
 
 " changing themes
 nmap<C-l> :colorscheme elflord <CR>
-nmap<C-d> :colorscheme darkness<CR>
+"nmap<C-d> :colorscheme darkness<CR>
 
 " save/leave file
 map<leader>w :w<CR>

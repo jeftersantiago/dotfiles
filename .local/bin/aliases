@@ -8,8 +8,8 @@ alias \
     em=$HOME"/.emacs.d/"				\
 
 alias \
-         v="vi "                                       \
-         vmi="vi "                                     \
+         v="vim "                                       \
+         vmi="vim "                                     \
 #         vim="vi "                                     \
 
 alias\
