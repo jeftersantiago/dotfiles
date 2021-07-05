@@ -1,7 +1,7 @@
 #+TITLE: Dotfiles
 #+STARTUP: shrink noalign
 * My extremely minimalist system!
-  *[[https://archlinux.org/download/][Arch Linux]]* 🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
+  *[[https://archlinux.org/download/][Arch Linux]]* 🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*  🤝  *i3-gaps*
 * Applications
   |---------------------+----------------------------------------+---------------------------+-------------------------|
   | *Required*          | *Customized*                           | *System status and tools* | *Themes and multimedia* |
@@ -14,8 +14,9 @@
   | dmenu               | [[.config/tint2/tint2rc][tint2]]                                  | pulsemixer                | [[https://aur.archlinux.org/packages/mirage/][mirage]]                  |
   | xcompmgr            | [[.config/dunst/dunstrc][dunst]]                                  | redshift                  | [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]                 |
   |---------------------+----------------------------------------+---------------------------+-------------------------|
-
 * Keyboard shortcuts
+** i3-gaps
+** Openbox
 *** Starting applications
     |--------------------+--------------------|
     | Command            | Application        |
@@ -59,7 +60,7 @@
    |---------+--------------|
 * Specifics of each important dotfile
   By specifics i mean "stuff that i will forget"
-** [[.config/openbox/rc.xml][  rc.xml]]
+** [[.config/openbox/rc.xml][rc.xml]]
     Openbox configuration.
     I don't like dark themes in every application, so, in the
     shortcuts for some of them i run a GTK command to make it run
@@ -68,7 +69,7 @@
 #+begin_src shell
 env GTK_THEME=light-theme: application
 #+end_src
-**  [[.profile][.profile]]
+** [[.profile][.profile]]
    This line is used to set my personal scripts in the PATH,  this way i can
    run them without specifying the absolute path
    #+begin_src shell

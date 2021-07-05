@@ -124,8 +124,10 @@
         <command>xsetwacom set 20 MapToOutput eDP-1</command>
       </action>
     </keybind>
-    <keybind key="W-F11">
-      <action name="Reconfigure"/>
+    <keybind key="Home">
+      <action name="Execute">
+      <command>openbox --reconfigure</command>
+      </action>
     </keybind>
     <keybind key="Print">
       <action name="Execute">
@@ -445,21 +447,21 @@
       <action name="Iconify"/>
     </keybind>
     <!-- move to the left side-->
-    <keybind key="W-h">
+    <keybind key="W-S-h">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>60%</width>
+        <width>50%</width>
         <height>100%</height>
       </action>
     </keybind>
-    <keybind key="W-l">
+    <keybind key="W-S-l">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
-        <width>40%</width>
+        <width>50%</width>
         <height>100%</height>
       </action>
     </keybind>

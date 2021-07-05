@@ -7,7 +7,8 @@ set $down  j
 set $left  h
 set $right l
 
-font pango:Source Code Pro 10
+
+font pango:Font Awesome 10
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
@@ -132,20 +133,22 @@ gaps outer 2
 
 # Move the dropdow window to scratchpad (aka hides)
 
-#for_window  [class="^.*"]  floating enable
+#for_window [class="^.*"]  floating enable
 for_window  [class="^.*"]  move position center
 for_window  [class="^.*"]  border pixel 2
 
-for_window [class="Emacs"] floating disable
-for_window [class="St"]    floating disable
-for_window [class="mate-screenshot"] floating disable
+for_window [class="Emacs"]           floating disable
+for_window [class="mate-screenshot"] floating enable
+
+for_window [class="St"]  floating enable
+
 
 bindsym $mod+minus   move scratchpad;
 bindsym $alt+minus   scratchpad show;
 
 set $indicator-color		#000000
 set $bg-color		        #1C5C81
-set $active-bg-color	        #1C5C81
+set $active-bg-color	    #1C5C81
 set $active-text-color		#ffffff
 set $inactive-bg-color	 	#181818
 set $text-color		        #ffffff
@@ -172,7 +175,6 @@ client.urgent		$urgent-bg-color	$urgent-bg-color	$text-color		$indicator-color
 #        urgent_workspace        $urgent-bg-color        $urgent-bg-color        $text-color
 #        }
 #}
-
 
 bindsym $mod+Shift+Return exec  $term
 bindsym $mod+Return     exec    $term
