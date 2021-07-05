@@ -9,7 +9,8 @@ dwm-bar &
 # starting applications
 xcompmgr &
 dunst &
-#xfce4-panel &  
+#xfce4-panel &
+tint2 &
 mate-power-manager &
 pulseaudio &
 nitrogen --restore

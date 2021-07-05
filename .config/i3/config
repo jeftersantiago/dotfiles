@@ -38,10 +38,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+h move left 40
-bindsym $mod+Shift+j move down 40
-bindsym $mod+Shift+k move up   40
-bindsym $mod+Shift+l move right 40
+bindsym $mod+Shift+h move left 50
+bindsym $mod+Shift+j move down 50
+bindsym $mod+Shift+k move up 50
+bindsym $mod+Shift+l move right 50
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -50,7 +50,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-#bindsym $mod+h split h
+bindsym $mod+b split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -120,11 +120,11 @@ bindsym $mod+Shift+F11 restart
 bindsym $mod+Shift+F12 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 
-bindsym  $alt+$right    resize shrink width 50 px or 50 ppt
-bindsym  $alt+$up       resize grow height  50 px or 50 ppt
-bindsym  $alt+$down     resize shrink height 50 px or 50 ppt
-bindsym  $alt+$left     resize grow width 50 px or 50 ppt
+bindsym  $alt+$right    resize shrink width  5 px or 5 ppt
+bindsym  $alt+$left     resize grow width    5 px or 5 ppt
 
+bindsym  $alt+$up      resize grow height   35 px or 35 ppt ; resize grow width  35 px or 35 ppt
+bindsym  $alt+$down    resize shrink height 35 px or 34 ppt ; resize shrink width 35 px or 35 ppt
 
 
 gaps inner 2
@@ -151,6 +151,7 @@ set $inactive-bg-color	 	#181818
 set $text-color		        #ffffff
 set $inactive-text-color	#ffffff
 set $urgent-bg-color		#ef2929
+#set $transparent #090a1733
 
 # window colors		border			background		text			indicator
 client.focused		$bg-color		$active-bg-color	$active-text-color	$indicator-color
@@ -158,19 +159,19 @@ client.unfocused	$inactive-bg-color	$inactive-bg-color	$inactive-text-color	$ind
 client.focused_inactive	$inactive-bg-color	$inactive-bg-color	$inactive-text-color	$indicator-color
 client.urgent		$urgent-bg-color	$urgent-bg-color	$text-color		$indicator-color
 
-
-bar {
-        font xft: Source Code Pro Bold 9
-        position bottom
-        status_command i3blocks -c ~/.config/i3/blocks
-        colors {
-        #                       border                  background              text
-        focused_workspace       $bg-color               $bg-color               $text-color
-        inactive_workspace      $inactive-bg-color      $inactive-bg-color      $inactive-text-color
-        urgent_workspace        $urgent-bg-color        $urgent-bg-color        $text-color
-
-        }
-}
+#bar {
+#        font xft: Source Code Pro Bold 9
+#        position top #bottom
+#        i3bar_command i3bar -t
+#        status_command i3blocks -c ~/.config/i3/blocks
+#        colors {
+#        background $bg-color
+#                                border                  background              text
+#        focused_workspace       $bg-color               $bg-color               $text-color
+#        inactive_workspace      $inactive-bg-color      $inactive-bg-color      $inactive-text-color
+#        urgent_workspace        $urgent-bg-color        $urgent-bg-color        $text-color
+#        }
+#}
 
 
 bindsym $mod+Shift+Return exec  $term
@@ -198,3 +199,6 @@ bindsym $mod+Shift+i    exec    keepassxc
 bindsym $alt+Shift+n    exec    nitrogen
 bindsym $mod+Shift+s    exec    spotify-tray
 bindsym $mod+Shift+v    exec    pavucontrol
+
+
+
