@@ -74,13 +74,13 @@
     </font>
   </theme>
   <desktops>
-    <number>5</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>1</name>
-      <name>2</name>
-      <name>3</name>
-      <name>4</name>
+      <name>Gravitational</name>
+      <name>Eletromagnetic</name>
+      <name>Strong</name>
+      <name>Weak</name>
       <name>5</name>
       <name>6</name>
       <name>7</name>
@@ -126,7 +126,7 @@
     </keybind>
     <keybind key="Home">
       <action name="Execute">
-      <command>openbox --reconfigure</command>
+        <command>openbox --reconfigure</command>
       </action>
     </keybind>
     <keybind key="Print">
@@ -231,7 +231,7 @@
     </keybind>
     <keybind key="A-S-f">
       <action name="Execute">
-        <command>env GTK_THEME=Materia-dark-compact: evince</command>
+        <command>env GTK_THEME=Materia-light-compact: xreader</command>
       </action>
     </keybind>
     <keybind key="W-S-K">
@@ -748,7 +748,7 @@
         <y>center</y>
       </position>
     </application>
-    <application class="qutebrowser">
+    <application class="Emacs">
       <decor>no</decor>
       <position force="no">
         <x>center</x>

@@ -1,7 +1,7 @@
 #+TITLE: Dotfiles
 #+STARTUP: shrink noalign
 * My extremely minimalist system!
-  *[[https://archlinux.org/download/][Arch Linux]]* 🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*  
+  *[[https://archlinux.org/download/][Arch Linux]]* 🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
 * Applications
   |---------------------+----------------------------------------+---------------------------+-------------------------|
   | *Required*          | *Customized*                           | *System status and tools* | *Themes and multimedia* |
@@ -15,7 +15,6 @@
   | xcompmgr            | [[.config/dunst/dunstrc][dunst]]                                  | redshift                  | [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]                 |
   |---------------------+----------------------------------------+---------------------------+-------------------------|
 * Keyboard shortcuts
-** i3-gaps
 ** Openbox
 *** Starting applications
     |--------------------+--------------------|
@@ -27,7 +26,8 @@
     | Super+Shift+m      | ncmpcpp            |
     | Super+p            | dmenu              |
     | Super+Shift+e      | emacs              |
-    | Super+Shift+b      | firefox            |
+    | Super+Shift+f      | firefox            |
+    | Super+Shift+b      | brave              |
     | Super+Shift+d      | discord            |
     | Super+Shift+       | pulsemixer         |
     | Alt+Shift+q        | qutebrowser        |
@@ -61,13 +61,13 @@
 * Specifics of each important dotfile
   By specifics i mean "stuff that i will forget"
 ** [[.config/openbox/rc.xml][rc.xml]]
-    Openbox configuration.
-    I don't like dark themes in every application, so, in the
-    shortcuts for some of them i run a GTK command to make it run
-    in a light theme, even tho my system has others in dark themes.
-    The command added to the shortcuts is
+   Openbox configuration.
+   I don't like dark themes in every application, so, in the
+   shortcuts for some of them i run a GTK command to make it run
+   in a light theme, even tho my system has others in dark themes.
+   The command added to the shortcuts is
 #+begin_src shell
-env GTK_THEME=light-theme: application
+  env GTK_THEME=light-theme: application
 #+end_src
 ** [[.profile][.profile]]
    This line is used to set my personal scripts in the PATH,  this way i can
@@ -94,6 +94,7 @@ env GTK_THEME=light-theme: application
    the rest is in the [[https://github.com/jefter66/st][st]] repository.
 ** [[.themes/Minstral/openbox-3/themerc][themerc]]
    - Black when active and gray when it isn't
-   - The most thinner possible
-   - This is it
+   - The most thinner window bar possible
+ 
+
      
