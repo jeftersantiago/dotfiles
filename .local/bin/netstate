@@ -1,8 +1,0 @@
-#!/bin/sh
-# shutdown/up interfaces
-case $1 in
-        1) sudo ip link set enp0s25 down && sudo ip link set wlp3s0 down;;
-        2) sudo ip link set enp0s25 up && sudo ip link set wlp3s0 up ;;
-esac
-
-

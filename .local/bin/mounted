@@ -1,8 +1,0 @@
-#!/bin/sh
-case $BLOCK_BUTTON in
-      1) "$TERMINAL" -e ranger ~/drive & ;;
-esac
-
-if mount | grep ~/drive > /dev/null; then
-    echo "💾"
-fi
