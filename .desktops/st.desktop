@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=St
+Comment=st
+Exec=st
+Icon=terminal
+Terminal=false
+StartupNotify=false
+Categories=Application;

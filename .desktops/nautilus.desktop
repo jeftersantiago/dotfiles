@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name[pt_BR]=Executar software
+Name=Run Software
+TryExec=nautilus-autorun-software
+Exec=nautilus %u
+Icon=nautilus
+Terminal=false
+StartupNotify=true
+Type=Application
+MimeType=x-content/unix-software;

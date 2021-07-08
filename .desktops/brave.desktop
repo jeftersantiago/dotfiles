@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Name=Brave
+GenericName=Web Browser
+Exec=brave --incognito
+Icon=brave
+MimeType=x-scheme-handler/unknown;x-scheme-handler/about;text/html;text/xml;application/xhtml_xml;image/webp;x-scheme-handler/http;x-scheme-handler/https;

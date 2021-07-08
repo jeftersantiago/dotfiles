@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Notion
+Comment=Notion in shared Electron runtime
+Exec=notion-app-nativefier
+Icon=notion
+Terminal=false
+StartupNotify=false
+Categories=Network;Office;ProjectManagement;Utility;TextTools;;
