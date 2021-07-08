@@ -281,9 +281,7 @@ current buffer's, reload dir-locals."
 (use-package auto-complete
   :ensure t
   :init
-  (progn
-    (ac-config-default)
-    (auto-complete-mode t)))
+ (global-auto-complete-mode))
 
 (use-package ace-window
   :ensure t

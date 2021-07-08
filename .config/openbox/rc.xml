@@ -22,7 +22,7 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>Nightmare</name>
+    <name>Minstral</name>
     <titleLayout>NLDIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most"once.
@@ -38,14 +38,14 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Noto Sans</name>
-      <size>9</size>
-      <weight>Normal</weight>
+      <size>8</size>
+      <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
       <name>Noto Sans</name>
-      <size>9</size>
-      <weight>Normal</weight>
+      <size>8</size>
+      <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">

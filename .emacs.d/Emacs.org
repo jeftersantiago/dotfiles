@@ -160,7 +160,6 @@ Add a new line below the current line
 
 
 
-
 * Code
 ** Ivy
 #+begin_src emacs-lisp 
@@ -379,9 +378,7 @@ Add a new line below the current line
   (use-package auto-complete
     :ensure t
     :init
-    (progn
-      (ac-config-default)
-      (auto-complete-mode t)))
+   (global-auto-complete-mode))
 #+end_src
 global
 
@@ -408,9 +405,9 @@ global
 * External
 Elcord			
 #+begin_src emacs-lisp
-(use-package elcord
-  :ensure t
-  :config
-  (setq elcord-refresh-rate 5)
-  (elcord-mode))
+   (use-package elcord
+     :ensure t
+     :config
+     (setq elcord-refresh-rate 5)
+     (elcord-mode))
 #+end_src
