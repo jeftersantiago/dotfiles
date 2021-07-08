@@ -1,6 +1,6 @@
 #+TITLE: Dotfiles
 #+STARTUP: shrink noalign
-* My extremely minimalist system!
+* My system configurations.
   *[[https://archlinux.org/download/][Arch Linux]]* 🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
 * Applications
   |---------------------+----------------------------------------+---------------------------+-------------------------|
@@ -14,7 +14,7 @@
   | dmenu               | [[.config/tint2/tint2rc][tint2]]                                  | pulsemixer                | [[https://aur.archlinux.org/packages/mirage/][mirage]]                  |
   | xcompmgr            | [[.config/dunst/dunstrc][dunst]]                                  | redshift                  | [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]                 |
   |---------------------+----------------------------------------+---------------------------+-------------------------|
-* [[.emacs.d/Emacs.org][Emacs]] 
+* [[.emacs.d/Emacs.org][Emacs]]
   My emacs configuration
 * Keyboard shortcuts
 ** Openbox
@@ -97,6 +97,6 @@
 ** [[.themes/Minstral/openbox-3/themerc][themerc]]
    - Black when active and gray when it isn't
    - The most thinner window bar possible
- 
 
-     
+
+
