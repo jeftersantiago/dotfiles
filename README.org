@@ -14,6 +14,8 @@
   | dmenu               | [[.config/tint2/tint2rc][tint2]]                                  | pulsemixer                | [[https://aur.archlinux.org/packages/mirage/][mirage]]                  |
   | xcompmgr            | [[.config/dunst/dunstrc][dunst]]                                  | redshift                  | [[https://wiki.archlinux.org/index.php/Ncmpcpp][ncmpcpp]]                 |
   |---------------------+----------------------------------------+---------------------------+-------------------------|
+* [[.emacs.d/Emacs.org][Emacs]] 
+  My emacs configuration
 * Keyboard shortcuts
 ** Openbox
 *** Starting applications
