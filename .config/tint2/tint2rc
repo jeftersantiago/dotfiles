@@ -146,6 +146,7 @@ launcher_item_app = ~/.desktops/julia.desktop
 launcher_item_app = ~/.desktops/st.desktop
 launcher_item_app = ~/.desktops/emacs.desktop
 launcher_item_app = ~/.desktops/notion.desktop
+launcher_item_app = ~/.desktops/steam.desktop
 
 #-------------------------------------
 # Clock

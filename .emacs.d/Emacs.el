@@ -27,22 +27,22 @@
 ;(setq-default cursor-type 'square)
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-(use-package cherry-blossom-theme 
- :config
- (load-theme 'cherry-blossom t)
- :ensure t)
+;  (use-package cherry-blossom-theme 
+;   :config
+;   (load-theme 'cherry-blossom t)
+;   :ensure t)
 
-(use-package almost-mono-themes
- :config
- (load-theme 'almost-mono-black t)
- (let ((line (face-attribute 'mode-line :underline)))
-   (set-face-attribute 'mode-line          nil :overline   line)
-   (set-face-attribute 'mode-line-inactive nil :overline   line)
-   (set-face-attribute 'mode-line-inactive nil :underline  line)
-   (set-face-attribute 'mode-line          nil :box        nil)
-   (set-face-attribute 'mode-line-inactive nil :box        nil)
-   (set-face-attribute 'mode-line-inactive nil :background "#212121"))
-                                        :ensure t)
+  (use-package dracula-theme ;almost-mono-themes
+   :config
+   (load-theme 'dracula t) ; 'almost-mono-black t)
+   (let ((line (face-attribute 'mode-line :underline)))
+     (set-face-attribute 'mode-line          nil :overline   line)
+     (set-face-attribute 'mode-line-inactive nil :overline   line)
+     (set-face-attribute 'mode-line-inactive nil :underline  line)
+     (set-face-attribute 'mode-line          nil :box        nil)
+     (set-face-attribute 'mode-line-inactive nil :box        nil)
+     (set-face-attribute 'mode-line-inactive nil :background "#212121"))
+                                          :ensure t)
 
 (set-frame-parameter (selected-frame) 'alpha '(95 95))
 (add-to-list 'default-frame-alist '(alpha 95 95))
@@ -279,8 +279,8 @@ current buffer's, reload dir-locals."
         (my-reload-dir-locals-for-current-buffer)))))
 
 (use-package auto-complete
-  :ensure t
-  :init
+ :ensure t
+ :init
  (global-auto-complete-mode))
 
 (use-package ace-window
@@ -301,5 +301,6 @@ current buffer's, reload dir-locals."
 (use-package elcord
   :ensure t
   :config
-  (setq elcord-refresh-rate 5)
-  (elcord-mode))
+  (setq elcord-refresh-rate 5))
+  ;(elcord-mode))
+(global-set-key (kbd "C-c d") 'elcord-mode)

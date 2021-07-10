@@ -440,6 +440,7 @@
       </action>
     </keybind>
     <!-- Keybindings for tilling -->
+
     <keybind key="W-S-space">
       <action name="ToggleMaximize"/>
     </keybind>
@@ -447,7 +448,7 @@
       <action name="Iconify"/>
     </keybind>
     <!-- move to the left side-->
-    <keybind key="W-S-h">
+    <keybind key="W-h">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>0</x>
@@ -456,7 +457,8 @@
         <height>100%</height>
       </action>
     </keybind>
-    <keybind key="W-S-l">
+    <!-- move to the right -->
+    <keybind key="W-l">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>-0</x>
@@ -465,6 +467,28 @@
         <height>100%</height>
       </action>
     </keybind>
+    
+  <keybind key="W-k">
+    <action name="Unmaximize" />
+    <action name="MoveResizeTo">
+      <x>0</x>
+      <y>0</y>
+      <width>100%</width>
+      <height>50%</height>
+    </action>
+  </keybind>
+
+  
+  <keybind key="W-j">
+    <action name="Unmaximize" />
+    <action name="MoveResizeTo">
+      <x>0</x>
+      <y>-0</y>
+      <width>100%</width>
+      <height>50%</height>
+    </action>
+  </keybind>
+
     <keybind key="A-space">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
@@ -473,6 +497,8 @@
       </action>
     </keybind>
   </keyboard>
+
+
   <mouse>
     <dragThreshold>1</dragThreshold>
     <doubleClickTime>500</doubleClickTime>

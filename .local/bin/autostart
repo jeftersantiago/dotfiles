@@ -29,6 +29,6 @@ blueman-applet &
 
 
 # scripts
-#startup_apps &
+startup_apps &
 touchpad &
 

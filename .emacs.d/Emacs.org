@@ -41,27 +41,26 @@ Doesn't ask to confirm everytime
 
   ;(setq-default cursor-type 'square)
   (defalias 'yes-or-no-p 'y-or-n-p)
-
 #+end_src
 ** Theme and transparency
    Loading theme and setting modeline background color.
 #+begin_src emacs-lisp
-  (use-package cherry-blossom-theme 
-   :config
-   (load-theme 'cherry-blossom t)
-   :ensure t)
+  ;  (use-package cherry-blossom-theme 
+  ;   :config
+  ;   (load-theme 'cherry-blossom t)
+  ;   :ensure t)
 
-  (use-package almost-mono-themes
-   :config
-   (load-theme 'almost-mono-black t)
-   (let ((line (face-attribute 'mode-line :underline)))
-     (set-face-attribute 'mode-line          nil :overline   line)
-     (set-face-attribute 'mode-line-inactive nil :overline   line)
-     (set-face-attribute 'mode-line-inactive nil :underline  line)
-     (set-face-attribute 'mode-line          nil :box        nil)
-     (set-face-attribute 'mode-line-inactive nil :box        nil)
-     (set-face-attribute 'mode-line-inactive nil :background "#212121"))
-                                          :ensure t)
+    (use-package dracula-theme ;almost-mono-themes
+     :config
+     (load-theme 'dracula t) ; 'almost-mono-black t)
+     (let ((line (face-attribute 'mode-line :underline)))
+       (set-face-attribute 'mode-line          nil :overline   line)
+       (set-face-attribute 'mode-line-inactive nil :overline   line)
+       (set-face-attribute 'mode-line-inactive nil :underline  line)
+       (set-face-attribute 'mode-line          nil :box        nil)
+       (set-face-attribute 'mode-line-inactive nil :box        nil)
+       (set-face-attribute 'mode-line-inactive nil :background "#212121"))
+                                            :ensure t)
 #+end_src
   Enabling transparency
 #+begin_src emacs-lisp
@@ -94,11 +93,6 @@ Doesn't ask to confirm everytime
     (moody-replace-vc-mode)
     :ensure t)
 #+end_src
-
-
-
-
-
 ** Line Number
    #+begin_src emacs-lisp
 ;     (global-display-line-numbers-mode)
@@ -145,7 +139,7 @@ Doesn't ask to confirm everytime
   mouse-wheel-follow-mouse 't)
 #+end_src
 ** Inserting new line
-Add a new line below the current line
+   Add a new line below the current line
 #+begin_src emacs-lisp
   (defun insert-new-line-below ()
     (interactive)
@@ -154,12 +148,6 @@ Add a new line below the current line
       (newline-and-indent)))
   (global-set-key (kbd "C-o") 'insert-new-line-below)
 #+end_src
-
-
-
-
-
-
 * Code
 ** Ivy
 #+begin_src emacs-lisp 
@@ -376,8 +364,8 @@ Add a new line below the current line
 * Auto-completation
 #+begin_src emacs-lisp
   (use-package auto-complete
-    :ensure t
-    :init
+   :ensure t
+   :init
    (global-auto-complete-mode))
 #+end_src
 global
@@ -405,9 +393,10 @@ global
 * External
 Elcord			
 #+begin_src emacs-lisp
-   (use-package elcord
-     :ensure t
-     :config
-     (setq elcord-refresh-rate 5)
-     (elcord-mode))
+  (use-package elcord
+    :ensure t
+    :config
+    (setq elcord-refresh-rate 5))
+    ;(elcord-mode))
+  (global-set-key (kbd "C-c d") 'elcord-mode)
 #+end_src
