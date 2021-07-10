@@ -1,4 +1,19 @@
 #+TITLE: Emacs configurations
+* Startup performance
+  Taken from https://github.com/daviwil/emacs-from-scratch/blob/master/Emacs.org
+#+begin_src emacs-lisp
+    ;; The default is 800 kilobytes.  Measured in bytes.
+    (setq gc-cons-threshold (* 50 1000 1000))
+
+    (defun efs/display-startup-time ()
+      (message "Emacs loaded in %s with %d garbage collections."
+               (format "%.2f seconds"
+                       (float-time
+                        (time-subtract after-init-time before-init-time)))
+               gcs-done))
+
+    (add-hook 'emacs-startup-hook #'efs/display-startup-time)
+  #+end_src
 * General config
 ** Personal configs
 #+begin_src emacs-lisp
@@ -21,6 +36,36 @@ Separated file to store generated config from emacs.
     :config (setq real-auto-save-interval 10)
     :hook (prog-mode . real-auto-save-mode))
 #+end_src
+** Custom file
+   Puts the outputs in a separated file
+  - Taken from
+    https://www.reddit.com/r/emacs/comments/4x655n/packageselectedpackages_always_appear_after/
+    https://www.reddit.com/r/emacs/comments/53zpv9/how_do_i_get_emacs_to_stop_adding_custom_fields/
+   #+begin_src 
+(setq custom-file "~/.emacs.d/custom.el")
+   #+end_src
+** Automatic package updates
+   Automatizating the =M-x auto-package-update-now= command.
+   #+begin_src emacs-lisp
+     (use-package auto-package-update
+       :ensure t
+       :custom
+       (auto-package-update-interval 7)
+       (auto-package-update-prompt-before-update t)
+       (auto-package-update-hide-results t)
+       :config
+       (auto-package-update-maybe))
+   #+end_src
+** No auto-save
+   Do not create the ~auto-save/~ folder
+   #+begin_src emacs-lisp
+     (use-package no-littering :ensure t )
+
+     ;; no-littering doesn't set this by default so we must place
+     ;; auto save files in the same path as it uses for sessions
+     (setq auto-save-file-name-transforms
+           `((".*" ,(no-littering-expand-var-file-name "auto-save/") t)))
+   #+end_src
 * UI Configuration
 ** Basics
 #+begin_src emacs-lisp
@@ -38,29 +83,16 @@ Doesn't ask to confirm everytime
     (setq confirm-kill-processes nil)
     (setq-default truncate-lines t)
     (setq-default fill-column 80)
-
   ;(setq-default cursor-type 'square)
   (defalias 'yes-or-no-p 'y-or-n-p)
 #+end_src
 ** Theme and transparency
    Loading theme and setting modeline background color.
 #+begin_src emacs-lisp
-  ;  (use-package cherry-blossom-theme 
-  ;   :config
-  ;   (load-theme 'cherry-blossom t)
-  ;   :ensure t)
-
-    (use-package dracula-theme ;almost-mono-themes
-     :config
-     (load-theme 'dracula t) ; 'almost-mono-black t)
-     (let ((line (face-attribute 'mode-line :underline)))
-       (set-face-attribute 'mode-line          nil :overline   line)
-       (set-face-attribute 'mode-line-inactive nil :overline   line)
-       (set-face-attribute 'mode-line-inactive nil :underline  line)
-       (set-face-attribute 'mode-line          nil :box        nil)
-       (set-face-attribute 'mode-line-inactive nil :box        nil)
-       (set-face-attribute 'mode-line-inactive nil :background "#212121"))
-                                            :ensure t)
+   (use-package doom-themes
+    :config
+    (load-theme 'doom-dracula t)
+    :ensure t)
 #+end_src
   Enabling transparency
 #+begin_src emacs-lisp
@@ -70,35 +102,41 @@ Doesn't ask to confirm everytime
 ** Font
    Took from here:  https://emacs.stackexchange.com/q/45895
 #+begin_src emacs-lisp
-  (set-frame-font "Liberation Mono-12:antialias=none")
+  (set-frame-font "Source Code Pro-12:antialias=none")
 #+end_src
 #+begin_src emacs-lisp
   (use-package default-text-scale
    :ensure t
    :hook (after-init . default-text-scale-mode))
-
   (set-language-environment "UTF-8")
   (global-prettify-symbols-mode t)
 #+end_src
 #+begin_src emacs-lisp
-(prefer-coding-system 'utf-8)
+  (prefer-coding-system 'utf-8)
 #+end_src
 ** Modeline
    Nice and simple.
 #+begin_src emacs-lisp
-  (use-package moody
-    :config
-    (setq x-underline-at-descent-line t)
-    (moody-replace-mode-line-buffer-identification)
-    (moody-replace-vc-mode)
+    ; (use-package moody
+    ;   :config
+    ;   (setq x-underline-at-descent-line t)
+    ;   (moody-replace-mode-line-buffer-identification)
+    ;   (moody-replace-vc-mode)
+    ;   :ensure t)
+
+  (use-package all-the-icons :ensure t)
+
+  (use-package doom-modeline
+    :init (doom-modeline-mode 1)
+    :custom ((doom-modeline-height 15))
     :ensure t)
+
 #+end_src
 ** Line Number
    #+begin_src emacs-lisp
-;     (global-display-line-numbers-mode)
-;     (setq display-line-numbers-type 'relative) 
+     (global-display-line-numbers-mode)
+     (setq display-line-numbers-type 'relative) 
    #+end_src
-
 ** Font lock
  Disables syntax hilight from startup
 #+begin_src emacs-lisp
@@ -148,6 +186,17 @@ Doesn't ask to confirm everytime
       (newline-and-indent)))
   (global-set-key (kbd "C-o") 'insert-new-line-below)
 #+end_src
+* Terminal
+   #+begin_src emacs-lisp
+     (use-package vterm
+       :ensure t
+       :commands vterm
+       :config
+       (setq term-prompt-regexp "^[^#$%>\n]*[#$%>] *")  ;; Set this to match your custom shell prompt
+       (setq vterm-shell "bash")                        ;; Set this to customize the shell to launch
+       (setq vterm-max-scrollback 10000))
+       (global-set-key (kbd "C-x t") 'vterm)
+   #+end_src
 * Code
 ** Ivy
 #+begin_src emacs-lisp 
@@ -180,13 +229,21 @@ Doesn't ask to confirm everytime
        :ensure t
        :config (which-key-mode))
 #+end_src
-** Language specifics
-*** Julia
-#+begin_src emacs-lisp
-  (use-package julia-mode
-    :ensure t
-    :hook ((julia-mode) . jl))
-#+end_src
+* Julia
+  #+begin_src emacs-lisp
+    (use-package julia-mode)
+    ;; Snail requires vterm
+    (use-package vterm)
+    (use-package julia-snail
+      :hook (julia-mode . julia-snail-mode))
+    (use-package lsp-julia
+      :ensure t 
+      :hook (julia-mode . (lambda ()
+                            (require 'lsp-julia)
+                            (lsp)))
+      :config
+      (setq lsp-julia-default-environment "~/.julia/environments/v1.6"))
+  #+end_src
 * Org-mode
 ** UI 
 #+begin_src emacs-lisp
@@ -217,31 +274,30 @@ Doesn't ask to confirm everytime
 #+end_src 
 ** Tasks management 
 #+begin_src emacs-lisp
-(add-hook 'org-mode-hook 'auto-fill-mode)
-(setq-default fill-column 79)
-(setq org-todo-keywords '((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d!)" "DROP(x!)"))
-      org-log-into-drawer t)
+  (add-hook 'org-mode-hook 'auto-fill-mode)
+  (setq-default fill-column 79)
+  (setq org-todo-keywords '((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d!)" "DROP(x!)"))
+        org-log-into-drawer t)
 
-(defun org-file-path (filename)
-  " Return the absolute address of an org file, give its relative name"
-  (concat (file-name-as-directory org-directory) filename))
+  (defun org-file-path (filename)
+    " Return the absolute address of an org file, give its relative name"
+    (concat (file-name-as-directory org-directory) filename))
 
-(setq org-index-file (org-file-path "todo.org"))
-(setq org-archive-location
-      (concat (org-file-path "done.org") "::* From %s"))
+  (setq org-index-file (org-file-path "todo.org"))
+  (setq org-archive-location
+        (concat (org-file-path "done.org") "::* From %s"))
 
-;; copy the content out of the archive.org file and yank in the inbox.org
-(setq org-agenda-files (list org-index-file))
-                                        ; mark  a todo as done and move it to an appropriate place in the archive.
-(defun hrs/mark-done-and-archive ()
-  " Mark the state of an org-mode item as DONE and archive it."
-  (interactive)
-  (org-todo 'done)
-  (org-archive-subtree))
-(global-set-key (kbd "C-c C-x C-s") 'hrs/mark-done-and-archive)
-(setq org-log-done 'time)
+  ;; copy the content out of the archive.org file and yank in the inbox.org
+  (setq org-agenda-files (list org-index-file))
+                                          ; mark  a todo as done and move it to an appropriate place in the archive.
+  (defun hrs/mark-done-and-archive ()
+    " Mark the state of an org-mode item as DONE and archive it."
+    (interactive)
+    (org-todo 'done)
+    (org-archive-subtree))
+  (global-set-key (kbd "C-c C-x C-s") 'hrs/mark-done-and-archive)
+  (setq org-log-done 'time)
 #+end_src
-
 ** Capturing Tasks
 #+begin_src emacs-lisp
 (setq org-capture-templates
@@ -306,14 +362,20 @@ Doesn't ask to confirm everytime
   (setq org-latex-listings-options '(("breaklines" "true")))
 #+end_src
 * Dired
-  #+begin_src emacs-lisp
+#+begin_src emacs-lisp
     (use-package dired-sidebar
       :ensure t
       :config
       (global-set-key (kbd "C-x C-n") 'dired-sidebar-toggle-sidebar)
       (add-hook 'dired-mode-hook 'font-lock-mode))
 #+end_src
-**  Definying default applications open certain types of file.
+** icons in the sidebar
+   #+begin_src emacs-lisp
+     (use-package all-the-icons-dired
+     :ensure t
+     :config (all-the-icons-dired-mode))
+   #+end_src
+** Definying default applications open certain types of file.
   #+begin_src emacs-lisp
   (use-package dired-open
     :ensure t
@@ -368,10 +430,7 @@ Doesn't ask to confirm everytime
    :init
    (global-auto-complete-mode))
 #+end_src
-global
-
-* Windows
-** Ace Window
+* Buffers
   #+begin_src emacs-lisp
     (use-package ace-window
       :ensure t
@@ -382,14 +441,6 @@ global
          '(aw-leading-char-face
            ((t (:inherit ace-jump-face-foreground :height 2.0)))))))
   #+end_src 
-** Terminal
-   #+begin_src emacs-lisp
-     (use-package multi-term 
-      :ensure t
-      :config  (setq multi-term-program "/bin/bash")
-      (progn
-        (global-set-key (kbd "C-x t") 'multi-term)))
-   #+end_src
 * External
 Elcord			
 #+begin_src emacs-lisp

@@ -775,7 +775,7 @@
       </position>
     </application>
     <application class="Emacs">
-      <decor>no</decor>
+      <decor>yes</decor>
       <position force="no">
         <x>center</x>
         <y>center</y>

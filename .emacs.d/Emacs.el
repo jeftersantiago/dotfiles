@@ -1,3 +1,15 @@
+;; The default is 800 kilobytes.  Measured in bytes.
+(setq gc-cons-threshold (* 50 1000 1000))
+
+(defun efs/display-startup-time ()
+  (message "Emacs loaded in %s with %d garbage collections."
+           (format "%.2f seconds"
+                   (float-time
+                    (time-subtract after-init-time before-init-time)))
+           gcs-done))
+
+(add-hook 'emacs-startup-hook #'efs/display-startup-time)
+
 (setq-default user-full-name "Jefter Santiago")
 (setq-default user-mail-address "jeftersantiago@protonmail.com")
 (load "~/.local/bin/private.el")
@@ -13,6 +25,22 @@
   :config (setq real-auto-save-interval 10)
   :hook (prog-mode . real-auto-save-mode))
 
+(use-package auto-package-update
+  :ensure t
+  :custom
+  (auto-package-update-interval 7)
+  (auto-package-update-prompt-before-update t)
+  (auto-package-update-hide-results t)
+  :config
+  (auto-package-update-maybe))
+
+(use-package no-littering :ensure t )
+
+;; no-littering doesn't set this by default so we must place
+;; auto save files in the same path as it uses for sessions
+(setq auto-save-file-name-transforms
+      `((".*" ,(no-littering-expand-var-file-name "auto-save/") t)))
+
 (scroll-bar-mode 0)
 (tool-bar-mode 0)
 (menu-bar-mode 0)
@@ -27,27 +55,15 @@
 ;(setq-default cursor-type 'square)
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-;  (use-package cherry-blossom-theme 
-;   :config
-;   (load-theme 'cherry-blossom t)
-;   :ensure t)
-
-  (use-package dracula-theme ;almost-mono-themes
-   :config
-   (load-theme 'dracula t) ; 'almost-mono-black t)
-   (let ((line (face-attribute 'mode-line :underline)))
-     (set-face-attribute 'mode-line          nil :overline   line)
-     (set-face-attribute 'mode-line-inactive nil :overline   line)
-     (set-face-attribute 'mode-line-inactive nil :underline  line)
-     (set-face-attribute 'mode-line          nil :box        nil)
-     (set-face-attribute 'mode-line-inactive nil :box        nil)
-     (set-face-attribute 'mode-line-inactive nil :background "#212121"))
-                                          :ensure t)
+(use-package doom-themes
+ :config
+ (load-theme 'doom-dracula t)
+ :ensure t)
 
 (set-frame-parameter (selected-frame) 'alpha '(95 95))
 (add-to-list 'default-frame-alist '(alpha 95 95))
 
-(set-frame-font "Liberation Mono-12:antialias=none")
+(set-frame-font "Source Code Pro-12:antialias=none")
 
 (use-package default-text-scale
  :ensure t
@@ -58,15 +74,22 @@
 
 (prefer-coding-system 'utf-8)
 
-(use-package moody
-  :config
-  (setq x-underline-at-descent-line t)
-  (moody-replace-mode-line-buffer-identification)
-  (moody-replace-vc-mode)
+; (use-package moody
+  ;   :config
+  ;   (setq x-underline-at-descent-line t)
+  ;   (moody-replace-mode-line-buffer-identification)
+  ;   (moody-replace-vc-mode)
+  ;   :ensure t)
+
+(use-package all-the-icons :ensure t)
+
+(use-package doom-modeline
+  :init (doom-modeline-mode 1)
+  :custom ((doom-modeline-height 15))
   :ensure t)
 
-;     (global-display-line-numbers-mode)
-;     (setq display-line-numbers-type 'relative)
+(global-display-line-numbers-mode)
+(setq display-line-numbers-type 'relative)
 
 (global-set-key (kbd "C-x C-l") 'font-lock-mode)
 
@@ -102,6 +125,15 @@ mouse-wheel-follow-mouse 't)
     (newline-and-indent)))
 (global-set-key (kbd "C-o") 'insert-new-line-below)
 
+(use-package vterm
+  :ensure t
+  :commands vterm
+  :config
+  (setq term-prompt-regexp "^[^#$%>\n]*[#$%>] *")  ;; Set this to match your custom shell prompt
+  (setq vterm-shell "bash")                        ;; Set this to customize the shell to launch
+  (setq vterm-max-scrollback 10000))
+  (global-set-key (kbd "C-x t") 'vterm)
+
 (use-package ivy
  :ensure t
  :config(ivy-mode 1))
@@ -125,9 +157,18 @@ mouse-wheel-follow-mouse 't)
   :ensure t
   :config (which-key-mode))
 
-(use-package julia-mode
-  :ensure t
-  :hook ((julia-mode) . jl))
+(use-package julia-mode)
+;; Snail requires vterm
+(use-package vterm)
+(use-package julia-snail
+  :hook (julia-mode . julia-snail-mode))
+(use-package lsp-julia
+  :ensure t 
+  :hook (julia-mode . (lambda ()
+                        (require 'lsp-julia)
+                        (lsp)))
+  :config
+  (setq lsp-julia-default-environment "~/.julia/environments/v1.6"))
 
 ; this allows to use some shortcuts .. begins_src..
 (require 'org-tempo)
@@ -235,6 +276,10 @@ mouse-wheel-follow-mouse 't)
   (global-set-key (kbd "C-x C-n") 'dired-sidebar-toggle-sidebar)
   (add-hook 'dired-mode-hook 'font-lock-mode))
 
+(use-package all-the-icons-dired
+:ensure t
+:config (all-the-icons-dired-mode))
+
 (use-package dired-open
   :ensure t
   :config
@@ -291,12 +336,6 @@ current buffer's, reload dir-locals."
     (custom-set-faces
      '(aw-leading-char-face
        ((t (:inherit ace-jump-face-foreground :height 2.0)))))))
-
-(use-package multi-term 
- :ensure t
- :config  (setq multi-term-program "/bin/bash")
- (progn
-   (global-set-key (kbd "C-x t") 'multi-term)))
 
 (use-package elcord
   :ensure t

@@ -29,7 +29,7 @@ border_color_pressed = #ffffff 60
 
 # Panel
 panel_items = LTSC
-panel_size = 100% 28
+panel_size = 100% 30
 panel_margin = 0 0
 panel_padding = 0 0 0
 panel_background_id = 1
@@ -130,7 +130,7 @@ systray_monitor = 1
 launcher_padding = 0 0 2
 launcher_background_id = 0
 launcher_icon_background_id = 0
-launcher_icon_size = 28
+launcher_icon_size = 30
 launcher_icon_asb = 100 0 0
 launcher_icon_theme = Papirus-Light
 launcher_icon_theme_override = 0

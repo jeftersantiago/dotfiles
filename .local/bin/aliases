@@ -4,15 +4,18 @@ alias \
     sc=$SCRIPTS 					\
     cf=$HOME"/.config/"			        	\
     em=$HOME"/.emacs.d/"				\
+
 alias \
          v="vim "                                       \
          vmi="vim "                                     \
 #         vim="vi "                                     \
+
 alias\
      	mkdir="mkdir -vp"		              	\
         rm="rm -rfiv"			       		\
     	mv="mv -iv"	                    		\
         ls="ls --color=auto"                            \
+
 alias\
 	df="df -H"	 	                        \
 	stn="sudo shutdown now" 			\
@@ -20,4 +23,3 @@ alias\
 	la="ls -alx "					\
 	mk="sudo make clean install" 			\
 	pp="pulsemixer"					\
-
