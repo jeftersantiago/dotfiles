@@ -1,2 +1,0 @@
-#!/bin/sh
-xsetwacom set $1 MapToOutput eDP-1

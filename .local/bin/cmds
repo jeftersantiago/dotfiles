@@ -1,5 +1,4 @@
 #!/bin/sh
-
 # Directories
 alias \
     pv="~/Documents/.private/"                          \

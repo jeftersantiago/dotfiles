@@ -1,7 +1,0 @@
-!/bin/sh
-pidof dunst && killall dunst
-dunst &
-
-notify-send " Testing dunstrc changes 1 !!! " --icon=dialog-information
-notify-send " Testing dunstrc changes 2 !!!😁😁😁 " --icon=dialog-information
-notify-send " Testing dunstrc changes 3 !!! " --icon=dialog-information
