@@ -6,7 +6,7 @@ border_sides = 0
 border_content_tint_weight = 0
 
 background_content_tint_weight = 6
-background_color = #000000 76
+background_color = #000000 90
 border_color = #000000 90
 background_color_hover = #000000 80
 border_color_hover = #555555 80
@@ -142,15 +142,15 @@ launcher_item_app = ~/.desktops/brave.desktop
 launcher_item_app = ~/.desktops/spotify.desktop
 launcher_item_app = ~/.desktops/yt.desktop
 launcher_item_app = ~/.desktops/nautilus.desktop
-launcher_item_app = ~/.desktops/julia.desktop
+launcher_item_app = ~/.desktops/alarm-clock-applet.desktop
 launcher_item_app = ~/.desktops/st.desktop
+launcher_item_app = ~/.desktops/julia.desktop
 launcher_item_app = ~/.desktops/emacs.desktop
 launcher_item_app = ~/.desktops/notion.desktop
-launcher_item_app = ~/.desktops/steam.desktop
 
 #-------------------------------------
 # Clock
-time1_format = %H:%M
+time1_format = %R %a %W %d/%m/%y
 time1_font = Source Code Pro Bold 10
 clock_font_color = #837575 100
 clock_lclick_command = zenity --calendar --text ""

@@ -44,42 +44,41 @@
 (scroll-bar-mode 0)
 (tool-bar-mode 0)
 (menu-bar-mode 0)
+(set-fringe-mode 10)        ; Give some breathing room
 (setq inhibit-startup-message t)
 
 (use-package rainbow-delimiters :ensure t)
 
 (setq confirm-kill-processes nil)
-  (setq-default truncate-lines t)
-  (setq-default fill-column 80)
-
-;(setq-default cursor-type 'square)
+(setq-default truncate-lines t)
+(setq-default fill-column 80)
+                                        ;(setq-default cursor-type 'square)
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (use-package doom-themes
- :config
- (load-theme 'doom-dracula t)
- :ensure t)
+  :config
+  (load-theme 'doom-dracula t)
+  :ensure t)
 
-(set-frame-parameter (selected-frame) 'alpha '(95 95))
-(add-to-list 'default-frame-alist '(alpha 95 95))
+(set-frame-parameter (selected-frame) 'alpha '(90 90))
+(add-to-list 'default-frame-alist '(alpha 90 90))
 
 (set-frame-font "Source Code Pro-12:antialias=none")
 
 (use-package default-text-scale
- :ensure t
- :hook (after-init . default-text-scale-mode))
-
+  :ensure t
+  :hook (after-init . default-text-scale-mode))
 (set-language-environment "UTF-8")
 (global-prettify-symbols-mode t)
 
 (prefer-coding-system 'utf-8)
 
 ; (use-package moody
-  ;   :config
-  ;   (setq x-underline-at-descent-line t)
-  ;   (moody-replace-mode-line-buffer-identification)
-  ;   (moody-replace-vc-mode)
-  ;   :ensure t)
+                                        ;   :config
+                                        ;   (setq x-underline-at-descent-line t)
+                                        ;   (moody-replace-mode-line-buffer-identification)
+                                        ;   (moody-replace-vc-mode)
+                                        ;   :ensure t)
 
 (use-package all-the-icons :ensure t)
 
@@ -108,15 +107,15 @@
 (setq-default tab-width 4)
 
 (setq kill-buffer-query-functions
-  (remq 'process-kill-buffer-query-function
-   kill-buffer-query-functions))
+      (remq 'process-kill-buffer-query-function
+            kill-buffer-query-functions))
 ;; mouse scrolls very slowly
 (setq confirm-kill-processes nil)
 (setq scroll-step            1
-scroll-conservatively  10000
-mouse-wheel-scroll-amount '(1 ((shift) . 1))
-mouse-wheel-progressive-speed nil
-mouse-wheel-follow-mouse 't)
+      scroll-conservatively  10000
+      mouse-wheel-scroll-amount '(1 ((shift) . 1))
+      mouse-wheel-progressive-speed nil
+      mouse-wheel-follow-mouse 't)
 
 (defun insert-new-line-below ()
   (interactive)
@@ -132,17 +131,17 @@ mouse-wheel-follow-mouse 't)
   (setq term-prompt-regexp "^[^#$%>\n]*[#$%>] *")  ;; Set this to match your custom shell prompt
   (setq vterm-shell "bash")                        ;; Set this to customize the shell to launch
   (setq vterm-max-scrollback 10000))
-  (global-set-key (kbd "C-x t") 'vterm)
+(global-set-key (kbd "C-x t") 'vterm)
 
 (use-package ivy
- :ensure t
- :config(ivy-mode 1))
+  :ensure t
+  :config(ivy-mode 1))
 
 (use-package swiper
   :ensure t
   :config
   (progn
-	(ivy-mode 1)
+    (ivy-mode 1)
     (setq ivy-use-virtual-buffers t)
     (global-set-key "\C-s" 'swiper)))
 
@@ -172,7 +171,7 @@ mouse-wheel-follow-mouse 't)
 
 ; this allows to use some shortcuts .. begins_src..
 (require 'org-tempo)
-; enabling syntax hilight
+                                        ; enabling syntax hilight
 (add-hook 'org-mode-hook 'font-lock-mode)
 
 (add-to-list 'org-modules 'org-tempo t)
@@ -181,14 +180,14 @@ mouse-wheel-follow-mouse 't)
   :hook (org-mode . org-bullets-mode)
   :custom
   (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
-  (setq org-ellipsis "ᐯ")
+(setq org-ellipsis "ᐯ")
 
 (font-lock-add-keywords
  'org-mode
  '(("^[[:space:]]*\\(-\\) "
     (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
 
-; (setq org-src-tab-acts-natively t)
+                                        ; (setq org-src-tab-acts-natively t)
 (setq org-src-window-setup 'current-window)
 (add-to-list 'org-structure-template-alist
              '("el" . "src emacs-lisp"))
@@ -227,14 +226,14 @@ mouse-wheel-follow-mouse 't)
 (define-key global-map "\C-cc" 'org-capture)
 
 (defun my/fix-inline-images ()
-(when org-inline-image-overlays
-(org-redisplay-inline-images)))
+  (when org-inline-image-overlays
+    (org-redisplay-inline-images)))
 (add-hook 'org-babel-after-execute-hook 'my/fix-inline-images)
 (setq-default org-image-actual-width 620)
 (global-set-key (kbd "C-c i") 'org-toggle-inline-images)
 
 (add-hook 'org-mode-hook
-(lambda () (org-toggle-pretty-entities))) 
+          (lambda () (org-toggle-pretty-entities))) 
 ;; Opening pdfs
 (add-to-list 'org-file-apps '("\\.pdf" . "xreader %s"))
 (global-set-key (kbd "C-x p") 'org-latex-export-to-pdf)
@@ -277,8 +276,8 @@ mouse-wheel-follow-mouse 't)
   (add-hook 'dired-mode-hook 'font-lock-mode))
 
 (use-package all-the-icons-dired
-:ensure t
-:config (all-the-icons-dired-mode))
+  :ensure t
+  :config (all-the-icons-dired-mode))
 
 (use-package dired-open
   :ensure t
@@ -324,9 +323,9 @@ current buffer's, reload dir-locals."
         (my-reload-dir-locals-for-current-buffer)))))
 
 (use-package auto-complete
- :ensure t
- :init
- (global-auto-complete-mode))
+  :ensure t
+  :init
+  (global-auto-complete-mode))
 
 (use-package ace-window
   :ensure t
@@ -338,8 +337,8 @@ current buffer's, reload dir-locals."
        ((t (:inherit ace-jump-face-foreground :height 2.0)))))))
 
 (use-package elcord
-  :ensure t
+  :ensure t 
   :config
-  (setq elcord-refresh-rate 5))
-  ;(elcord-mode))
-(global-set-key (kbd "C-c d") 'elcord-mode)
+  (setq elcord-use-major-mode-as-main-icon t)
+  :init)
+ (global-set-key (kbd "C-c d") 'elcord-mode)

@@ -186,7 +186,7 @@
     </keybind>
     <keybind key="W-R">
       <action name="Execute">
-        <command>redshift-gtk</command>
+        <command>redshift</command>
       </action>
     </keybind>
     <keybind key="W-S-f">
@@ -199,19 +199,9 @@
         <command>nautilus</command>
       </action>
     </keybind>
-    <keybind key="A-S-q">
-      <action name="Execute">
-        <command>qutebrowser</command>
-      </action>
-    </keybind>
     <keybind key="W-S-D">
       <action name="Execute">
         <command>discord</command>
-      </action>
-    </keybind>
-    <keybind key="W-S-S">
-      <action name="Execute">
-        <command>spotify-tray</command>
       </action>
     </keybind>
     <keybind key="W-S-T">
@@ -467,7 +457,7 @@
         <height>100%</height>
       </action>
     </keybind>
-    
+
   <keybind key="W-k">
     <action name="Unmaximize" />
     <action name="MoveResizeTo">
@@ -478,7 +468,7 @@
     </action>
   </keybind>
 
-  
+
   <keybind key="W-j">
     <action name="Unmaximize" />
     <action name="MoveResizeTo">
