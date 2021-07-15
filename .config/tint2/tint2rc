@@ -144,6 +144,7 @@ launcher_item_app = ~/.desktops/yt.desktop
 launcher_item_app = ~/.desktops/nautilus.desktop
 launcher_item_app = ~/.desktops/alarm-clock-applet.desktop
 launcher_item_app = ~/.desktops/st.desktop
+launcher_item_app = ~/.desktops/ranger.desktop
 launcher_item_app = ~/.desktops/julia.desktop
 launcher_item_app = ~/.desktops/emacs.desktop
 launcher_item_app = ~/.desktops/notion.desktop
