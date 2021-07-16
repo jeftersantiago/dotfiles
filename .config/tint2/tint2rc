@@ -75,8 +75,8 @@ taskbar_name_padding = 50 0
 taskbar_name_background_id = 6
 taskbar_name_active_background_id = 0
 taskbar_name_font = Liberation Mono Bold 14
-taskbar_name_font_color = #dddddd 100
-taskbar_name_active_font_color = #837575 100
+taskbar_name_font_color = #E66DB3 100
+taskbar_name_active_font_color = #E66DB3 100
 
 taskbar_distribute_size = 1
 taskbar_sort_order = none
