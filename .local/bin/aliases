@@ -4,6 +4,7 @@ alias \
     sc=$SCRIPTS 					\
     cf=$HOME"/.config/"			        	\
     em=$HOME"/.emacs.d/"				\
+#    xreader="env GTK_THEME=Materia-light-compact: xreader "\
 
 alias \
          v="vim "                                       \

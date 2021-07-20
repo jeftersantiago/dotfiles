@@ -151,7 +151,8 @@
     </keybind>
     <keybind key="W-S-P">
       <action name="Execute">
-        <command>env GTK_THEME=Materia-dark-compact: gnome-pomodoro</command>
+        <!-- <command>env GTK_THEME=Materia-dark-compact: gnome-pomodoro</command>-->
+        <command>gnome-pomodoro</command>
       </action>
     </keybind>
     <keybind key="W-S-A">
@@ -236,7 +237,7 @@
     </keybind>
     <keybind key="W-p">
       <action name="Execute">
-        <command>dmenu_run -fn "monospaced:size=15"</command>
+        <command>dmenu_run -fn "monospaced:size=15" -nf "#E66DB3" -sb  "#E66DB3" -sf "#000000"</command>
       </action>
     </keybind>
     <keybind key="M-S-N">
@@ -430,7 +431,6 @@
       </action>
     </keybind>
     <!-- Keybindings for tilling -->
-
     <keybind key="W-S-space">
       <action name="ToggleMaximize"/>
     </keybind>
@@ -457,28 +457,24 @@
         <height>100%</height>
       </action>
     </keybind>
-
-  <keybind key="W-k">
-    <action name="Unmaximize" />
-    <action name="MoveResizeTo">
-      <x>0</x>
-      <y>0</y>
-      <width>100%</width>
-      <height>50%</height>
-    </action>
-  </keybind>
-
-
-  <keybind key="W-j">
-    <action name="Unmaximize" />
-    <action name="MoveResizeTo">
-      <x>0</x>
-      <y>-0</y>
-      <width>100%</width>
-      <height>50%</height>
-    </action>
-  </keybind>
-
+    <keybind key="W-k">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-j">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>-0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
     <keybind key="A-space">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
@@ -487,8 +483,6 @@
       </action>
     </keybind>
   </keyboard>
-
-
   <mouse>
     <dragThreshold>1</dragThreshold>
     <doubleClickTime>500</doubleClickTime>

@@ -121,7 +121,7 @@ mouse_scroll_down = next_task
 systray_padding = 0 0 0
 systray_background_id = 2
 systray_sort = descending
-systray_icon_size = 22
+systray_icon_size = 25
 systray_icon_asb = 100 0 0
 systray_monitor = 1
 
@@ -130,7 +130,7 @@ systray_monitor = 1
 launcher_padding = 0 0 2
 launcher_background_id = 0
 launcher_icon_background_id = 0
-launcher_icon_size = 30
+launcher_icon_size = 25
 launcher_icon_asb = 100 0 0
 launcher_icon_theme = Papirus-Light
 launcher_icon_theme_override = 0
@@ -138,6 +138,10 @@ startup_notifications = 1
 launcher_tooltip = 1
 
 
+launcher_item_app = ~/.desktops/brave.desktop
+launcher_item_app = ~/.desktops/firefox.desktop
+launcher_item_app = ~/.desktops/discord.desktop
+launcher_item_app = ~/.desktops/telegram.desktop
 launcher_item_app = ~/.desktops/brave.desktop
 launcher_item_app = ~/.desktops/spotify.desktop
 launcher_item_app = ~/.desktops/yt.desktop
@@ -148,6 +152,8 @@ launcher_item_app = ~/.desktops/ranger.desktop
 launcher_item_app = ~/.desktops/julia.desktop
 launcher_item_app = ~/.desktops/emacs.desktop
 launcher_item_app = ~/.desktops/notion.desktop
+launcher_item_app = ~/.desktops/xournalpp.desktop
+launcher_item_app = ~/.desktops/krita.desktop
 
 #-------------------------------------
 # Clock

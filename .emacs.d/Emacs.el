@@ -124,14 +124,12 @@
     (newline-and-indent)))
 (global-set-key (kbd "C-o") 'insert-new-line-below)
 
-(use-package vterm
+(use-package multi-term 
   :ensure t
-  :commands vterm
-  :config
-  (setq term-prompt-regexp "^[^#$%>\n]*[#$%>] *")  ;; Set this to match your custom shell prompt
-  (setq vterm-shell "bash")                        ;; Set this to customize the shell to launch
-  (setq vterm-max-scrollback 10000))
-(global-set-key (kbd "C-x t") 'vterm)
+  :config 
+  (progn
+    (global-set-key (kbd "C-x t") 'multi-term)))
+  (setq multi-term-program "/bin/bash")
 
 (use-package ivy
   :ensure t

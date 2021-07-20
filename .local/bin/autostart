@@ -12,9 +12,11 @@ xsetwacom set 20 MapToOutput eDP-1
 xmodmap ~/.Xmodmap
 xrdb ~/.Xresources &
 xset b off &
+
 # applets
 nm-applet &
 pa-applet &
+
 blueman-applet &
 # scripts
 startup_apps &

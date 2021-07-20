@@ -55,14 +55,14 @@ window.inactive.grip.bg:		flat solid
 window.inactive.grip.bg.color:	        #181818
 ! OSD
 osd.hilight.bg: flat border
-osd.hilight.bg.color: #000000
-osd.hilight.bg.border.color: #000000
+osd.hilight.bg.color: #E66DB3
+osd.hilight.bg.border.color: #E66DB3
 
 ! Button Settings
 window.active.button.unpressed.bg:			flat solid
 window.active.button.unpressed.bg.color:		#181818
 window.active.button.unpressed.bg.colorTo:		#181818
-window.active.button.unpressed.image.color:		#E66DB3
+window.active.button.unpressed.image.color:		#ffffff
 
  
 
@@ -88,7 +88,7 @@ window.inactive.button.hover.bg:			flat solid
 window.inactive.button.hover.bg.color:
 window.inactive.button.pressed.bg:			flat solid
 window.inactive.button.pressed.bg.color:
-window.inactive.button.pressed.bg.colorTo:
+window.inactive.button.pressed.bg.colorTo: #ffffff
 
 window.inactive.button.disabled.bg:			parentrelative
 window.inactive.button.disabled.image.color:		#white

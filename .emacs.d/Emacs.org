@@ -189,14 +189,12 @@
    #+end_src
 * Terminal
   #+begin_src emacs-lisp
-    (use-package vterm
+    (use-package multi-term 
       :ensure t
-      :commands vterm
-      :config
-      (setq term-prompt-regexp "^[^#$%>\n]*[#$%>] *")  ;; Set this to match your custom shell prompt
-      (setq vterm-shell "bash")                        ;; Set this to customize the shell to launch
-      (setq vterm-max-scrollback 10000))
-    (global-set-key (kbd "C-x t") 'vterm)
+      :config 
+      (progn
+        (global-set-key (kbd "C-x t") 'multi-term)))
+      (setq multi-term-program "/bin/bash")
   #+end_src
 * Code
 ** Ivy
