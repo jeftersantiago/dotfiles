@@ -7,6 +7,11 @@ export TERMINAL="st"
 #export LANG="fr_FR.UTF-8"
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
+
+
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
+
 # important directories
 export SCRIPTS=$HOME/".local/bin/"
 export SC=$HOME"/.local/bin/"

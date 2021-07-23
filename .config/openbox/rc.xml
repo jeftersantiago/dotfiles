@@ -192,7 +192,7 @@
     </keybind>
     <keybind key="W-S-f">
       <action name="Execute">
-        <command>env GTK_THEME=Raleigh: firefox</command>
+        <command>brave</command>
       </action>
     </keybind>
     <keybind key="W-S-c">
@@ -217,7 +217,7 @@
     </keybind>
     <keybind key="W-S-b">
       <action name="Execute">
-        <command>brave</command>
+        <command>google-chrome-stable</command>
       </action>
     </keybind>
     <keybind key="A-S-f">
@@ -236,7 +236,7 @@
       </action>
     </keybind>
     <keybind key="W-p">
-      <action name="Execute">
+      <action name="Excute">
         <command>dmenu_run -fn "monospaced:size=15" -nf "#E66DB3" -sb  "#E66DB3" -sf "#000000"</command>
       </action>
     </keybind>
