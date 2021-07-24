@@ -22,8 +22,8 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>Minstral</name>
-    <titleLayout>NLDIMC</titleLayout>
+    <name>Nightmare</name>
+    <titleLayout>NLD</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most"once.
       N: window icon
@@ -236,8 +236,8 @@
       </action>
     </keybind>
     <keybind key="W-p">
-      <action name="Excute">
-        <command>dmenu_run -fn "monospaced:size=15" -nf "#E66DB3" -sb  "#E66DB3" -sf "#000000"</command>
+      <action name="Execute">
+        <command>dmenu_run -fn "size=18" -nf "#E66DB3" -sb "#E66DB3" -sf "#000000" </command>
       </action>
     </keybind>
     <keybind key="M-S-N">

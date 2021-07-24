@@ -28,7 +28,7 @@ menu.items.bg.color: #181818
 menu.items.text.color: #ffffff
 menu.items.disabled.text.color: #707070
 menu.items.active.bg: flat border
-menu.items.active.bg.color: #7f1e31
+menu.items.active.bg.color: #e66db3
 menu.items.active.bg.border.color: #c3314f
 menu.items.active.text.color: #ffffff
 
@@ -42,7 +42,7 @@ window.active.handle.bg: raised
 window.active.handle.bg.color: #181818
 window.active.grip.bg: parentrelative
 window.active.label.bg: parentrelative
-window.active.label.text.color: #ffffff
+window.active.label.text.color: #e66db3 
 window.*.button.*.bg: parentrelative
 window.active.button.*.image.color: #ffffff
 window.active.button.*.pressed.image.color: #000000
@@ -86,9 +86,9 @@ menu.border.color: #000000
 #======================================
 
 osd.hilight.bg: flat border
-osd.hilight.bg.color: #7f1e31
-osd.hilight.bg.border.color: #c3314f
-osd.label.text.color: #ffffff
+osd.hilight.bg.color: #e66db3
+osd.hilight.bg.border.color: #e66db3
+osd.label.text.color: #e66db3 
 
 #======================================
 #     Title Justification
