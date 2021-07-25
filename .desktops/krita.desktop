@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Qt;KDE;Office;Graphics;
+Comment=
+Exec=krita %F
+Icon=krita
+MimeType=application/x-krita;
+Name=Krita
+StartupNotify=true
+Terminal=false
+Type=Application
+NoDisplay=true

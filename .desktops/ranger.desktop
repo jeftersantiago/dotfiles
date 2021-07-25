@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Ranger
+Comment=File Manager
+Exec=st -e ranger
+Icon=ranger
+Terminal=false
+StartupNotify=false
+Categories=Application;

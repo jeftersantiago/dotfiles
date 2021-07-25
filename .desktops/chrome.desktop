@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Name=Google Chrome
+GenericName=Web Browser
+Icon=google-chrome
+StartupWMClass=Google-chrome
+Exec=/usr/bin/google-chrome-stable
