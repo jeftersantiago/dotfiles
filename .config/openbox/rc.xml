@@ -77,10 +77,10 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>Gravitational</name>
-      <name>Eletromagnetic</name>
-      <name>Strong</name>
-      <name>Weak</name>
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
       <name>5</name>
       <name>6</name>
       <name>7</name>
@@ -222,7 +222,7 @@
     </keybind>
     <keybind key="A-S-f">
       <action name="Execute">
-        <command>env GTK_THEME=Materia-light-compact: xreader</command>
+        <command>evince</command>
       </action>
     </keybind>
     <keybind key="W-S-K">

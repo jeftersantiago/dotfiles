@@ -139,6 +139,7 @@ launcher_tooltip = 1
 
 
 launcher_item_app = ~/.desktops/brave.desktop
+launcher_item_app = ~/.desktops/chrome.desktop
 launcher_item_app = ~/.desktops/firefox.desktop
 launcher_item_app = ~/.desktops/discord.desktop
 launcher_item_app = ~/.desktops/telegram.desktop
@@ -146,7 +147,7 @@ launcher_item_app = ~/.desktops/brave.desktop
 launcher_item_app = ~/.desktops/spotify.desktop
 launcher_item_app = ~/.desktops/yt.desktop
 launcher_item_app = ~/.desktops/nautilus.desktop
-launcher_item_app = ~/.desktops/alarm-clock-applet.desktop
+launcher_item_app = ~/.desktops/alarm.desktop
 launcher_item_app = ~/.desktops/st.desktop
 launcher_item_app = ~/.desktops/ranger.desktop
 launcher_item_app = ~/.desktops/julia.desktop
@@ -154,7 +155,6 @@ launcher_item_app = ~/.desktops/emacs.desktop
 launcher_item_app = ~/.desktops/notion.desktop
 launcher_item_app = ~/.desktops/xournalpp.desktop
 launcher_item_app = ~/.desktops/krita.desktop
-
 #-------------------------------------
 # Clock
 time1_format = %R %a %W %d/%m/%y
