@@ -60,8 +60,8 @@
   (load-theme 'doom-dracula t)
   :ensure t)
 
-(set-frame-parameter (selected-frame) 'alpha '(90 90))
-(add-to-list 'default-frame-alist '(alpha 90 90))
+(set-frame-parameter (selected-frame) 'alpha '(95 95))
+(add-to-list 'default-frame-alist '(alpha 95 95))
 
 (set-frame-font "Source Code Pro-12:antialias=none")
 
@@ -167,12 +167,18 @@
   :config
   (setq lsp-julia-default-environment "~/.julia/environments/v1.6"))
 
-; this allows to use some shortcuts .. begins_src..
 (require 'org-tempo)
-                                        ; enabling syntax hilight
-(add-hook 'org-mode-hook 'font-lock-mode)
-
 (add-to-list 'org-modules 'org-tempo t)
+(with-eval-after-load 'org
+ ;; This is needed as of Org 9.2
+
+(add-to-list 'org-structure-template-alist '("jl" . "src julia"))
+(add-to-list 'org-structure-template-alist '("c" . "src c"))
+(add-to-list 'org-structure-template-alist '("sh" . "src shell"))
+(add-to-list 'org-structure-template-alist '("el" . "src emacs-lisp"))
+(add-to-list 'org-structure-template-alist '("py" . "src python")))
+
+(add-hook 'org-mode-hook 'global-display-line-numbers-mode)
 
 (use-package org-bullets
   :hook (org-mode . org-bullets-mode)
@@ -189,6 +195,15 @@
 (setq org-src-window-setup 'current-window)
 (add-to-list 'org-structure-template-alist
              '("el" . "src emacs-lisp"))
+
+(defun efs/org-mode-visual-fill ()
+  (setq visual-fill-column-width 100
+        visual-fill-column-center-text t)
+  (visual-fill-column-mode 1))
+
+(use-package visual-fill-column
+  :ensure t
+  :hook (org-mode . efs/org-mode-visual-fill))
 
 (add-hook 'org-mode-hook 'auto-fill-mode)
 (setq-default fill-column 79)
