@@ -170,10 +170,7 @@
 (require 'org-tempo)
 (add-to-list 'org-modules 'org-tempo t)
 (with-eval-after-load 'org
- ;; This is needed as of Org 9.2
-
 (add-to-list 'org-structure-template-alist '("jl" . "src julia"))
-(add-to-list 'org-structure-template-alist '("c" . "src c"))
 (add-to-list 'org-structure-template-alist '("sh" . "src shell"))
 (add-to-list 'org-structure-template-alist '("el" . "src emacs-lisp"))
 (add-to-list 'org-structure-template-alist '("py" . "src python")))
