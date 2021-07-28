@@ -247,7 +247,7 @@
     </keybind>
     <keybind key="W-S-N">
       <action name="Execute">
-        <command>st -e newsboat</command>
+        <command>notion-app-nativefier</command>
       </action>
     </keybind>
     <keybind key="A-S-R">

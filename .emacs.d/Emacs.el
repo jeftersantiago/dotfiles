@@ -350,5 +350,6 @@ current buffer's, reload dir-locals."
   :ensure t 
   :config
   (setq elcord-use-major-mode-as-main-icon t)
+  (setq elcord-refresh-rate 2)
   :init)
  (global-set-key (kbd "C-c d") 'elcord-mode)
