@@ -130,8 +130,8 @@ bindsym  $alt+$up      resize grow height   $size px or $size ppt
 bindsym  $alt+$down    resize shrink height $size px or $size ppt
 
 
-gaps inner 2
-gaps outer 2
+gaps inner 1
+gaps outer 1
 
 # Move the dropdow window to scratchpad (aka hides)
 
@@ -149,8 +149,8 @@ bindsym $mod+minus   move scratchpad;
 bindsym $alt+minus   scratchpad show;
 
 set $indicator-color		#000000
-set $bg-color		        #1C5C81
-set $active-bg-color	    #1C5C81
+set $bg-color		        #ED66DB
+set $active-bg-color	    #ED66DB
 set $active-text-color		#ffffff
 set $inactive-bg-color	 	#181818
 set $text-color		        #ffffff
@@ -186,8 +186,8 @@ bindsym $alt+Shift+r    exec    $term -e R
 bindsym $mod+Shift+n    exec    $term -e newsboat
 bindsym $mod+Shift+m    exec    $term -e ncmpcpp
 bindsym $alt+Shift+p    exec    $term -e pulsemixer
-bindsym $mod+Shift+f    exec    firefox
-bindsym $mod+Shift+b    exec    brave
+bindsym $mod+Shift+f    exec    brave
+bindsym $mod+Shift+b    exec    google-chrome-stable 
 bindsym $mod+Shift+d    exec    discord
 bindsym $mod+Shift+t    exec    telegram-desktop
 bindsym $mod+Shift+w    exec    whatsapp-nativefier-dark
@@ -197,7 +197,7 @@ bindsym $mod+r          exec    redshift
 bindsym $mod+Shift+p    exec    env GTK_THEME=Materia-dark-compact: gnome-pomodoro
 bindsym $mod+Shift+a    exec    alarm-clock-applet
 bindsym $alt+Shift+b    exec    mate-power-preferences
-bindsym F10             exec    mate-screenshot
+bindsym F10             exec    mate-screenshot -a
 bindsym $mod+Shift+x    exec    env GTK_THEME=Raleigh: xournalpp
 bindsym $mod+Shift+i    exec    keepassxc
 bindsym $alt+Shift+n    exec    nitrogen
