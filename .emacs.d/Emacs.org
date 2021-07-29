@@ -90,10 +90,10 @@
 ** Theme and transparency
    Loading theme and setting modeline background color.
    #+begin_src emacs-lisp
-     (use-package doom-themes
-       :config
-       (load-theme 'doom-dracula t)
-       :ensure t)
+        (use-package doom-themes
+          :config
+          (load-theme 'doom-challenger-deep t)
+          :ensure t)
    #+end_src
    Enabling transparency
    #+begin_src emacs-lisp

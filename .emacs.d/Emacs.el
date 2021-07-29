@@ -57,7 +57,7 @@
 
 (use-package doom-themes
   :config
-  (load-theme 'doom-dracula t)
+  (load-theme 'doom-challenger-deep t)
   :ensure t)
 
 (set-frame-parameter (selected-frame) 'alpha '(95 95))
