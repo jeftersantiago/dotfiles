@@ -285,6 +285,7 @@
     (use-package visual-fill-column
       :ensure t
       :hook (org-mode . efs/org-mode-visual-fill))
+
   #+end_src
 ** Tasks management 
    #+begin_src emacs-lisp
@@ -342,6 +343,10 @@
      (add-to-list 'org-file-apps '("\\.pdf" . "xreader %s"))
      (global-set-key (kbd "C-x p") 'org-latex-export-to-pdf)
    #+end_src
+
+   #+RESULTS:
+   : org-latex-export-to-pdf
+
 * Latex
   #+begin_src emacs-lisp
     (use-package auctex
@@ -370,11 +375,26 @@
     (setq TeX-PDF-mode t)
                                             ; (add-hook 'LateX-mode-hook (lambda () (latex-preview-pane-mode)))
                                             ; (global-set-key (kbd "C-x l ") 'latex-preview-pane-mode)
-    (global-set-key (kbd "C-x l ") 'pdflatex)
+;    (global-set-key (kbd "C-x l ") 'pdflatex)
     (add-to-list 'org-latex-packages-alist '("" "listings" nil))
     (setq org-latex-listings t)   
     (setq org-latex-listings-options '(("breaklines" "true")))
+
+
+    (setq latex-run-command "pdflatex")
+
+    (defun hrs/mark-done-and-archive ()
+      " Mark the state of an org-mode item as DONE and archive it."
+      (interactive)
+      (org-todo 'done)
+      (org-archive-subtree))
+    (global-set-key (kbd "C-c C-x C-s") 'hrs/mark-done-and-archive)
+    (setq org-log-done 'time)
   #+end_src
+
+  #+RESULTS:
+  : time
+
 * Dired
   #+begin_src emacs-lisp
     (use-package dired-sidebar
