@@ -27,12 +27,12 @@ window.active.title.bg.color:		#181818
 window.active.label.bg:			flat solid
 window.active.label.bg.color:		#181818
 window.active.label.bg.colorTo:		#181818
-window.active.label.text.color:		#E66DB3
+window.active.label.text.color:		#ffffff
 
 
 window.active.handle.bg:		flat solid
 window.active.handle.bg.color:		#181818
-window.active.handle.bg.colorTo:	#E66DB3
+window.active.handle.bg.colorTo:	#ffffff
 
 
 window.active.grip.bg:			flat solid
@@ -54,8 +54,8 @@ window.inactive.grip.bg:		flat solid
 window.inactive.grip.bg.color:	        #181818
 ! OSD
 osd.hilight.bg: flat border
-osd.hilight.bg.color: #E66DB3
-osd.hilight.bg.border.color: #E66DB3
+osd.hilight.bg.color: #ffffff
+osd.hilight.bg.border.color: #ffffff
 
 ! Button Settings
 window.active.button.unpressed.bg:			flat solid
@@ -67,7 +67,7 @@ window.active.button.unpressed.image.color:		#ffffff
 
 window.active.button.pressed.bg:			flat solid
 window.active.button.pressed.bg.colorTo:		#ffffff
-window.active.button.pressed.image.color:		#E66DB3
+window.active.button.pressed.image.color:		#ffffff
 
 window.active.button.hover.bg:			flat solid
 window.active.button.hover.bg.color:
