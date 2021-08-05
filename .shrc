@@ -1,9 +1,9 @@
 #!/bin
-[ -f $SC"aliases" ] && source $SC"aliases"
-[ -f $SC"cmds" ] && source $SC"cmds"
+[ -f $SC"aliases.sh" ] && source $SC"aliases.sh"
+[ -f $SC"cmds.sh" ] && source $SC"cmds.sh"
 setxkbmap br
 xrdb ~/.Xresources
 shopt -s autocd
-seticon
+seticon.sh
 #PS1="\[\e]0;\u@\h\$ : \w\a\]\u@\h\w\$ "
 PS1="\[\e]0;\u@\h\$ : \w\a\]\u@\h\w\$ "
