@@ -2,7 +2,7 @@
 # default applications
 export READER="xreader"
 export BROWSER="brave"
-export VIEWER="mirage"
+export VIEWER="eog"
 export TERMINAL="st"
 #export LANG="fr_FR.UTF-8"
 export LANG="en_US.UTF-8"

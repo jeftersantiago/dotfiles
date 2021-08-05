@@ -23,7 +23,7 @@
   </placement>
   <theme>
     <name>Minstral</name>
-    <titleLayout>NLD</titleLayout>
+    <titleLayout>NLDIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most"once.
       N: window icon
@@ -151,8 +151,7 @@
     </keybind>
     <keybind key="W-S-P">
       <action name="Execute">
-        <!-- <command>env GTK_THEME=Materia-dark-compact: gnome-pomodoro</command>-->
-        <command>gnome-pomodoro</command>
+        <command>env GTK_THEME=Materia-dark-compact: gnome-pomodoro</command>
       </action>
     </keybind>
     <keybind key="W-S-A">
@@ -197,7 +196,7 @@
     </keybind>
     <keybind key="W-S-c">
       <action name="Execute">
-        <command>nautilus</command>
+        <command>env GTK_THEME=Materia-dark-compact: nautilus</command>
       </action>
     </keybind>
     <keybind key="W-S-D">
@@ -237,7 +236,7 @@
     </keybind>
     <keybind key="W-p">
       <action name="Execute">
-        <command>dmenu_run -fn "size=18" -nf "#E66DB3" -sb "#E66DB3" -sf "#000000" </command>
+        <command>dmenu_run -fn "monospaced:size=15"</command>
       </action>
     </keybind>
     <keybind key="M-S-N">

@@ -1,7 +1,7 @@
 #+TITLE: Dotfiles
 #+STARTUP: shrink noalign
 * My system configurations.
-  *[[https://archlinux.org/download/][Arch Linux]]* 🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*  🤝 *[[https://i3wm.org/][i3wm]]*
+  *[[https://archlinux.org/download/][Arch Linux]]* 🤝 *[[https://www.gnome.org/][Gnome*]] 🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]* 🤝 *[[https://i3wm.org/][i3wm]]*
 * Applications
   |---------------------+----------------------------------------+---------------------------+-------------------------|
   | *Required*          | *Customized*                           | *System status and tools* | *Themes and multimedia* |
@@ -46,10 +46,6 @@
     | Super+Shift+q     | Close Window                                            |
     | Super+Shift+Space | Fullscreen                                              |
     |-------------------+---------------------------------------------------------|
-*** Tilling windows behavior (i3wm)
-   |---+---+---|
-   |   |   |   |
-   |---+---+---|
 * Ranger shortcuts
    |---------+--------------|
    | Command | Go to folder |
@@ -102,4 +98,6 @@
 
 
 
+   
+   
    

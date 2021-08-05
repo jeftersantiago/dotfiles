@@ -126,22 +126,17 @@ launcher_icon_theme = Papirus-Light
 launcher_icon_theme_override = 0
 startup_notifications = 1
 launcher_tooltip = 1
-launcher_item_app = ~/.desktops/brave.desktop
 launcher_item_app = ~/.desktops/chrome.desktop
 launcher_item_app = ~/.desktops/firefox.desktop
+launcher_item_app = ~/.desktops/yt.desktop
+launcher_item_app = ~/.desktops/spotify.desktop
 launcher_item_app = ~/.desktops/discord.desktop
 launcher_item_app = ~/.desktops/telegram.desktop
-launcher_item_app = ~/.desktops/spotify.desktop
-launcher_item_app = ~/.desktops/yt.desktop
 launcher_item_app = ~/.desktops/nautilus.desktop
-launcher_item_app = ~/.desktops/alarm.desktop
 launcher_item_app = ~/.desktops/st.desktop
-launcher_item_app = ~/.desktops/ranger.desktop
-launcher_item_app = ~/.desktops/julia.desktop
 launcher_item_app = ~/.desktops/emacs.desktop
 launcher_item_app = ~/.desktops/notion.desktop
 launcher_item_app = ~/.desktops/xournalpp.desktop
-launcher_item_app = ~/.desktops/krita.desktop
 
 #-------------------------------------
 # Clock
