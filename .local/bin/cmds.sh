@@ -11,10 +11,10 @@ alias \
 # Some commands
 alias \
     x="startx"                                          \
-    du="$SCRIPTS/du"                                    \
+    du="$SCRIPTS/du.sh"                                    \
     mn="sudo mount /dev/sdb2 ~/Drive"                   \
     um="sudo umount ~/Drive"                            \
-    bk=$PV"/scripts/backup"                             \
+    bk=$PV"/scripts/backup"                            \
     r="ranger "                                         \
     down="sudo ip link set wlp6s0 down"                 \
     up="sudo ip link set wlp6s0 up"                     \

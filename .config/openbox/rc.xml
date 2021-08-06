@@ -764,6 +764,12 @@
         <y>center</y>
       </position>
     </application>
+    <application class="St">
+     <size>
+      <width>50%</width>
+      <height>60%</height>
+    </size>
+    </application>
     <!--
     <decor>yes</decor>
     <shade>no</shade>
