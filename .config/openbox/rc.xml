@@ -221,7 +221,7 @@
     </keybind>
     <keybind key="A-S-f">
       <action name="Execute">
-        <command>evince</command>
+        <command>xreader</command>
       </action>
     </keybind>
     <keybind key="W-S-K">

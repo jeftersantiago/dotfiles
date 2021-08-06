@@ -19,5 +19,5 @@ pa-applet &
 
 blueman-applet &
 # scripts
-startup_apps &
-touchpad &
+startup_apps.sh &
+touchpad.sh &
