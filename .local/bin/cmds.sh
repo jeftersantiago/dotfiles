@@ -6,14 +6,14 @@ alias \
     dw=$HOME"/Downloads"                                \
     torr=$HOME"/Downloads/_torrent/"                    \
     ag=$HOME"/Documents/agenda/"                        \
-    w="~/Workspace"                                     \
+    w="~/workspace"                                     \
 
 # Some commands
 alias \
     x="startx"                                          \
     du="$SCRIPTS/du.sh"                                    \
-    mn="sudo mount /dev/sdb2 ~/Drive"                   \
-    um="sudo umount ~/Drive"                            \
+    mn="sudo mount /dev/sdb2 ~/drive"                   \
+    um="sudo umount ~/drive"                            \
     bk=$PV"/scripts/backup"                            \
     r="ranger "                                         \
     down="sudo ip link set wlp6s0 down"                 \

@@ -11,7 +11,7 @@ set number relativenumber
 
 let mapleader=" "
 
-colorscheme elflord
+colorscheme koehler
 
 " changing themes
 nmap<C-l> :colorscheme elflord <CR>

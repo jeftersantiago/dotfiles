@@ -2,7 +2,7 @@
 Name[pt_BR]=Executar software
 Name=Run Software
 TryExec=nautilus-autorun-software
-Exec=nautilus %u
+Exec=GTK_THEME=Materia-dark-compact: nautilus %u
 Icon=nautilus
 Terminal=false
 StartupNotify=true

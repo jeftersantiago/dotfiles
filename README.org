@@ -97,7 +97,11 @@
    - The most thinner window bar possible
 
 
+   
+   $x^2 + 3$   
+   
 
-   
-   
+
+
+
    

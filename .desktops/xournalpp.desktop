@@ -4,7 +4,7 @@ Type=Application
 Name=Xournal++
 Comment=Take handwritten notes
 Keywords=Tablet;Wacom;Pen Input;PDF Annotation;Markup
-Exec=env GTK_THEME=Materia-light-compact: xournalpp %f
+Exec=env GTK_THEME=Raleigh: xournalpp %f
 Terminal=false
 StartupNotify=true
 MimeType=application/x-xoj;application/x-xojpp;application/x-xopp;application/x-xopt;application/pdf;

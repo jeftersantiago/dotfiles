@@ -196,7 +196,7 @@
     </keybind>
     <keybind key="W-S-c">
       <action name="Execute">
-        <command>env GTK_THEME=Materia-dark-compact: nautilus</command>
+        <command>env GTK_THEME=Raleigh: thunar</command>
       </action>
     </keybind>
     <keybind key="W-S-D">
@@ -765,10 +765,10 @@
       </position>
     </application>
     <application class="St">
-     <size>
-      <width>50%</width>
-      <height>60%</height>
-    </size>
+      <size>
+        <width>60%</width>
+        <height>70%</height>
+      </size>
     </application>
     <!--
     <decor>yes</decor>

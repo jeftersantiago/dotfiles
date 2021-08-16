@@ -1,4 +1,3 @@
 #!/bin/sh
-discord  &
 alarm-clock-applet &
 GTK_THEME=Materia-dark-compact: gnome-pomodoro &
