@@ -21,11 +21,11 @@
   cool stuff.
 ** Defining mapleader
    I use the leader to automate some commands with keybindings.
-  #+begin_src vimrc
+  #+begin_src sh
    let mapleader=" "
   #+end_src
 ** Save file
-   #+begin_src vimrc
+   #+begin_src sh
    " Save the file
    map<leader>w :w<CR>
    " Save and leave
@@ -35,22 +35,22 @@
    #+end_src
 ** Latex
    Setting the latex syntax
-   #+begin_src vimrc 
+   #+begin_src sh 
      autocmd BufRead,BufNewFile *.tex set filetype=tex
    #+end_src
    Compile the =.tex= file opened
    For it to work you have to be in the same directory as the tex file
-   #+begin_src vimrc
+   #+begin_src sh
    autocmd FileType tex nnoremap <leader>c :! pdflatex %<CR><CR>
    #+end_src
    Open the pdf with =xreader=.
    For it to work you have to be in the same directory as the pdf file
-   #+begin_src vimrc
+   #+begin_src sh
    autocmd FileType tex nnoremap <leader>o :! xreader $(echo % \| sed 's/tex$/pdf/') & disown <CR><CR>
    #+end_src
 ** Xresources
    Compile the =~/.Xresources= when saving the file.
-   #+begin_src vimrc
+   #+begin_src sh
     autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
    #+end_src
 * Keyboard shortcuts
