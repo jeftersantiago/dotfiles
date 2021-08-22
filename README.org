@@ -25,26 +25,24 @@
    let mapleader=" "
   #+end_src
 ** Save file
+   Save the file, save and leave, just leave.
    #+begin_src sh
-   " Save the file
-   map<leader>w :w<CR>
-   " Save and leave
-   map<leader>ww :wq<CR>
-   " Just leave
-   map<leader>q :q!<CR>
+     map<leader>w :w<CR>
+     map<leader>ww :wq<CR>
+     map<leader>q :q!<CR>
    #+end_src
 ** Latex
-   Setting the latex syntax
+   Setting the latex syntax.
    #+begin_src sh 
      autocmd BufRead,BufNewFile *.tex set filetype=tex
    #+end_src
-   Compile the =.tex= file opened
-   For it to work you have to be in the same directory as the tex file
+   Compile the =.tex= file opened.
+   For it to work you have to be in the same directory as the tex file.
    #+begin_src sh
    autocmd FileType tex nnoremap <leader>c :! pdflatex %<CR><CR>
    #+end_src
    Open the pdf with =xreader=.
-   For it to work you have to be in the same directory as the pdf file
+   For it to work you have to be in the same directory as the pdf file.
    #+begin_src sh
    autocmd FileType tex nnoremap <leader>o :! xreader $(echo % \| sed 's/tex$/pdf/') & disown <CR><CR>
    #+end_src
