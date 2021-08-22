@@ -163,14 +163,21 @@ startup_notifications = 1
 launcher_tooltip = 1
 launcher_item_app = ~/.desktops/brave.desktop
 launcher_item_app = ~/.desktops/chrome.desktop
+launcher_item_app = ~/.desktops/firefox.desktop
+launcher_item_app = ~/.desktops/meet.desktop
+
 launcher_item_app = ~/.desktops/yt.desktop
 launcher_item_app = ~/.desktops/spotify.desktop
-launcher_item_app = ~/.desktops/meet.desktop
+launcher_item_app = ~/.desktops/twitter.desktop
+launcher_item_app = ~/.desktops/reddit.desktop
+
 launcher_item_app = ~/.desktops/lol.desktop
 launcher_item_app = ~/.desktops/Stardew Valley.desktop
 launcher_item_app = ~/.desktops/hollowknight.desktop
+
 launcher_item_app = ~/.desktops/julia.desktop
 launcher_item_app = ~/.desktops/st.desktop
+
 launcher_item_app = ~/.desktops/notion.desktop
 launcher_item_app = ~/.desktops/thunar.desktop
 launcher_item_app = ~/.desktops/xournalpp.desktop
