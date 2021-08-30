@@ -12,8 +12,8 @@ xrdb ~/.Xresources &
 xset b off &
 
 # startup scripts
-screen.sh &
-setTabletScreen.sh &
+#screen.sh &
+#setTabletScreen.sh &
 
 # applets
 nm-applet &
