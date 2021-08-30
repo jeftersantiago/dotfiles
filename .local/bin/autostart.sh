@@ -1,17 +1,19 @@
 #!/bin/sh
-#xsetwacom set 21 MapToOutput eDP-1
 # starting applications
 xcompmgr &
 dunst &
 tint2 &
 mate-power-manager &
-pulseaudio &
 nitrogen --restore
 # commands
 xsetwacom set 20 MapToOutput eDP-1
 xmodmap ~/.Xmodmap
 xrdb ~/.Xresources &
 xset b off &
+
+# startup scripts
+screen.sh &
+setTabletScreen.sh &
 
 # applets
 nm-applet &
