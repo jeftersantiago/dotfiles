@@ -3,9 +3,12 @@
 xcompmgr &
 dunst &
 tint2 &
+
 mate-power-manager &
 nitrogen --restore
+
 # commands
+
 xsetwacom set 20 MapToOutput eDP-1
 xmodmap ~/.Xmodmap
 xrdb ~/.Xresources &

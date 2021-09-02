@@ -23,6 +23,7 @@ export PATH=$PATH:/usr/bin/pdflatex
 
 # makes my own scripts load as commands
 export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | paste -sd ':')"
+export PATH="$PATH:$(du "$HOME/Dropbox/private-configs/" | cut -f2 | paste -sd ':')"
 
 # somehow makes the sh shell works on login
 test -f "$HOME"/.shrc && export ENV="$HOME"/.shrc
