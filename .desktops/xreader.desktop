@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Document Viewer
 TryExec=xreader
-Exec=xreader %U
+Exec=env GTK_THEME=Raleigh: xreader %U
 StartupNotify=true
 Terminal=false
 Type=Application
