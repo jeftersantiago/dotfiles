@@ -211,7 +211,7 @@
     </keybind>
     <keybind key="W-S-W">
       <action name="Execute">
-        <command>whatsapp-nativefier</command>
+        <command>whatsapp-nativefier-dark</command>
       </action>
     </keybind>
     <keybind key="W-S-b">

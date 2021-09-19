@@ -2,8 +2,7 @@
 # starting applications
 xcompmgr &
 dunst &
-tint2 &
-
+xfce4-panel &
 mate-power-manager &
 nitrogen --restore
 
