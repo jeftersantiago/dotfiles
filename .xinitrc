@@ -4,6 +4,5 @@ sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 XDG_SESSION_TYPE=x11
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
-#autostart.sh
-#exec openbox
-exec gnome-session
+autostart.sh
+exec openbox

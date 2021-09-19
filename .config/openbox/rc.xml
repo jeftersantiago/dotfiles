@@ -22,7 +22,7 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>Minstral</name>
+    <name>Arc-Dark</name>
     <titleLayout>NLDIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most"once.
