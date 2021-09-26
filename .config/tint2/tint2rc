@@ -73,7 +73,7 @@ border_color_pressed = #000000 100
 #-------------------------------------
 # Panel
 panel_items = L:TSC
-panel_size = 100% 30
+panel_size = 100% 26
 panel_margin = 0 0
 panel_padding = 2 0 2
 panel_background_id = 1
@@ -162,15 +162,13 @@ launcher_icon_theme_override = 0
 startup_notifications = 1
 launcher_tooltip = 1
 launcher_item_app = ~/.desktops/brave.desktop
-launcher_item_app = ~/.desktops/chrome.desktop
 launcher_item_app = ~/.desktops/yt.desktop
 launcher_item_app = ~/.desktops/spotify.desktop
-launcher_item_app = ~/.desktops/twitter.desktop
-launcher_item_app = ~/.desktops/st.desktop
 launcher_item_app = ~/.desktops/notion.desktop
 launcher_item_app = ~/.desktops/thunar.desktop
 launcher_item_app = ~/.desktops/xournalpp.desktop
 launcher_item_app = ~/.desktops/xreader.desktop
+launcher_item_app = ~/.desktops/st.desktop
 launcher_item_app = ~/.desktops/emacs.desktop
 
 #-------------------------------------

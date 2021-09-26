@@ -22,7 +22,7 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>Arc-Dark</name>
+    <name>Minstral</name>
     <titleLayout>NLDIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most"once.
@@ -134,11 +134,12 @@
         <command>mate-screenshot -a </command>
       </action>
     </keybind>
-    <keybind key="A-S-B">
+    <!--    <keybind key="A-S-B">
       <action name="Execute">
         <command>mate-power-preferences</command>
       </action>
     </keybind>
+-->
     <keybind key="W-Return">
       <action name="Execute">
         <command>st</command>
@@ -151,12 +152,12 @@
     </keybind>
     <keybind key="W-S-P">
       <action name="Execute">
-        <command>env GTK_THEME=Materia-dark-compact: gnome-pomodoro</command>
+        <command>env GTK_THEME=Mojave-dark-solid-alt: gnome-pomodoro</command>
       </action>
     </keybind>
     <keybind key="W-S-A">
       <action name="Execute">
-        <command>env GTK_THEME=Materia-dark-compact: alarm-clock-applet</command>
+        <command>alarm-clock-applet</command>
       </action>
     </keybind>
     <keybind key="A-F3">
@@ -442,7 +443,7 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>50%</width>
+        <width>55%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -452,7 +453,7 @@
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
-        <width>50%</width>
+        <width>45%</width>
         <height>100%</height>
       </action>
     </keybind>
