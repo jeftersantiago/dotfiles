@@ -23,7 +23,7 @@
   </placement>
   <theme>
     <name>Minstral</name>
-    <titleLayout>NLDIMC</titleLayout>
+    <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most"once.
       N: window icon
@@ -91,7 +91,7 @@
     <popupTime>875</popupTime>
   </desktops>
   <resize>
-    <drawContents>yes</drawContents>
+    <drawContents>no</drawContents>
     <popupShow>Nonpixel</popupShow>
     <popupPosition>Center</popupPosition>
     <popupFixedPosition>
@@ -118,7 +118,7 @@
     <moveButton>Middle</moveButton>
   </dock>
   <keyboard>
-    <!-- sticking my table to just one screen -->
+    <!-- sticking my table to juxterm one screen -->
     <keybind key="W-t">
       <action name="Execute">
         <command>xsetwacom set 20 MapToOutput eDP-1</command>
@@ -134,20 +134,19 @@
         <command>mate-screenshot -a </command>
       </action>
     </keybind>
-    <!--    <keybind key="A-S-B">
+    <keybind key="A-S-B">
       <action name="Execute">
         <command>mate-power-preferences</command>
       </action>
     </keybind>
--->
     <keybind key="W-Return">
       <action name="Execute">
-        <command>st</command>
+        <command>xterm</command>
       </action>
     </keybind>
     <keybind key="W-S-Return">
       <action name="Execute">
-        <command>st</command>
+        <command>xterm</command>
       </action>
     </keybind>
     <keybind key="W-S-P">
@@ -182,7 +181,7 @@
     </keybind>
     <keybind key="W-S-R">
       <action name="Execute">
-        <command>st ranger</command>
+        <command>xterm -e ranger</command>
       </action>
     </keybind>
     <keybind key="W-R">
@@ -232,7 +231,7 @@
     </keybind>
     <keybind key="W-S-X">
       <action name="Execute">
-        <command> env GTK_THEME=Raleigh: xournalpp</command>
+        <command> env GTK_THEME=Raleigh: xournalpp /home/jefter66/Dropbox/.xournalpp/template.xopp</command>
       </action>
     </keybind>
     <keybind key="W-p">
@@ -252,12 +251,12 @@
     </keybind>
     <keybind key="A-S-R">
       <action name="Execute">
-        <command>st R</command>
+        <command>xterm -e julia </command>
       </action>
     </keybind>
     <keybind key="M-S-P">
       <action name="Execute">
-        <command>st pulsemixer</command>
+        <command>xterm -e pulsemixer</command>
       </action>
     </keybind>
     <keybind key="M-S-V">
@@ -267,7 +266,7 @@
     </keybind>
     <keybind key="W-S-m">
       <action name="Execute">
-        <command>st ncmpcpp</command>
+        <command>xterm -e ncmpcpp</command>
       </action>
     </keybind>
     <keybind key="W-S-E">
@@ -443,7 +442,7 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>55%</width>
+        <width>60%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -453,7 +452,7 @@
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
-        <width>45%</width>
+        <width>40%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -796,7 +795,7 @@
 -->
   </applications>
   <resistance>
-    <strength>10</strength>
-    <screen_edge_strength>20</screen_edge_strength>
+    <strength>0</strength>
+    <screen_edge_strength>0</screen_edge_strength>
   </resistance>
 </openbox_config>

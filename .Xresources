@@ -1,9 +1,8 @@
 st*locale: true
 st*scrollBar:false
 st*geometry: 80x32
-*faceName:Liberation Mono:pixelsize=18
-st*alpha:0.90
-
+*faceName:Liberation Mono:pixelsize=14
+!st*alpha:0.98
 
 
 Alt <Key>C: copy-selection(CLIPBOARD) \n\
