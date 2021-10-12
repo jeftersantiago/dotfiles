@@ -118,7 +118,7 @@
     <moveButton>Middle</moveButton>
   </dock>
   <keyboard>
-    <!-- sticking my table to juxterm one screen -->
+    <!-- sticking my table to just one screen -->
     <keybind key="W-t">
       <action name="Execute">
         <command>xsetwacom set 20 MapToOutput eDP-1</command>
@@ -141,12 +141,12 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>xterm</command>
+        <command>st</command>
       </action>
     </keybind>
     <keybind key="W-S-Return">
       <action name="Execute">
-        <command>xterm</command>
+        <command>st</command>
       </action>
     </keybind>
     <keybind key="W-S-P">
@@ -181,7 +181,7 @@
     </keybind>
     <keybind key="W-S-R">
       <action name="Execute">
-        <command>xterm -e ranger</command>
+        <command>st -e ranger</command>
       </action>
     </keybind>
     <keybind key="W-R">
@@ -251,12 +251,12 @@
     </keybind>
     <keybind key="A-S-R">
       <action name="Execute">
-        <command>xterm -e julia </command>
+        <command>st -e julia </command>
       </action>
     </keybind>
     <keybind key="M-S-P">
       <action name="Execute">
-        <command>xterm -e pulsemixer</command>
+        <command>st -e pulsemixer</command>
       </action>
     </keybind>
     <keybind key="M-S-V">
@@ -266,7 +266,7 @@
     </keybind>
     <keybind key="W-S-m">
       <action name="Execute">
-        <command>xterm -e ncmpcpp</command>
+        <command>st -e ncmpcpp</command>
       </action>
     </keybind>
     <keybind key="W-S-E">

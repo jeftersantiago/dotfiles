@@ -4,6 +4,6 @@
 setxkbmap br
 xrdb ~/.Xresources
 shopt -s autocd
-#seticon
+seticon
 #PS1="\[\e]0;\u@\h\$ : \w\a\]\u@\h\w\$ "
 PS1="\[\e]0;\u@\h\$ : \w\a\]\u@\h\w\$ "

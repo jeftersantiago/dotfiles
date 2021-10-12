@@ -27,3 +27,8 @@ export PATH="$PATH:$(du "$HOME/Dropbox/private-configs/" | cut -f2 | paste -sd '
 
 # somehow makes the sh shell works on login
 test -f "$HOME"/.shrc && export ENV="$HOME"/.shrc
+
+
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec startx
+fi
