@@ -191,6 +191,11 @@
     </keybind>
     <keybind key="W-S-f">
       <action name="Execute">
+        <command>firefox</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-b">
+      <action name="Execute">
         <command>brave</command>
       </action>
     </keybind>
@@ -211,14 +216,10 @@
     </keybind>
     <keybind key="W-S-W">
       <action name="Execute">
-        <command>whatsapp-nativefier-dark</command>
+        <command>whatsapp-nativefier</command>
       </action>
     </keybind>
-    <keybind key="W-S-b">
-      <action name="Execute">
-        <command>google-chrome-stable</command>
-      </action>
-    </keybind>
+
     <keybind key="A-S-f">
       <action name="Execute">
         <command>xreader</command>
@@ -442,7 +443,7 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>60%</width>
+        <width>50%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -452,7 +453,7 @@
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
-        <width>40%</width>
+        <width>50%</width>
         <height>100%</height>
       </action>
     </keybind>
