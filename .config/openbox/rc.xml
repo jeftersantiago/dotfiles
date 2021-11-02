@@ -216,7 +216,7 @@
     </keybind>
     <keybind key="W-S-W">
       <action name="Execute">
-        <command>whatsapp-nativefier</command>
+        <command>whatsapp-nativefier-dark</command>
       </action>
     </keybind>
 
@@ -438,7 +438,7 @@
       <action name="Iconify"/>
     </keybind>
     <!-- move to the left side-->
-    <keybind key="W-h">
+    <keybind key="W-S-H">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>0</x>
@@ -448,31 +448,13 @@
       </action>
     </keybind>
     <!-- move to the right -->
-    <keybind key="W-l">
+    <keybind key="W-S-L">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
         <width>50%</width>
         <height>100%</height>
-      </action>
-    </keybind>
-    <keybind key="W-k">
-      <action name="Unmaximize"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
-        <width>100%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-j">
-      <action name="Unmaximize"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>-0</y>
-        <width>100%</width>
-        <height>50%</height>
       </action>
     </keybind>
     <keybind key="A-space">
@@ -758,13 +740,14 @@
         <y>center</y>
       </position>
     </application>
+
     <application class="Emacs">
       <decor>yes</decor>
-      <position force="no">
+      <position force="yes">
         <x>center</x>
         <y>center</y>
       </position>
-    </application>
+   </application>
     <application class="St">
       <size>
         <width>60%</width>
