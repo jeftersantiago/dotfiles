@@ -214,12 +214,6 @@
         <command>telegram-desktop</command>
       </action>
     </keybind>
-    <keybind key="W-S-W">
-      <action name="Execute">
-        <command>whatsapp-nativefier-dark</command>
-      </action>
-    </keybind>
-
     <keybind key="A-S-f">
       <action name="Execute">
         <command>xreader</command>
