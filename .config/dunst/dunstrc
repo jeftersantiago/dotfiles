@@ -2,14 +2,16 @@
     # Which monitor should the notifications be displayed on.
     monitor = 0
     follow = mouse
-    geometry = "0x0-0+0"
-    geometry = "330x50-10+44"
+
+#    geometry = "0x0-0+0"
+#    geometry = "330x50-10+44"
     #       [{width}]x{height}[+/-{x}+/-{y}]
     # Show how many messages are currently hidden (because of geometry).
+
     indicate_hidden = yes
     shrink = yes
     transparency = 1
-    notification_height = 10
+#    notification_height = 10
     separator_height = 5
     padding = 5
     horizontal_padding = 8
@@ -43,8 +45,8 @@
     title = Dunst
     # Define the class of the windows spawned by dunst
     class = Dunst
-    startup_notification = false
-    verbosity = mesg
+#    startup_notification = false
+#    verbosity = mesg
     corner_radius = 0
     ignore_dbusclose = false
     force_xinerama = false
@@ -62,12 +64,6 @@
     # where there are multiple screens with very different dpi values.
     per_monitor_dpi = false
 
-[shortcuts]
-    close = ctrl+space
-    close_all = ctrl+shift+space
-    history = ctrl+grave
-    # Context menu.
-    context = ctrl+shift+period
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
@@ -77,13 +73,6 @@
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
-
-[urgency_normal]
-    background = "#000000"
-    foreground = "#AEA9A9"
-    timeout = 5
-    # Icon for notifications with normal urgency, uncomment to enable
-    icon = /usr/share/icons/Adwaita/24x24/apps/preferences-system-notifications-symbolic.symbolic.png
 
 [urgency_critical]
     background = "#900000"
