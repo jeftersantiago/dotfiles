@@ -1,7 +1,7 @@
 #+TITLE: Dotfiles
 #+STARTUP: shrink noalign
 * My system configurations.
-  *[[https://archlinux.org/download/][Arch Linux]]*  🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]* 
+  *[[https://archlinux.org/download/][Arch Linux]]*  🤝 *[[http://openbox.org/wiki/Openbox%3ADownload][Openbox]]*
 * Applications
   |---------------------+----------------------------------------+---------------------------+-------------------------|
   | *Required*          | *Customized*                           | *System status and tools* | *Themes and multimedia* |
@@ -33,7 +33,7 @@
    #+end_src
 ** Latex
    Setting the latex syntax.
-   #+begin_src sh 
+   #+begin_src sh
      autocmd BufRead,BufNewFile *.tex set filetype=tex
    #+end_src
    Compile the =.tex= file opened.
