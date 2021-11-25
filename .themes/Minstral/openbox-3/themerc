@@ -10,11 +10,11 @@ menu.overlap:                           0
 
 ! Font
 window.active.label.text.font:shadow=y
-window.label.text.justify:	    left	
+window.label.text.justify:	    left
 
 
-menu.title.text.font:			shadow=y
-menu.title.text.justify:		left
+window.label.text.justify:		center
+
 
 menu.items.font:
 
@@ -65,7 +65,7 @@ window.active.button.unpressed.bg.color:		#000000
 window.active.button.unpressed.bg.colorTo:		#000000
 window.active.button.unpressed.image.color:		#ffffff
 
- 
+
 
 window.active.button.pressed.bg:			flat solid
 window.active.button.pressed.bg.colorTo:		#ffffff
