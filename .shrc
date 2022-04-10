@@ -5,7 +5,7 @@
 setxkbmap br
 xrdb ~/.Xresources
 shopt -s autocd
-PS1="\[\e]0;\u@\h\$ : \w\a\]\e[0;31m<\u@\h>\w\$\e[m "
+# PS1="\[\e]0;\u@\h\$ : \w\a\]\e[0;31m<\u@\h>\w\$\e[m "
 
 #seticon
-# PS1="\[\e]0;\u@\h\$ : \w\a\]\u@\h\w\$ "
+PS1="\[\e]0;\u@\h\$ : \w\a\]\u@\h\w\$ "
