@@ -74,19 +74,13 @@
     </font>
   </theme>
   <desktops>
-    <number>5</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
       <name>2</name>
       <name>3</name>
       <name>4</name>
-      <name>5</name>
-      <name>6</name>
-      <name>7</name>
-      <name>8</name>
-      <name>9</name>
-      <name>10</name>
     </names>
     <popupTime>875</popupTime>
   </desktops>
@@ -110,7 +104,7 @@
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
-    <stacking>Below</stacking>
+    <stacking>Above</stacking>
     <direction>Horizontal</direction>
     <autoHide>no</autoHide>
     <hideDelay>300</hideDelay>
@@ -191,12 +185,12 @@
     </keybind>
     <keybind key="W-S-f">
       <action name="Execute">
-        <command>firefox</command>
+        <command>brave</command>
       </action>
     </keybind>
     <keybind key="W-S-b">
       <action name="Execute">
-        <command>brave</command>
+        <command>google-chrome-stable</command>
       </action>
     </keybind>
     <keybind key="W-S-c">
@@ -244,7 +238,7 @@
         <command>notion-app-nativefier</command>
       </action>
     </keybind>
-    <keybind key="A-S-R">
+    <keybind key="W-S-J">
       <action name="Execute">
         <command>st -e julia </command>
       </action>
@@ -259,9 +253,9 @@
         <command>pavucontrol</command>
       </action>
     </keybind>
-    <keybind key="W-S-m">
+    <keybind key="W-S-s">
       <action name="Execute">
-        <command>st -e ncmpcpp</command>
+        <command>spotify</command>
       </action>
     </keybind>
     <keybind key="W-S-E">
@@ -734,14 +728,13 @@
         <y>center</y>
       </position>
     </application>
-
     <application class="Emacs">
       <decor>yes</decor>
       <position force="yes">
         <x>center</x>
         <y>center</y>
       </position>
-   </application>
+    </application>
     <application class="St">
       <size>
         <width>60%</width>

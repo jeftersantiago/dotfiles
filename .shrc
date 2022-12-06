@@ -7,5 +7,6 @@ xrdb ~/.Xresources
 shopt -s autocd
 # PS1="\[\e]0;\u@\h\$ : \w\a\]\e[0;31m<\u@\h>\w\$\e[m "
 
-#seticon
+seticon
 PS1="\[\e]0;\u@\h\$ : \w\a\]\u@\h\w\$ "
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh

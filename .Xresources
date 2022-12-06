@@ -1,8 +1,8 @@
 st*locale: true
 st*scrollBar:false
-st*alpha:0.92
+st*alpha:0.90
 
-*faceName:Roboto:pixelsize=15
+*faceName:Source Code Pro:pixelsize=15
 *reverseVideo: true
 *.cursorColor: #CE12FF
 

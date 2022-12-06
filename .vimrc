@@ -4,14 +4,14 @@ set ignorecase
 set smartcase
 set expandtab
 
-syntax off
+syntax on
 filetype on
 
 set number relativenumber
 
 let mapleader=" "
 
-colorscheme default
+colorscheme elflord
 
 
 " changing themes
