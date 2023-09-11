@@ -195,7 +195,7 @@
     </keybind>
     <keybind key="W-S-c">
       <action name="Execute">
-        <command>env GTK_THEME=Raleigh: thunar</command>
+        <command>nemo</command>
       </action>
     </keybind>
     <keybind key="W-S-D">
@@ -210,7 +210,7 @@
     </keybind>
     <keybind key="A-S-f">
       <action name="Execute">
-        <command>xreader</command>
+        <command>evince</command>
       </action>
     </keybind>
     <keybind key="W-S-K">
@@ -255,7 +255,7 @@
     </keybind>
     <keybind key="W-S-s">
       <action name="Execute">
-        <command>spotify</command>
+        <command>spotify-tray</command>
       </action>
     </keybind>
     <keybind key="W-S-E">

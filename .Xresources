@@ -1,31 +1,28 @@
 st*locale: true
 st*scrollBar:false
-st*alpha:0.90
+st*alpha:0.98
 
-*faceName:Source Code Pro:pixelsize=15
+! *faceName:Source Code Pro:pixelsize=12
 *reverseVideo: true
-*.cursorColor: #CE12FF
+! *.cursorColor: #CE12FF
 
-
-/bin/sh: line 1: black: command not found
-r1:            #af005f
-*color9:            #ff6c5c
+!r1:                 #171420
+!*color9:            #ff6c5c
 !green
-*color2:            #519f50
-*color10:           #a5c261
+!*color2:            #519f50
+!*color10:           #a5c261
 !yellow
-*color3:            #cc7833
-*color11:           #bc9458
+!*color3:            #cc7833
+!*color11:           #bc9458
 !blue
-*color4:            #1C5F87
-*color12:           #3288C6
+!*color4:            #1C5F87
+!*color12:           #3288C6
 !*magenta
-*color5:            #5f1c5f
-*color13:           #A617DE
+!*color5:            #5f1c5f
+!*color13:           #A617DE
 !*cyan
-*color6:            #435d75
-*color14:           #6e98a4
+!*color6:            #435d75
+!*color14:           #6e98a4
 !*white
-*color7:            #dddddd
-*color15:           #dddddd
-
+!*color7:            #dddddd
+!*color15:           #dddddd
