@@ -11,7 +11,7 @@ set number relativenumber
 
 let mapleader=" "
 
-colorscheme default
+colorscheme elflord "default
 
 
 " changing themes
