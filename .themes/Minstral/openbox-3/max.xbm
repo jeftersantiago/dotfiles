@@ -1,4 +1,1 @@
-#define close_width 9
-#define close_height 9
-static unsigned char close_bits[] = {
-  0x33, 0x33, 0x00, 0x00, 0x30, 0x30 };
+../../../.dotfiles/.themes/Minstral/openbox-3/max.xbm
