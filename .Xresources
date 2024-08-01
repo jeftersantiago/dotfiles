@@ -1,4 +1,1 @@
-st*locale: true
-st*scrollBar:false
-st*alpha:0.98
-*reverseVideo: true
+.dotfiles/.Xresources

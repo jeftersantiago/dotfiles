@@ -1,4 +1,1 @@
-#define shade_toggled_width 5
-#define shade_toggled_height 5
-static unsigned char shade_toggled_bits[] = {
-   0x0a, 0x04, 0x11, 0x0a, 0x04 };
+../../../.dotfiles/.themes/Nightmare/openbox-3/shade_toggled.xbm
