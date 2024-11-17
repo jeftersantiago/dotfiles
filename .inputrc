@@ -1,8 +1,8 @@
 set meta-flag on
-set editing-mode emacs
+set editing-mode emacs 
 set horizontal-scroll-mode Off
 set convert-meta Off
 set output-meta On
-"\C-e~": end-of-line
-"\C-d~": delete-char
+# "\C-e~": end-of-line
+# "\C-d~": delete-char
 

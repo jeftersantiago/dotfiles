@@ -1,10 +1,10 @@
 #!/bin/sh
 # default applications
-export READER="xreader"
+export READER="evince"
 export BROWSER="brave"
-export VIEWER="mirage"
+export VIEWER="eog"
 export TERMINAL="st"
-export EDITOR="emacsclient -c -a emacs"
+# export EDITOR="emacsclient -c -a emacs"
 
 #export LANG="fr_FR.UTF-8"
 
