@@ -1,5 +1,4 @@
-#!/bin
-# [ -f $SC"aliases" ] && source $SC"aliases"
+#!/bin # [ -f $SC"aliases" ] && source $SC"aliases"
 # [ -f $SC"cmds" ] && source $SC"cmds"
 
 setxkbmap br
