@@ -17,3 +17,5 @@ vim.cmd("map<leader>w :w<CR>")
 vim.cmd("map<leader>ww :wq<CR>")
 vim.cmd("map<leader>q :q!<CR>")
 
+
+
