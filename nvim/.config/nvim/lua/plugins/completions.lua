@@ -5,7 +5,7 @@ return {
   {
     "L3MON4D3/LuaSnip",
     dependencies = {
-      "saadparwaiz1/cmp_luasnip", 
+      "saadparwaiz1/cmp_luasnip",
       "rafamadriz/friendly-snippets"
     },
   },
@@ -16,6 +16,8 @@ return {
     local cmp = require("cmp")
 
     require("luasnip.loaders.from_vscode").lazy_load()
+    -- load snippets from path/of/your/nvim/config/my-cool-snippets
+    -- (Note: It's mandatory to have a 'package.json' file in the snippet directory. For examples, see documentation.)
 
     cmp.setup({
     snippet = {
@@ -41,19 +43,13 @@ return {
       ['<C-e>'] = cmp.mapping.abort(),
       ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     }),
-
     sources = cmp.config.sources({
-      -- { name = 'nvim_lsp' },
       { name = 'luasnip' }, -- For luasnip users.
-      -- { name = 'ultisnips' }, -- For ultisnips users.
-      -- { name = 'snippy' }, -- For snippy users.
-    }, 
+    },
     {
       { name = 'buffer' },
     })
   })
   end
   },
-
-
 }

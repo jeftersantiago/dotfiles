@@ -4,22 +4,6 @@
 -- compile when save
 vim.cmd("autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %")
 
--- Rename tmux window when opening a file
-vim.api.nvim_create_autocmd({"BufReadPost", "FileReadPost", "BufNewFile"}, {
-  pattern = "*",
-  callback = function()
-    vim.fn.system('tmux rename-window "nvim ' .. vim.fn.expand('%') .. '"')
-  end,
-})
-
--- Restore tmux window name when leaving the file
-vim.api.nvim_create_autocmd({"BufDelete", "BufWritePost", "VimLeave"}, {
-  pattern = "*",
-  callback = function()
-    vim.fn.system('tmux rename-window "bash"')  -- Change "default" to whatever you want
-  end,
-})
-
 -- latex
 --vim.cmd("autocmd BufRead,BufNewFile *.tex set filetype=tex")
 -- compile pdflatex
