@@ -3,9 +3,6 @@ st*scrollBar:false
 st*alpha:0.95
 *reverseVideo: true
 
-
-
-
 ! hard contrast: *background: #1d2021
 *background: #282828
 ! soft contrast: *background: #32302f
