@@ -3,15 +3,27 @@ local s = ls.snippet
 local t = ls.text_node
 
 return {
+
+    s('rho', {t('\\rho')}),
+
     s('alpha', {t('\\alpha')}),
 
     s('beta', {t('\\beta')}),
+
+    s('sigma', {t('\\sigma')}),
+    s('Sigma', {t('\\Sigma')}),
 
     s('delta', {t('\\delta')}),
     s('Delta', {t('\\Delta')}),
 
     s('zeta', {t('\\zeta')}),
     s('Zeta', {t('\\Zeta')}),
+
+    s('tau', {t('\\tau')}),
+    s('Tau', {t('\\Tau')}),
+
+    s('omega', {t('\\omega')}),
+    s('Omega', {t('\\Omega')}),
 
     s('eta', {t('\\eta')}),
     s('Eta', {t('\\Eta')}),
@@ -87,6 +99,12 @@ return {
 
     s('dot', {t('\\cdot')}),
     s('dots', {t('\\dots')}),
+    s('det', {t('\\det')}),
+
+    s('bb', {t('\\boldsymbol')}),
+
+    s('ln', {t('\\ln')}),
+    s('log', {t('\\log')}),
 }
 
 

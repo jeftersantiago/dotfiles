@@ -29,7 +29,21 @@ return {
       t("}"),
     }
   ),
+  s({trig="ket", dscr="ket"},
+    {
+      t("\\ket{"),
+      i(1),
+      t("}"),
+    }
+  ),
   s({trig="\\<|", dscr="bra"},
+    {
+      t("\\bra{"),
+      i(1),
+      t("}"),
+    }
+  ),
+  s({trig="bra", dscr="bra"},
     {
       t("\\bra{"),
       i(1),
@@ -40,8 +54,6 @@ return {
     {
       t("\\braket{"),
       i(1),
-      t("|"),
-      i(2),
       t("\\right}"),
     }
   ),
@@ -68,23 +80,30 @@ return {
   ),
   s({trig="exp", dscr="big exponential"},
     {
-      t("\\left("),
+      t("\\exp\\bigg["),
       i(1),
-      t("\\right)"),
+      t("\\bigg])"),
     }
   ),
   s({trig="trace", dscr="lower case trace"},
     {
-      t("\\text{tr}("),
+      t("\\tr \\left("),
       i(1),
-      t(")"),
+      t("\\right)"),
     }
   ),
   s({trig="Trace", dscr="upper case trace"},
     {
-      t("\\text{Tr}("),
+      t("\\Tr \\left["),
       i(1),
-      t(")"),
+      t("\\right]"),
+    }
+  ),
+  s({trig="bTrace", dscr="upper case bold trace"},
+    {
+      t("{\\boldsymbol \\Tr}\\left["),
+      i(1),
+      t("\\right]"),
     }
   ),
   s({trig="vec", dscr="arrow"},
@@ -115,6 +134,13 @@ return {
       t("}"),
     }
   ),
+  s({trig="bb", dscr="boldsymbol env"},
+    {
+      t("{\\boldsymbol "),
+      i(1),
+      t("}"),
+    }
+  ),
   s({trig="sqrt", dscr="sqrt env"},
     {
       t("\\sqrt{"),
@@ -122,27 +148,39 @@ return {
       t("}"),
     }
   ),
+  s({trig="pmatrix", dscr="pmatrix"},
+    {
+      t("\\begin{pmatrix}"),
+       i(1),
+      t("\\end{pmatrix}"),
+    }
+  ),
+  s({trig="<>", dscr="braket"},
+    {
+      t("\\braket{"),
+       i(1),
+      t("}"),
+    }
+  ),
+  s({trig="><", dscr="ketbra"},
+    {
+      t("\\ket{"),
+       i(1),
+      t("}"),
+      t("\\bra{"),
+       i(2),
+      t("}"),
+    }
+  ),
+  s({trig="ketbra", dscr="ketbra"},
+    {
+      t("\\ket{"),
+       i(1),
+      t("}"),
+      t("\\bra{"),
+       i(2),
+      t("}"),
+    }
+  ),
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
