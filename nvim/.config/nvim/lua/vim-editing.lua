@@ -22,8 +22,6 @@ vim.api.nvim_set_keymap('n', '<C-i>', '"+P', { noremap = true, silent = true })
 -- Paste from the system clipboard in insert mode
 -- vim.api.nvim_set_keymap('i', '<C-i>', '<C-r>+', { noremap = true, silent = true })
 
-
-
 -- move between panes
 vim.keymap.set('n', '<C-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<C-j>', ':wincmd j<CR>')
