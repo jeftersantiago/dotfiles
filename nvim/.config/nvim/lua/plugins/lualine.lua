@@ -3,7 +3,8 @@ return {
   config = function()
     require('lualine').setup({
       options = {
-        theme = 'gruvbox' 
+        theme = 'gruvbox',
+        icons_enabled = true -- 🔧 disable icons
       }
     })
   end
